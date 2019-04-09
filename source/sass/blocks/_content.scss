@@ -1,11 +1,16 @@
 .content {
   padding-top: 20px;
   padding-bottom: 54px;
+  overflow: hidden;
 }
 
 .content__wrap {
   @include wrapper;
   width: 100%;
+}
+
+.content__catalog {
+  margin-top: -20px;
 }
 
 .content__slider {
@@ -35,8 +40,6 @@
 .content__products {
   margin-bottom: 10px;
 }
-
-
 
 @include respond-to(medium) {
   .content__wrap {

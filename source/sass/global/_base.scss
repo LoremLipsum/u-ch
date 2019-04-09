@@ -5,7 +5,6 @@ html {
   min-width: breakpoints(small);
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -16,6 +15,7 @@ body {
   font-style: normal;
   font-weight: 400;
   color: color(black);
+  overflow-x: hidden;
 }
 
 html {

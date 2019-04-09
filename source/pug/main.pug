@@ -19,35 +19,12 @@ block content
                 +slider({
                     mix: 'content__slider',
                     js: 'slider',
-                    items: [
-                        {
-                            image: 'slider01.jpg',
-                            text: 'Более <span class="slider__secondary-lg">2000</span> <br>наименований товаров <br><span class="slider__secondary">для безупречного ремонта <br>и&nbsp;строительства</span> <br>в&nbsp;одном магазине'
-                        },
-                        {
-                            image: 'slider02.jpg',
-                            text: 'Более <span class="slider__secondary-lg">2000</span> <br>наименований товаров <br><span class="slider__secondary">для безупречного ремонта <br>и&nbsp;строительства</span> <br>в&nbsp;одном магазине'
-                        },
-                    ]
+                    items: slider,
                 })
                 +features({
                     mix: 'content__features',
-                    items: [
-                        {
-                            icon: 'bottles',
-                            text: 'Широкий ассортимент товаров для хозяйственных магазинов'
-                        },
-                        {
-                            icon: 'procent',
-                            text: 'Отдельные категории цен&nbsp;для торгующих организаций'
-                        },
-                        {
-                            icon: 'mashine',
-                            text: 'Отлаженная система оперативной доставки по&nbsp;Крыму'
-                        },
-                    ]
+                    items: features
                 })
-
                 .content__products
                     +tabs({
                         mix: 'content__tabs',
@@ -64,9 +41,17 @@ block content
                             }
                         ],
                     })
-                    +products({
-                        mix: '',
-                        items: products,
+                    .tab-1.js-content-tabs.active
+                        +products({
+                            items: products,
+                        })
+                    .tab-2.js-content-tabs
+                        +products({
+                            items: products1,
+                        })
+                    .tab-3.js-content-tabs
+                        +products({
+                            items: products2,
                         })
                 +brends({
                     mix: 'content__brends',

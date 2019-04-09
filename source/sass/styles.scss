@@ -13,6 +13,7 @@ $src: '../pug';
 @import "./global/default/default";
 @import "./global/animation";
 @import "./global/helpers";
+@import "./global/js";
 
 // blocks
 @import "./blocks/sticky-footer";
@@ -56,3 +57,4 @@ $src: '../pug';
 @import "./blocks/category-article";
 
 @import "../pug/blocks/brends/brends";
+@import "../pug/blocks/post-links/post-links";
