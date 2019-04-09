@@ -1,0 +1,44 @@
+.phone__link,
+.phone__button {
+  display: block;
+}
+
+.phone__link {
+  font-family: font(secondary);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.phone__num {
+  font-size: 18px;
+}
+
+.phone__button {
+  position: relative;
+  padding: 4px;
+  padding-bottom: 6px;
+  color: color(dark-primary);
+  font-size: 16px;
+  line-height: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    right: 4px;
+    opacity: 1;
+    height: 2px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg preserveAspectRatio='xMinYMax' fill='black' viewBox='0 0 4 1.4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='0.7' cy='0.7' r='0.7'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
+    transition: duration(md) func(primary);
+  }
+
+  @include hover {
+    &::after {
+      opacity: 0;
+    }
+  }
+}

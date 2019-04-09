@@ -1,0 +1,22 @@
+mixin logo(data)
+    +el({
+        tag: 'a',
+        class: 'logo',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+        href: main == true ? 'none' : 'main.html',
+        title: main == true ? data.title : 'Перейти на главную страницу',
+    })&attributes(attributes)
+        if !data.footer
+            +el({
+                class: 'logo__image',
+                tag: 'img',
+                src: 'logo.svg'
+            })
+        else
+            +el({
+                class: 'logo__image',
+                tag: 'img',
+                src: 'logo-white.svg'
+            })

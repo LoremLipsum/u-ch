@@ -1,0 +1,64 @@
+.content {
+  padding-top: 20px;
+  padding-bottom: 54px;
+}
+
+.content__wrap {
+  @include wrapper;
+  width: 100%;
+}
+
+.content__slider {
+  margin-bottom: 20px;
+}
+
+.content__features {
+  margin-bottom: 40px;
+}
+
+.content__tabs {
+  margin-bottom: 20px;
+}
+
+.content__products-main {
+
+}
+
+.content__breadcrumbs {
+  // margin-bottom: 30px;
+}
+
+.content__heading {
+  // margin-bottom: 28px;
+}
+
+.content__products {
+  margin-bottom: 10px;
+}
+
+
+
+@include respond-to(medium) {
+  .content__wrap {
+    display: flex;
+  }
+
+  .content__aside {
+    width: 220px;
+    margin-right: 20px;
+  }
+
+  .content__main {
+    width: calc(100% - 240px);
+  }
+}
+
+@include respond-to(large) {
+  .content__aside {
+    width: 290px;
+  }
+
+  .content__main {
+    width: calc(100% - 310px);
+  }
+}

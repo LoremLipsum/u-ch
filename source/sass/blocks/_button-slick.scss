@@ -1,0 +1,37 @@
+.button-slick {
+  position: absolute;
+  top: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  transform: translateY(-50%);
+  outline: none;
+
+  svg {
+    display: block;
+    width: 100%;
+    fill: color(gray);
+  }
+
+  @include hover {
+    background-color: rgba(#000, 0.07);
+
+    svg {
+      fill: darken(color(gray), $change-color);
+    }
+  }
+
+  &--prev {
+    left: 0;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--next {
+    right: 0;
+  }
+}

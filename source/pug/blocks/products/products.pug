@@ -1,0 +1,21 @@
+mixin products(data)
+
+    +el({
+        tag: 'ul',
+        class: 'products',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        each item in data.items
+            +el({
+                tag: 'li',
+                class: 'products__item',
+            })
+                +products-item({
+                    image: item.image,
+                    heading: item.heading,
+                    oldPrice: item.oldPrice,
+                    art: item.art,
+                    newPrice: item.newPrice,
+                })

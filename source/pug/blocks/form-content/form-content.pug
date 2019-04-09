@@ -1,0 +1,51 @@
+mixin form-content(data)
+    +form({
+        class: 'form-content',
+    })
+        if data.group
+            each item in data.group
+                .form-content__group
+                    if item.userName
+                        +field({
+                            mix: 'form-content__field',
+                            label: 'Имя пользователя',
+                            name: 'userName',
+                            placeholder: 'Имя'
+                        })(aria-required='true', aria-invalid='false')
+                    if item.email
+                        +field({
+                            mix: 'form-content__field',
+                            label: 'E-mail',
+                            type: 'email',
+                            name: 'email',
+                            placeholder: 'E-mail'
+                        })(aria-required='true', aria-invalid='false')
+                    if item.phone
+                        +field({
+                            mix: 'form-content__field',
+                            label: 'Телефон',
+                            type: 'tel',
+                            name: 'phone',
+                            placeholder: 'Телефон'
+                        })(aria-required='true', aria-invalid='false')
+                    if item.message
+                        +field({
+                            tag: 'textarea',
+                            mix: 'form-content__field',
+                            label: 'Вопрос',
+                            type: 'email',
+                            name: 'message',
+                            placeholder: data.message.placeholder
+                        })(aria-required='true', aria-invalid='false')
+        if data.personal
+            .form-content__personal
+                +checkbox({
+                    mod: 'small',
+                    label: 'Согласие на обработку персональных данных',
+                })(aria-required='true', aria-invalid='false')
+        .form-content__submit
+            +button({
+                mod: 'bg-primary',
+                type: 'submit',
+                text: data.submit
+            })

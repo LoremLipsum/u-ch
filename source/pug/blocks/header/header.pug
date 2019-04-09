@@ -1,0 +1,97 @@
+mixin header(data)
+    +el({
+        tag: 'header',
+        class: 'header',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        .header__top
+            .header__wrap
+                .header__company
+                    +el({
+                        class: 'header__text',
+                        text: 'г. Симферополь, ул. Глинки, 55',
+                    })
+                    +el({
+                        class: 'header__text',
+                        text: 'пн-пт с 8:00 до 18:00, сб - с 8:00 до 15:00, вс - выходной',
+                    })
+                ul.header__list
+                    li.header__item.header__item--nav
+                        +button-nav({
+                            js: 'open-nav'
+                        })
+                    li.header__item.header__item--search
+                        +button-toggle({
+                            icon: 'search',
+                            js: 'toggle-search',
+                        })
+                    li.header__item.header__item--user
+                        +button-toggle({
+                            icon: 'user',
+                            text: 'Вход / Регистрация',
+                            position: 'before',
+                        })
+                    li.header__item.header__item--cart
+                        +button-toggle({
+                            icon: 'cart01',
+                            js: 'button-cart',
+                            mod: 'cart',
+                            badge: '10',
+                        })
+        .header__middle
+            .header__wrap
+                +search({
+                    mix: 'header__search',
+                    js: 'search'
+                })
+                .header__company
+                    +logo({
+                        mix: 'header__logo',
+                    })
+                    .header__text
+                        | Склад-магазин строительных, <br>лакокрасочных материалов <br>и&nbsp;хозяйственных товаров
+                +button-cart({
+                    mix: 'header__button-cart',
+                    icon: 'cart',
+                    badge: '10',
+                    js: 'button-cart'
+                })
+                +header-phone({
+                    mix: 'header__phone'
+                })
+        .header__bottom
+            .header__wrap
+                +button-catalog({
+                    mix: 'header__button-catalog',
+                    text: 'Каталог товаров',
+                    js: 'open-catalog',
+                })
+                nav.header__dialog.js-main-nav(aria-label='Основное меню' itemscope itemtype='http://schema.org/SiteNavigationElement')
+                    +button-remove({
+                        mix: 'header__button-close',
+                        title: 'Закрыть главное меню',
+                        js: 'close-nav'
+                    })
+                    +main-nav({
+                        items: nav,
+                        mix: 'header__main-nav'
+                    })
+                    .header__company
+                        +el({
+                            class: 'header__text',
+                            text: 'г. Симферополь, ул. Глинки, 55',
+                        })
+
+                        +el({
+                            class: 'header__text',
+                            text: 'пн-пт с 8:00 до 18:00, <br>сб - с 8:00 до 15:00, <br>вс - выходной',
+                        })
+                        +header-phone({
+                            mix: 'header__phone'
+                        })
+        +overlay({
+            mix: 'header__overlay',
+            js: 'header-overlay'
+        })

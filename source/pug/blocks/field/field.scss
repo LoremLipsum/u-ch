@@ -1,0 +1,75 @@
+.field {
+  display: block;
+  width: 100%;
+
+  &--with-button {
+    position: relative;
+
+    .field__input {
+      padding-right: 60px;
+    }
+  }
+}
+
+.field__label {
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  color: color(gray);
+}
+
+.field__input {
+  width: 100%;
+  height: 50px;
+  padding: 14px;
+  border: none;
+  background-color: color(light);
+  color: color(black);
+  font-size: 16px;
+  line-height: 20px;
+  caret-color: color(black);
+  outline: none;
+  box-shadow: inset 1px 1px 3px 0 rgba(color(black), 0.1);
+
+  &::placeholder {
+    color: color(black);
+  }
+
+  &:hover,
+  &:focus,
+  &.active {
+    background-color: darken(color(light), 5%);
+  }
+
+  &--error:not(:focus) {
+    border: 1px solid color(error);
+    color: color(error);
+
+    ~ .field__label {
+      color: color(error);
+    }
+  }
+}
+
+.field__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(color(primary), 0.2);
+
+  svg {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    fill: color(dark-primary);
+  }
+}
+
+@include respond-to(large) {
+
+}

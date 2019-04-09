@@ -1,0 +1,74 @@
+.h-button {
+  display: block;
+  padding: 5px 10px;
+  color: inherit;
+  text-decoration: none;
+
+  @include hover {
+    .h-button__icon-wrap {
+      background-color: rgba(#000, 0.3);
+    }
+  }
+}
+
+.h-button__icon,
+.h-button__text,
+.h-button__badge {
+  display: block;
+}
+
+.h-button__icon-wrap {
+  position: relative;
+}
+
+.h-button__icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.h-button__text {
+  margin-left: 15px;
+}
+
+.h-button__badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  transform: translate(-100%);
+  min-width: 24px;
+  height: 24px;
+  margin-left: -8px;
+  padding: 2px;
+  border: 1px solid color(white);
+  border-radius: 14px;
+  background-color: color(secondary);
+  color: color(white);
+  text-align: center;
+  line-height: 20px;
+  font-family: font(secondary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@include respond-to(medium) {
+  .h-button {
+}
+
+  .h-button__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .h-button__badge {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    min-width: 30px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid color(white);
+    border-radius: 16px;
+  }
+}

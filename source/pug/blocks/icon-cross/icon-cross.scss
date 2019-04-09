@@ -1,0 +1,26 @@
+.icon-cross {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: $icon-thickness;
+    border-radius: $icon-thickness;
+    background-color: color(primary);
+  }
+
+  &::before {
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+}

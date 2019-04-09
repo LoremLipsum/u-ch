@@ -1,0 +1,53 @@
+$fonts: (
+  primary: #{"Open Sans", "Roboto", "Pragmatica", "Myriad", sans-serif, "Nimbus Sans L", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"},
+  secondary: #{"Roboto", "Pragmatica", "Myriad", sans-serif, "Nimbus Sans L", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"},
+);
+
+$breakpoints: (
+  small: 320px,
+  medium: 768px,
+  large: 1220px,
+);
+
+$pads: (
+  small: 30px,
+  medium: 30px,
+  large: 40px,
+);
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$colors: (
+  primary: #6b8bc7,
+  dark-primary: #475e88,
+  light-primary: #eaf0fc,
+  secondary: #ff7043,
+  acсent: #6da93d,
+  light: #fafafa,
+  light-gray: #c9c9c6,
+  gray: #999,
+  dark-gray: #ababab,
+  black: #0a1123,
+  white: #fff,
+  error: #d0021b,
+  disabled: #c9c9c6,
+);
+
+// время анимаций
+$durations: (
+  md: 0.3s,
+  lg: 0.6s,
+);
+
+// для бордер-радиусов
+$radius: (
+  sm: 6px,
+);
+
+$func: (
+  primary: cubic-bezier(0.25, 0.1, 0.25, 1),
+);
+
+$change-color: 10%;
+$icon-thickness: 1px;

@@ -1,0 +1,76 @@
+mixin catalog(data)
+    +el({
+        class: 'catalog',
+        mod: data.mod,
+        mix: data.mix,
+    })&attributes(attributes)
+        +overlay({
+            mix: 'catalog__overlay',
+            js: 'catalog-overlay'
+        })
+        .catalog__dialog.js-catalog
+            +button-remove({
+                mix: 'catalog__close',
+                title: 'Закрыть каталог',
+                js: 'close-catalog'
+            })
+            .catalog__inner
+                +el({
+                    tag: 'ul',
+                    class: 'catalog__list',
+                    mod: 'lvl-1',
+                    js: 'catalog-lvl-1',
+                })
+                    each item in data.items
+                        +el({
+                            tag: 'li',
+                            class: 'catalog__item',
+                        })
+                            +el({
+                                tag: 'a',
+                                href: item.href,
+                                class: 'catalog__link',
+                                text: item.text,
+                                js: 'link-lvl-1',
+                                before: {
+                                    tag: 'svg',
+                                    class: 'catalog__icon',
+                                    icon: item.icon,
+                                }
+                            })
+                            +el({
+                                tag: 'ul',
+                                class: 'catalog__list',
+                                mod: 'lvl-2',
+                                js: 'catalog-lvl-2',
+                            })
+                                each item_lvl_2 in item.items
+                                    +el({
+                                        tag: 'li',
+                                        class: 'catalog__item',
+                                    })
+                                        +el({
+                                            tag: 'a',
+                                            href: item_lvl_2.href,
+                                            class: 'catalog__link',
+                                            text: item_lvl_2.text,
+                                            js: 'link-lvl-2',
+                                        })
+                                        +el({
+                                            tag: 'ul',
+                                            class: 'catalog__list',
+                                            mod: 'lvl-3',
+                                            js: 'catalog-lvl-3',
+                                        })
+                                            each item_lvl_3 in item_lvl_2.items
+                                                +el({
+                                                    tag: 'li',
+                                                    class: 'catalog__item',
+                                                })
+                                                    +el({
+                                                        tag: 'a',
+                                                        href: item_lvl_3.href,
+                                                        class: 'catalog__link',
+                                                        text: item_lvl_3.text,
+                                                        js: 'link-lvl-3',
+                                                    })

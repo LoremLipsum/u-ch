@@ -1,0 +1,73 @@
+extends ./templates/template
+
+block vars
+    - var pageTitle = 'Техальянс'
+    - var main = true
+    - var pageId = 1
+
+
+block content
+    main.content
+        .content__wrap
+            aside.content__aside
+                +catalog({
+                    mix: 'content__catalog',
+                    items: catalog,
+                    js: 'catalog',
+                })
+            .content__main
+                +slider({
+                    mix: 'content__slider',
+                    js: 'slider',
+                    items: [
+                        {
+                            image: 'slider01.jpg',
+                            text: 'Более <span class="slider__secondary-lg">2000</span> <br>наименований товаров <br><span class="slider__secondary">для безупречного ремонта <br>и&nbsp;строительства</span> <br>в&nbsp;одном магазине'
+                        },
+                        {
+                            image: 'slider02.jpg',
+                            text: 'Более <span class="slider__secondary-lg">2000</span> <br>наименований товаров <br><span class="slider__secondary">для безупречного ремонта <br>и&nbsp;строительства</span> <br>в&nbsp;одном магазине'
+                        },
+                    ]
+                })
+                +features({
+                    mix: 'content__features',
+                    items: [
+                        {
+                            icon: 'bottles',
+                            text: 'Широкий ассортимент товаров для хозяйственных магазинов'
+                        },
+                        {
+                            icon: 'procent',
+                            text: 'Отдельные категории цен&nbsp;для торгующих организаций'
+                        },
+                        {
+                            icon: 'mashine',
+                            text: 'Отлаженная система оперативной доставки по&nbsp;Крыму'
+                        },
+                    ]
+                })
+
+                .content__products
+                    +tabs({
+                        mix: 'content__tabs',
+                        items: [
+                            {
+                                text: 'Хиты продаж',
+                                mix: 'active'
+                            },
+                            {
+                                text: 'Новинки',
+                            },
+                            {
+                                text: 'Акции',
+                            }
+                        ],
+                    })
+                    +products({
+                        mix: '',
+                        items: products,
+                        })
+                +brends({
+                    mix: 'content__brends',
+                })
