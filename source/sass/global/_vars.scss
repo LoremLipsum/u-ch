@@ -6,6 +6,7 @@ $fonts: (
 $breakpoints: (
   small: 320px,
   medium: 768px,
+  medium-lg: 840px,
   large: 1220px,
 );
 
@@ -32,6 +33,9 @@ $colors: (
   white: #fff,
   error: #d0021b,
   disabled: #c9c9c6,
+  hit: #dc5078,
+  new: #6da93d,
+  action: #45a7eb,
 );
 
 // время анимаций
@@ -42,6 +46,7 @@ $durations: (
 
 // для бордер-радиусов
 $radius: (
+  xs: 3px,
   sm: 6px,
 );
 
@@ -51,3 +56,4 @@ $func: (
 
 $change-color: 10%;
 $icon-thickness: 1px;
+$width-aside-md: 260px;

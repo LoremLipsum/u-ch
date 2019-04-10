@@ -9,7 +9,7 @@
   &--bg-disabled,
   &--border {
     min-height: 34px;
-    padding: 8px 15px;
+    padding: 8px 18px;
     font-size: 14px;
     line-height: 18px;
     font-weight: 500;
@@ -70,11 +70,10 @@
 }
 
 .button__icon {
-  position: relative;
   display: block;
   fill: currentColor;
-  width: 20px;
-  width: 20px;
+  width: 22px;
+  width: 22px;
 
   // &::after {
   //   content: "";

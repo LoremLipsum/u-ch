@@ -152,7 +152,7 @@
 .catalog__link {
   position: relative;
   display: flex;
-  padding: 12px;
+  padding: 11px;
   padding-right: 30px;
   text-decoration: none;
 
@@ -188,7 +188,7 @@
   z-index: 17;
 }
 
-@include respond-to(medium) {
+@include respond-to(medium-lg) {
   .catalog {
     position: relative;
     overflow: visible;
@@ -207,7 +207,7 @@
   }
 
   .catalog__list {
-    width: 220px;
+    width: $width-aside-md;
 
     &--lvl-1 {
       > .catalog__item {

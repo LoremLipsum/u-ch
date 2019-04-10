@@ -1,0 +1,40 @@
+mixin aside-posts(data)
+    +el({
+        tag: 'section',
+        class: 'aside-posts',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+    })&attributes(attributes)
+        +el({
+            tag: 'h3',
+            class: 'aside-posts__heading',
+            text: 'Статьи и рекоментации',
+        })
+        +el({
+            tag: 'ul',
+            class: 'aside-posts__list',
+        })
+            each item in data.items
+                +el({
+                    tag: 'li',
+                    class: 'aside-posts__item',
+                })
+                    +el({
+                        class: 'aside-posts__item-date',
+                        text: item.date,
+                    })
+                    +el({
+                        tag: 'h4',
+                        class: 'aside-posts__item-heading',
+                        before: {
+                            tag: 'a',
+                            href: item.href,
+                            text: item.heading,
+                        }
+                    })
+        +el({
+            tag: 'a',
+            class: 'aside-posts__link',
+            text: 'Все статьи'
+        })

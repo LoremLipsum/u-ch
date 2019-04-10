@@ -1,0 +1,37 @@
+mixin aside-action(data)
+    +el({
+        class: 'aside-action',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+    })&attributes(attributes)
+        +el({
+            tag: 'picture',
+            class: 'aside-action__picture',
+        })
+            source(srcset='assets/images/engineer@1x.webp 1x, assets/images/engineer@2x.webp 2x,' type='image/webp')
+            img.aside-action__image(src='assets/images/engineer@1x.png' srcset='assets/images/engineer@2x.png 2x' alt='Инженер')
+        .aside-action__content
+            +el({
+                class: 'aside-action__heading',
+                text: 'Будьте всегда в&nbsp;курсе',
+            })
+            +el({
+                tag: 'p',
+                class: 'aside-action__text',
+                text: 'Узнавайте о&nbsp;скидках и&nbsp;акциях первыми!',
+            })
+            +form({
+                class: 'aside-action__form',
+            })
+                +field({
+                    class: 'aside-action__field',
+                    mod: ['with-button', 'button-secondary', 'bg-light', 'small'],
+                    label: 'Ваш e-mail:',
+                    placeholder: 'Ваш e-mail:',
+                    type: 'tel',
+                    button: {
+                        icon: 'telegram',
+                        type: 'submit'
+                    }
+                })

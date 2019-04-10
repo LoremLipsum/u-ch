@@ -242,7 +242,9 @@
     margin-top: 0;
     margin-bottom: 20px;
   }
+}
 
+@include respond-to(medium-lg) {
   .header__dialog {
     position: static;
     transform: none;
@@ -270,7 +272,7 @@
   }
 
   .header__dialog {
-    width: calc(100% - 220px);
+    width: calc(100% - #{$width-aside-md});
   }
 
   .header__bottom {
@@ -281,10 +283,10 @@
   }
 
   .header__button-catalog {
-    flex-shrink: 1;
+    flex-shrink: 0;
     position: static;
     transform: none;
-    width: 220px;
+    width: $width-aside-md;
   }
 }
 

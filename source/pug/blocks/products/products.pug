@@ -1,5 +1,4 @@
 mixin products(data)
-
     +el({
         tag: 'ul',
         class: 'products',
@@ -12,10 +11,13 @@ mixin products(data)
                 tag: 'li',
                 class: 'products__item',
             })
-                +products-item({
+                +products-card({
                     image: item.image,
                     heading: item.heading,
                     oldPrice: item.oldPrice,
                     art: item.art,
                     newPrice: item.newPrice,
+                    hit: item.hit,
+                    new: item.new,
+                    action: item.action
                 })

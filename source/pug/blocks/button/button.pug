@@ -17,6 +17,7 @@ mixin button(data)
             if data.icon
                 +el({
                     tag: 'svg',
+                    class: 'button__icon',
                     icon: data.icon,
                 })
 
@@ -34,7 +35,8 @@ mixin button(data)
             target: data.target,
         })&attributes(attributes)
             if data.icon
-                +icon({
-                    mix: 'button__icon',
+                +el({
+                    tag: 'svg',
+                    class: 'button__icon',
                     icon: data.icon,
                 })

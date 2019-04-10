@@ -1,0 +1,41 @@
+.aside-action {
+  padding: 17px;
+  background-color: color(light);
+}
+
+.aside-action__picture,
+.aside-action__image {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-width: 254px;
+  max-height: 230px;
+}
+
+.aside-action__content {
+  margin-top: -25px;
+  padding: 15px;
+  padding-top: 40px;
+  background-color: color(white);
+}
+
+.aside-action__heading {
+  margin-bottom: 20px;
+  color: color(secondary);
+  font-family: font(secondary);
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.aside-action__text {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+@include respond-to(large) {
+  .aside-action__heading {
+    font-size: 28px;
+  }
+}

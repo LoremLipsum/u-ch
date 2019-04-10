@@ -1,7 +1,5 @@
-$src: '../pug';
-
 // fonts
-@import "../assets/fonts/myriad/myriad";
+// @import "../assets/fonts/myriad/myriad";
 @import "./libs/normalize";
 @import "./libs/slick";
 // @import "./libs/slick-theme";
@@ -14,12 +12,13 @@ $src: '../pug';
 @import "./global/animation";
 @import "./global/helpers";
 @import "./global/js";
-
 // blocks
 @import "./blocks/sticky-footer";
 @import "./blocks/teaser";
+
 @import "./blocks/slider-button";
 @import "./blocks/slider-dots";
+
 @import "../pug/blocks/button/button";
 @import "../pug/blocks/button-nav/button-nav";
 @import "../pug/blocks/button-remove/button-remove";
@@ -27,34 +26,36 @@ $src: '../pug';
 @import "../pug/blocks/button-plus/button-plus";
 @import "../pug/blocks/button-toggle/button-toggle";
 @import "../pug/blocks/button-cart/button-cart";
-@import "../pug/blocks/icon/icon";
-@import "../pug/blocks/icon-cross/icon-cross";
-@import "../pug/blocks/icon-remove/icon-remove";
+
 @import "../pug/blocks/list/list";
+
 @import "../pug/blocks/logo/logo";
 @import "../pug/blocks/main-nav/main-nav";
 @import "../pug/blocks/overlay/overlay";
 @import "../pug/blocks/phone/phone";
+
 @import "../pug/blocks/field/field";
 @import "../pug/blocks/checkbox/checkbox";
 @import "../pug/blocks/radio-button/radio-button";
 @import "../pug/blocks/search/search";
-@import "../pug/blocks/form-card/form-card";
-@import "../pug/blocks/form-content/form-content";
+// @import "../pug/blocks/form-card/form-card";
+// @import "../pug/blocks/form-content/form-content";
+
 @import "../pug/blocks/header/header";
 @import "../pug/blocks/footer/footer";
 @import "../pug/blocks/catalog/catalog";
 @import "../pug/blocks/slider/slider";
 @import "../pug/blocks/features/features";
-@import "../pug/blocks/main-page-products/main-page-products";
 @import "../pug/blocks/products/products";
-@import "../pug/blocks/products-item/products-item";
+@import "../pug/blocks/products-card/products-card";
 @import "../pug/blocks/tabs/tabs";
+@import "../pug/blocks/brends/brends";
+@import "../pug/blocks/sticker/sticker";
+@import "../pug/blocks/aside-posts/aside-posts";
 
 @import "./blocks/content";
 @import "./blocks/aside";
 @import "./blocks/article";
 @import "./blocks/category-article";
 
-@import "../pug/blocks/brends/brends";
-@import "../pug/blocks/post-links/post-links";
+@import "../pug/blocks/aside-action/aside-action";

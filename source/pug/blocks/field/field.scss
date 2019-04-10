@@ -9,6 +9,101 @@
       padding-right: 60px;
     }
   }
+
+  &--border {
+    .field__input {
+      border: 1px solid #cedaef;
+      border-radius: radius(sm);
+
+      @include hover {
+        border-color: darken(#cedaef, $change-color);
+      }
+    }
+  }
+
+  &--border-bottom {
+    .field__input {
+      border-bottom: 1px solid #9da0a7;
+
+      @include hover {
+        border-bottom-color: darken(#9da0a7, $change-color);
+      }
+    }
+  }
+
+  &--bg-light {
+    .field__input {
+      background-color: color(light);
+
+      @include hover {
+        background-color: darken(color(light), $change-color);
+      }
+    }
+  }
+
+  &--with-icon {
+    position: relative;
+
+    .field__input {
+      padding-left: 60px;
+    }
+  }
+
+  &--button-primary-light {
+    .field__button {
+      background-color: color(light-primary);
+
+      @include hover {
+        background-color: darken(color(light-primary), $change-color);
+      }
+
+      .button__icon {
+        fill: color(dark-primary);
+      }
+    }
+  }
+
+  &--button-secondary {
+    .field__button {
+      background-color: color(secondary);
+      border-radius: radius(sm);
+
+      @include hover {
+        background-color: darken(color(secondary), $change-color);
+      }
+
+      .button__icon {
+        fill: color(white);
+      }
+    }
+  }
+
+  &--small {
+    .field__input {
+      height: 40px;
+      padding: 10px 15px;
+    }
+  }
+
+  &--shadow {
+    box-shadow: inset 1px 1px 3px 0 rgba(color(black), 0.1);
+  }
+
+  &--error:not(:focus) {
+    .field__input {
+      border: 1px solid color(error);
+      color: color(error);
+    }
+  }
+}
+
+.field--small.field--with-button {
+  padding-right: 50px;
+
+  .field__button {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .field__label {
@@ -21,24 +116,17 @@
 .field__input {
   width: 100%;
   height: 50px;
-  padding: 14px;
+  padding: 15px;
   border: none;
-  background-color: color(light);
+  background-color: transparent;
   color: color(black);
   font-size: 16px;
   line-height: 20px;
   caret-color: color(black);
   outline: none;
-  box-shadow: inset 1px 1px 3px 0 rgba(color(black), 0.1);
 
   &::placeholder {
     color: color(black);
-  }
-
-  &:hover,
-  &:focus,
-  &.active {
-    background-color: darken(color(light), 5%);
   }
 
   &--error:not(:focus) {
@@ -60,14 +148,26 @@
   justify-content: center;
   width: 50px;
   height: 50px;
-  background-color: rgba(color(primary), 0.2);
+}
 
-  svg {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    fill: color(dark-primary);
-  }
+.field__icon-wrap {
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: color(light-primary);
+  border-radius: 50%;
+}
+
+.field__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: color(white);
 }
 
 @include respond-to(large) {

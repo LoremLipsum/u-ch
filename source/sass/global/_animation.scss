@@ -7,3 +7,39 @@
     opacity: 1;
   }
 }
+
+@keyframes scaleXstart {
+  0% {
+    transform: scaleX(0.1);
+	}
+	40% {
+    transform: scaleX(1.04);
+	}
+	60% {
+    transform: scaleX(0.98);
+	}
+	80% {
+    transform: scaleX(1.02);
+	}
+	100% {
+    transform: scaleX(1.0);
+	}
+}
+
+@keyframes scaleYend {
+  0% {
+    transform: scaleX(1);
+	}
+	40% {
+    transform: scaleX(0.98);
+	}
+	60% {
+    transform: scaleX(0.98);
+	}
+	80% {
+    transform: scaleX(1.02);
+	}
+	100% {
+    transform: scaleX(0);
+	}
+}

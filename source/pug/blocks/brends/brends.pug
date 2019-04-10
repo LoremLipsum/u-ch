@@ -2,9 +2,11 @@ mixin brends(data)
     - var brends = ['caparol.png', 'ceresit.png','tikkurila.png','dulux.png','remmers.png', 'caparol.png', 'ceresit.png','tikkurila.png','dulux.png','remmers.png']
 
     +el({
+        tag: 'section',
         class: 'brends',
         mod: data.mod,
         mix: data.mix,
+        js: data.js,
     })&attributes(attributes)
         h2.brends__heading Бренды
         .brends__list.js-brends

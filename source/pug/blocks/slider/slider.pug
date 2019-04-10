@@ -10,7 +10,8 @@ mixin slider(data)
                 class: 'slider__item',
                 style: 'background-image: url(\"assets/images/slider/' + item.image + '\");'
             })
-                +el({
-                    class: 'slider__text',
-                    text: item.text
-                })
+                .slider__inner
+                    +el({
+                        class: 'slider__text',
+                        text: item.text
+                    })

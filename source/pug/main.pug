@@ -1,33 +1,26 @@
 extends ./templates/template
 
 block vars
-    - var pageTitle = 'Техальянс'
+    - var pageTitle = 'Южхим'
     - var main = true
-    - var pageId = 1
-
+    //- - var pageId = 1
 
 block content
     main.content
         .content__wrap
-            aside.content__aside
-                +catalog({
-                    mix: 'content__catalog',
-                    items: catalog,
-                    js: 'catalog',
-                })
             .content__main
                 +slider({
-                    mix: 'content__slider',
+                    mix: 'content__main-section',
                     js: 'slider',
                     items: slider,
                 })
                 +features({
-                    mix: 'content__features',
+                    mix: 'content__main-section',
                     items: features
                 })
-                .content__products
+                .content__main-section.content__main-section--products
                     +tabs({
-                        mix: 'content__tabs',
+                        mix: '',
                         items: [
                             {
                                 text: 'Хиты продаж',
@@ -54,5 +47,18 @@ block content
                             items: products2,
                         })
                 +brends({
-                    mix: 'content__brends',
+                    mix: 'content__main-section',
+                })
+            aside.content__aside
+                +catalog({
+                    mix: 'content__aside-section content__aside-section--catalog',
+                    items: catalog,
+                    js: 'catalog',
+                })
+                +aside-posts({
+                    mix: 'content__aside-section',
+                    items: aside_posts,
+                })
+                +aside-action({
+                    mix: 'content__aside-section',
                 })

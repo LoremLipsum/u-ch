@@ -14,10 +14,11 @@ mixin field(data)
         if data.icon
             +el({
                 tag: 'span',
-                class: 'field__icon',
+                class: 'field__icon-wrap',
                 after: {
                     tag: 'svg',
                     icon: data.icon,
+                    class: 'field__icon'
                 }
             })
         +el({

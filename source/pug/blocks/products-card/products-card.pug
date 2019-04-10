@@ -1,0 +1,72 @@
+mixin products-card(data)
+    +el({
+        class: 'products-card',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        if data.hit || data.new || data.action
+            .products-card__sticker-wrap
+                if data.hit
+                    +sticker({
+                        mix: 'products-card__sticker',
+                        mod: 'hit',
+                        text: 'Хит'
+                    })
+                if data.new
+                    +sticker({
+                        mix: 'products-card__sticker',
+                        mod: 'new',
+                        text: 'Новинка'
+                    })
+                if data.action
+                    +sticker({
+                        mix: 'products-card__sticker',
+                        mod: 'action',
+                        text: 'Акция'
+                    })
+        +el({
+            tag: 'a',
+            href: data.href,
+            class: 'products-card__image-wrap',
+        })
+            img.products-card__image(src='./assets/upload/' + data.image, alt='')
+        +el({
+            class: 'products-card__content',
+        })
+            +el({
+                tag: 'h3',
+                class: 'products-card__heading',
+                before: {
+                    tag: 'a',
+                    class: 'products-card__heading-link',
+                    href: data.href,
+                    text: data.heading,
+                }
+            })
+            +el({
+                class: 'products-card__bottom',
+            })
+                +el({
+                    class: 'products-card__row',
+                })
+                    +el({
+                        class: 'products-card__old-price',
+                        text: data.oldPrice,
+                    })
+                    +el({
+                        class: 'products-card__art',
+                        text: data.art,
+                    })
+                +el({
+                    class: 'products-card__row',
+                })
+                    +el({
+                        class: 'products-card__new-price',
+                        text: data.newPrice,
+                    })
+                    +button({
+                        mod: 'bg-secondary',
+                        mix: 'products-card__button',
+                        text: 'В корзину',
+                    })

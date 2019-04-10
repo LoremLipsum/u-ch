@@ -1,7 +1,10 @@
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  @include list-none;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .tabs__item {
@@ -27,9 +30,20 @@
     left: 6px;
     right: 6px;
     height: 3px;
-    background-color: color(secondary);
     opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 0 0;
     transition: duration(md);
+    background-color: color(light-gray);
+  }
+
+  @include hover {
+    color: color(dark-primary);
+
+    &::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
   }
 
   &.active {
@@ -37,11 +51,13 @@
 
     &::after {
       opacity: 1;
+      transform: scaleX(1);
+      background-color: color(secondary);
     }
   }
 }
 
-@include respond-to(620px) {
+@include respond-to(520px) {
   .tabs__item {
     margin-right: 20px;
   }
