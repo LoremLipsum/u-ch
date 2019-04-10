@@ -38,8 +38,8 @@
 @import "../pug/blocks/checkbox/checkbox";
 @import "../pug/blocks/radio-button/radio-button";
 @import "../pug/blocks/search/search";
-// @import "../pug/blocks/form-card/form-card";
-// @import "../pug/blocks/form-content/form-content";
+@import "../pug/blocks/form/form";
+@import "../pug/blocks/form-card/form-card";
 
 @import "../pug/blocks/header/header";
 @import "../pug/blocks/footer/footer";
@@ -52,10 +52,12 @@
 @import "../pug/blocks/brends/brends";
 @import "../pug/blocks/sticker/sticker";
 @import "../pug/blocks/aside-posts/aside-posts";
+@import "../pug/blocks/aside-action/aside-action";
+@import "../pug/blocks/modal/modal";
 
 @import "./blocks/content";
 @import "./blocks/aside";
 @import "./blocks/article";
 @import "./blocks/category-article";
 
-@import "../pug/blocks/aside-action/aside-action";
+@import "../pug/blocks/checkbox-confirm/checkbox-confirm";

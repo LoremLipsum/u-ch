@@ -62,3 +62,14 @@ block content
                 +aside-action({
                     mix: 'content__aside-section',
                 })
+            +modal({
+                js: 'modal-callback',
+                heading: 'Обратный звонок',
+            })
+                +form({
+                    card: true,
+                    user: true,
+                    tel: true,
+                    confirm: true,
+                    submit: 'Заказать',
+                })

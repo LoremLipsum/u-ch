@@ -23,17 +23,13 @@
 }
 
 .main-nav__link {
-  display: block;
+  display: inline-block;
   padding: 5px 10px;
   color: inherit;
   text-decoration: none;
-
-  @include hover {
-    opacity: 0.6;
-  }
 }
 
-@include respond-to(medium) {
+@include respond-to(medium-lg) {
   .main-nav {
     display: flex;
     background-color: color(primary);
@@ -46,10 +42,38 @@
     line-height: 20px;
     text-align: center;
     color: color(white);
+
+    &.active {
+      .main-nav__link {
+        &::after {
+          background-color: color(secondary);
+        }
+      }
+    }
   }
 
   .main-nav__link {
+    position: relative;
+    width: auto;
     padding: 15px;
-    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 4px;
+      bottom: 0;
+      background-color: color(light-gray);
+      transform-origin: 0 0;
+      transform: scaleX(0);
+      transition: duration(md) func(primary);
+    }
+
+    @include hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
   }
 }

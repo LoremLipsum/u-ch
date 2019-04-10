@@ -1,0 +1,25 @@
+mixin modal(data)
+    +el({
+        class: 'modal',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    }).js-modal&attributes(attributes)
+        +overlay({
+            mix: 'modal__overlay active',
+            js: 'overlay-modal'
+        })
+        .modal__dialog
+            +button-remove({
+                mix: 'modal__close',
+                js: 'close-modal'
+            })
+            if data.heading
+                +el({
+                    tag: 'h3',
+                    class: 'modal__heading',
+                    text: data.heading,
+                })
+            if data.video
+                iframe.modal__video(id="player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/UfVpoI5ksag?enablejsapi=1")
+            block

@@ -58,8 +58,9 @@ mixin header(data)
                     badge: '10',
                     js: 'button-cart'
                 })
-                +header-phone({
-                    mix: 'header__phone'
+                +phone({
+                    mix: 'header__phone',
+                    js: 'open-callback',
                 })
         .header__bottom
             .header__wrap
@@ -88,8 +89,9 @@ mixin header(data)
                             class: 'header__text',
                             text: 'пн-пт с 8:00 до 18:00, <br>сб - с 8:00 до 15:00, <br>вс - выходной',
                         })
-                        +header-phone({
-                            mix: 'header__phone'
+                        +phone({
+                            mix: 'header__phone',
+                            js: 'open-callback',
                         })
         +overlay({
             mix: 'header__overlay',

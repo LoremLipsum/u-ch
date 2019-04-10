@@ -6,31 +6,33 @@
   var search = document.querySelector('.js-search');
   var ESC = 27;
 
-  var toggle = function() {
+  var toggleSearch = function() {
     search.classList.toggle('active');
   }
 
-  var close = function() {
+  var closeSearch = function() {
     search.classList.remove('active');
   }
 
   var onToggleClick = function(e) {
     e.preventDefault();
-    toggle();
+    toggleSearch();
   };
 
   var onSubmitClick = function(e) {
     e.preventDefault();
-    close();
+    closeSearch();
   };
 
   var onEscKeyup = function(e) {
     if (e.keyCode === ESC) {
       e.preventDefault();
-      close();
+      closeSearch();
     }
   };
 
   btnToggle.addEventListener('click', onToggleClick);
-  btnSubmit.addEventListener('click', onSubmitClick);
+  if(btnSubmit) {
+    btnSubmit.addEventListener('click', onSubmitClick);
+  }
 })();

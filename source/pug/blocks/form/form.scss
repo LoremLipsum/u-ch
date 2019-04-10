@@ -1,0 +1,22 @@
+.form__field-group {
+  margin-bottom: 50px;
+}
+
+.form__field {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__submit {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form__confirm {
+  text-align: center;
+}

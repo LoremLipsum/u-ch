@@ -47,6 +47,12 @@
     .field__input {
       padding-left: 60px;
     }
+
+    @include hover {
+      .field__icon {
+        fill: darken(#b5c5e3, $change-color);
+      }
+    }
   }
 
   &--button-primary-light {
@@ -158,22 +164,21 @@
 
 .field__icon-wrap {
   position: absolute;
-  top: 10px;
+  top: 0;
   left: 2px;
   display: flex;
+
   align-items: center;
   justify-content: center;
   width: 30px;
-  height: 30px;
-  background-color: color(light-primary);
-  border-radius: 50%;
+  height: 50px;
 }
 
 .field__icon {
   display: block;
-  width: 20px;
-  height: 20px;
-  fill: color(white);
+  width: 30px;
+  height: 30px;
+  fill: #b5c5e3;
 }
 
 @include respond-to(large) {

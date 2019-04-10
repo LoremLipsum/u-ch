@@ -3,25 +3,19 @@
   flex-shrink: 0;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 
   &--bg-primary,
   &--bg-secondary,
+  &--bg-secondary-large,
   &--bg-disabled,
   &--border {
     min-height: 34px;
-    padding: 8px 18px;
-    font-size: 14px;
-    line-height: 18px;
+    color: color(white);
     font-weight: 500;
     text-align: center;
     text-decoration: none;
     border-radius: radius(sm);
-  }
-
-  &--bg-primary,
-  &--bg-disabled,
-  &--bg-secondary {
-    color: color(white);
   }
 
   &:disabled,
@@ -37,14 +31,26 @@
     }
   }
 
-  &--bg-secondary {
-    background-color: color(secondary);
+  &--bg-secondary,
+  &--bg-secondary-large {
     background-image: linear-gradient(#f4511e, #ff7043);
     box-shadow: 0 3px 15px 0 rgba(color(secondary), 0.8);
 
     @include hover {
       box-shadow: 0 0px 10px 0 rgba(color(secondary), 0.8);
     }
+  }
+
+  &--bg-secondary {
+    padding: 8px 18px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--bg-secondary-large {
+    padding: 12px 20px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   &--border {

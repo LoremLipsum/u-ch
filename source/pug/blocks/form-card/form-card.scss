@@ -1,37 +1,36 @@
 .form-card {
   width: 100%;
   padding: 20px;
+  border: 7px solid color(secondary);
   background-color: color(white);
 }
 
 .form-card__heading {
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 40px;
+  color: color(dark-primary);
+  font-family: font(secondary);
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
-
-  .small {
-    margin-top: 5px;
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    color: color(gray);
-  }
+  text-transform: uppercase;
+  text-align: center;
 }
-
-.form-card__heading {
-  font-size: 20px;
-}
-
 
 @include respond-to(medium) {
   .form-card {
-    padding: 30px;
+    padding: 20px 30px;
   }
 
+  .form-card__heading {
+    font-size: 22px;
+  }
 }
 
 @include respond-to(large) {
+  .form-card {
+    padding: 30px 50px;
+  }
 
+  .form-card__heading {
+    font-size: 24px;
+  }
 }
