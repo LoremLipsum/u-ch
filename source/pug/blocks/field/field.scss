@@ -36,7 +36,7 @@
       background-color: color(light);
 
       @include hover {
-        background-color: darken(color(light), $change-color);
+        box-shadow: 0 0 0 1px #cedaef;
       }
     }
   }
@@ -64,6 +64,10 @@
   }
 
   &--button-secondary {
+    .field__input {
+      border-radius: 0 radius(sm) radius(sm) 0;
+    }
+
     .field__button {
       background-color: color(secondary);
       border-radius: radius(sm);
@@ -98,7 +102,9 @@
 }
 
 .field--small.field--with-button {
-  padding-right: 50px;
+  .field__input {
+    padding-right: 50px;
+  }
 
   .field__button {
     width: 40px;
