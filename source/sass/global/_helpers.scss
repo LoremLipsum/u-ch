@@ -17,32 +17,6 @@
   clip: rect(0 0 0 0);
 }
 
-.dotted {
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    height: 2px;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg preserveAspectRatio='xMinYMax' fill='black' viewBox='0 0 4 1.4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='0.7' cy='0.7' r='0.7'/%3E%3C/svg%3E");
-    background-repeat: repeat-x;
-    background-size: 4px 2px;
-  }
-
-  @include hover {
-    &::after {
-      opacity: 0;
-    }
-  }
-
-  &--indent-sm {
-    &::after {
-      left: 4px;
-      right: 4px;
-    }
-  }
+.no-underline {
+  text-decoration: none;
 }

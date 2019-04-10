@@ -39,20 +39,20 @@ mixin form(data)
                         +field({
                             tag: 'textarea',
                             mix: 'form__field',
-                            icon: 'message-cirle',
+                            icon: 'message-circle',
                             mod: ['with-icon', 'border-bottom'],
                             label: 'Вопрос',
                             type: 'email',
                             name: 'message',
                             placeholder: data.message
                         })
-
-                +button({
-                    mix: 'form__submit',
-                    mod: 'bg-secondary-large',
-                    type: 'submit',
-                    text: data.submit
-                })
+                .form__submit-wrap
+                    +button({
+                        mix: 'form__submit',
+                        mod: 'bg-secondary-large',
+                        type: 'submit',
+                        text: data.submit
+                    })
                 if data.confirm
                     .form__confirm
                         +checkbox-confirm({

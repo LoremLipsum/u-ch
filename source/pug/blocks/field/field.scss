@@ -16,7 +16,7 @@
       border-radius: radius(sm);
 
       @include hover {
-        border-color: darken(#cedaef, $change-color);
+        background-color: color(light-primary);
       }
     }
   }
@@ -26,7 +26,7 @@
       border-bottom: 1px solid #9da0a7;
 
       @include hover {
-        border-bottom-color: darken(#9da0a7, $change-color);
+        background-color: color(light-primary);
       }
     }
   }
@@ -45,7 +45,7 @@
     position: relative;
 
     .field__input {
-      padding-left: 60px;
+      padding-left: 50px;
     }
 
     @include hover {
@@ -79,7 +79,7 @@
       border-radius: radius(sm);
 
       @include hover {
-        background-color: darken(color(secondary), $change-color);
+        background-color: #f4511e;
       }
 
       .button__icon {
@@ -128,6 +128,7 @@
 .field__input {
   width: 100%;
   height: 50px;
+  min-height: 50px;
   padding: 15px;
   border: none;
   background-color: transparent;
@@ -136,6 +137,7 @@
   line-height: 20px;
   caret-color: color(black);
   outline: none;
+  transition: duration(md) func(primary);
 
   &::placeholder {
     color: color(black);
@@ -182,5 +184,11 @@
 }
 
 @include respond-to(large) {
-
+  .field {
+    &--with-icon {
+      .field__input {
+        padding-left: 60px;
+      }
+    }
+  }
 }

@@ -1,12 +1,12 @@
 .form-card {
   width: 100%;
   padding: 20px;
-  border: 7px solid color(secondary);
+  border: 4px solid color(secondary);
   background-color: color(white);
 }
 
 .form-card__heading {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: color(dark-primary);
   font-family: font(secondary);
   font-weight: 700;
@@ -18,9 +18,11 @@
 @include respond-to(medium) {
   .form-card {
     padding: 20px 30px;
+    border-width: 5px;
   }
 
   .form-card__heading {
+    margin-bottom: 30px;
     font-size: 22px;
   }
 }
@@ -28,9 +30,11 @@
 @include respond-to(large) {
   .form-card {
     padding: 30px 50px;
+    border-width: 6px;
   }
 
   .form-card__heading {
+    margin-bottom: 40px;
     font-size: 24px;
   }
 }

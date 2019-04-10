@@ -1,3 +1,8 @@
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cedaef;
+}
+
 .header__wrap {
   @include wrapper;
 }
@@ -56,16 +61,10 @@
   .header__company {
     margin-top: 20px;
   }
-
-  .header__text {
-    text-align: center;
-  }
 }
 
 // логотип
 .header__logo {
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 15px;
 }
 
@@ -108,11 +107,11 @@
 // кнопка для каталога
 .header__button-catalog {
   position: fixed;
-  top: 170px;
+  top: 50%;
   left: 0;
   z-index: 18;
-  transform-origin: left bottom;
-  transform: rotate(90deg);
+  transform-origin: 0 0;
+  transform: rotate(90deg) translate(-50%, -100%);
   margin-left: 0;
 
   &.active {
@@ -239,7 +238,13 @@
   }
 }
 
+// Перестраиваем главное меню
 @include respond-to(medium-lg) {
+  .header {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
   .header__dialog {
     position: static;
     transform: none;

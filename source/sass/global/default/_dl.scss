@@ -1,0 +1,36 @@
+dl {
+  margin: 0;
+}
+
+dt {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+dd {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@include respond-to(medium) {
+  dt {
+    margin-bottom: 8px;
+  }
+
+  dd {
+    margin-bottom: 30px;
+  }
+}
+
+@include respond-to(large) {
+  dt {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  dd {
+    margin-bottom: 40px;
+  }
+}

@@ -18,7 +18,7 @@
   height: 100vh;
   padding: 20px;
   padding-top: 60px;
-  border: 7px solid color(secondary);
+  border: 4px solid color(secondary);
   background-color: color(white);
   overflow-y: auto;
 }
@@ -30,8 +30,7 @@
 }
 
 .modal__heading {
-  margin-bottom: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: color(dark-primary);
   font-family: font(secondary);
   font-weight: 700;
@@ -56,16 +55,24 @@
     flex-shrink: 0;
     width: 460px;
     height: auto;
-    padding: 65px;
+    padding: 50px;
+    border-width: 5px;
   }
 
   .modal__heading {
-    font-size: 24px;
+    margin-bottom: 30px;
+    font-size: 22px;
   }
 }
 
 @include respond-to(large) {
-  // .modal__heading {
-  //   font-size: 24px;
-  // }
+  .modal__dialog {
+    padding: 65px;
+    border-width: 6px;
+  }
+
+  .modal__heading {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
 }

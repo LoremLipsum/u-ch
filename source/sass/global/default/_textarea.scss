@@ -5,6 +5,6 @@ textarea {
   color: inherit;
   text-transform: inherit;
   transition: duration(md);
-  resize: none;
+  resize: vertical;
   overflow-y: auto;
 }

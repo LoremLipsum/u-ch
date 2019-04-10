@@ -17,7 +17,6 @@
     var el;
     var ESC = 27;
     var WIDTH = 768;
-    var header = $('.header');
 
     var toggle = function() {
       btnOpen.toggleClass('active');
@@ -86,9 +85,6 @@
     overlay.on('click', onCloseClick);
     btnClose.on('click', onCloseClick);
     $(document).on('keyup', onEscKeyup);
-    if (+$(window).width() > WIDTH) {
-      header.on('click', onCloseClick);
-    }
 
 	});
 })(jQuery);

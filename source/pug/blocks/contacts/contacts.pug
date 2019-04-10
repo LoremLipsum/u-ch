@@ -1,0 +1,55 @@
+mixin contacts(data)
+    +el({
+        class: 'contacts',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        .contacts__text-wrap
+            dl
+                dt Офис и склад находятся по&nbsp;адресу:
+                dd Республика Крым, 295022 <br>г. Симферополь, ул. Глинки, 55
+
+                dt Телефон:
+                dd
+                    +el({
+                        tag: 'a',
+                        class: 'no-underline',
+                        href: 'tel:+79788400180',
+                        text: '+7 (978) 840-01-80',
+                    })
+                    br
+                    +el({
+                        tag: 'a',
+                        class: 'no-underline',
+                        href: 'tel:+79780403963',
+                        text: '+7 (978) 040-39-63',
+                    })
+                    br
+                    +el({
+                        tag: 'a',
+                        class: 'no-underline',
+                        href: 'tel:+79780035242',
+                        text: '+7 (978) 003-52-42',
+                    })
+                dt E-mail:
+                dd
+                    +el({
+                        tag: 'a',
+                        class: 'no-underline',
+                        href: 'email:ughimprodukt@mail.ru',
+                        text: 'ughimprodukt@mail.ru',
+                    })
+
+        +form-card({
+            mix: 'contacts__form-card',
+            heading: 'Обратная связь'
+        })
+            +form({
+                card: true,
+                user: true,
+                tel: true,
+                message: 'Сообщение',
+                confirm: true,
+                submit: 'Отправить',
+            })

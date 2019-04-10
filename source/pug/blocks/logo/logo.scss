@@ -1,4 +1,7 @@
 .logo {
+  display: block;
+  width: 240px;
+  height: 65px;
   text-decoration: none !important;
 
   &--footer {
@@ -12,20 +15,18 @@
   }
 }
 
-.logo,
 .logo__image {
   display: block;
   width: 240px;
   height: 65px;
 }
 
-@include respond-to(medium) {
-
-
-}
 
 @include respond-to(large) {
   .logo {
+    width: 278px;
+    height: 76px;
+
     &--footer {
       width: 225px;
       height: 63px;
@@ -37,7 +38,6 @@
     }
   }
 
-  .logo,
   .logo__image {
     width: 278px;
     height: 76px;

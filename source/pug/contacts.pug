@@ -1,0 +1,33 @@
+extends ./templates/template
+
+block vars
+    - var pageTitle = 'Южхим: контакты'
+    - var main = false
+    - var pageId = 4
+
+block content
+    main.content.content--regular.content--contacts
+        .content__wrap
+            h1 Контакты
+            +catalog({
+                mod: 'is-mobile',
+                items: catalog,
+                js: 'catalog',
+            })
+            +contacts({
+                mix: 'content__contacts'
+            })
+        +map({
+        })
+
+    +modal({
+        js: 'modal-callback',
+        heading: 'Обратный звонок',
+    })
+        +form({
+            card: true,
+            user: true,
+            tel: true,
+            confirm: true,
+            submit: 'Заказать',
+        })

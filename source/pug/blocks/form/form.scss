@@ -1,5 +1,5 @@
 .form__field-group {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .form__field {
@@ -10,13 +10,38 @@
   }
 }
 
-.form__submit {
-  width: 200px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+.form__submit-wrap {
   text-align: center;
+}
+
+.form__submit {
+  display: inline-block;
+  min-width: 140px;
+  margin-bottom: 20px;
 }
 
 .form__confirm {
   text-align: center;
+}
+
+@include respond-to(medium) {
+  .form__field-group {
+    margin-bottom: 40px;
+  }
+
+  .form__submit {
+    min-width: 180px;
+    margin-bottom: 25px;
+  }
+}
+
+@include respond-to(large) {
+  .form__field-group {
+    margin-bottom: 50px;
+  }
+
+  .form__submit {
+    min-width: 200px;
+    margin-bottom: 30px;
+  }
 }

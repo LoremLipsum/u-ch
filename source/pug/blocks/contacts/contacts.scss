@@ -1,0 +1,25 @@
+.contacts {
+}
+
+@include respond-to(medium) {
+  .contacts {
+    display: flex;
+  }
+
+  .contacts__text-wrap,
+  .contacts__form-card {
+    width: 50%;
+  }
+
+  .contacts__form-card {
+    max-width: 430px;
+    margin-top: -57px;
+    margin-left: auto;
+  }
+}
+
+@include respond-to(large) {
+  .contacts__form-card {
+    margin-top: -72px;
+  }
+}

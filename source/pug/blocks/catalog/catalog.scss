@@ -192,6 +192,10 @@
   .catalog {
     position: relative;
     overflow: visible;
+
+    &--is-mobile {
+      display: none !important;
+    }
   }
 
   .catalog__dialog {

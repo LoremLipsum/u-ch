@@ -1,7 +1,15 @@
 .content {
   padding-top: 20px;
-  padding-bottom: 54px;
+  padding-bottom: 50px;
   overflow: hidden;
+
+  &--regular {
+    padding-top: 20px;
+  }
+
+  &--contacts {
+    padding-bottom: 0;
+  }
 }
 
 .content__wrap {
@@ -37,11 +45,36 @@
   }
 }
 
-@include respond-to(medium-lg) {
-  .content__wrap {
-    display: flex;
+.content__contacts {
+  margin-bottom: 30px;
+}
+
+@include respond-to(medium) {
+  .content {
+    &--with-aside {
+      .content__wrap {
+        display: flex;
+      }
+    }
+
+    &--regular {
+      padding-top: 30px;
+    }
+
+    &--contacts {
+      h1 {
+        margin-bottom: 24px;
+      }
+    }
   }
 
+  .content__contacts {
+    margin-bottom: 40px;
+  }
+}
+
+// Перестраиваем сайдбар
+@include respond-to(medium-lg) {
   .content__aside {
     order: 1;
     width: $width-aside-md;
@@ -55,6 +88,18 @@
 }
 
 @include respond-to(large) {
+  .content {
+    &--regular {
+      padding-top: 40px;
+    }
+
+    &--contacts {
+      h1 {
+        margin-bottom: 36px;
+      }
+    }
+  }
+
   .content__aside {
     width: 290px;
   }
@@ -65,5 +110,9 @@
 
   .content__slider {
     margin-bottom: 30px;
+  }
+
+  .content__contacts {
+    margin-bottom: 50px;
   }
 }

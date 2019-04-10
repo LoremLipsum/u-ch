@@ -6,7 +6,7 @@ block vars
     //- - var pageId = 1
 
 block content
-    main.content
+    main.content.content--with-aside
         .content__wrap
             .content__main
                 +slider({
@@ -62,14 +62,14 @@ block content
                 +aside-action({
                     mix: 'content__aside-section',
                 })
-            +modal({
-                js: 'modal-callback',
-                heading: 'Обратный звонок',
-            })
-                +form({
-                    card: true,
-                    user: true,
-                    tel: true,
-                    confirm: true,
-                    submit: 'Заказать',
-                })
+    +modal({
+        js: 'modal-callback',
+        heading: 'Обратный звонок',
+    })
+        +form({
+            card: true,
+            user: true,
+            tel: true,
+            confirm: true,
+            submit: 'Заказать',
+        })
