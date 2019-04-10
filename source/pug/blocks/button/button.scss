@@ -23,13 +23,13 @@
     pointer-events: none;
   }
 
-  &--bg-primary {
-    background-color: color(primary);
-
-    @include hover {
-      background-color: darken(color(primary), $change-color);
-    }
-  }
+  // &--bg-primary {
+  //   background-color: color(primary);
+  //
+  //   @include hover {
+  //     background-color: darken(color(primary), $change-color);
+  //   }
+  // }
 
   &--bg-secondary,
   &--bg-secondary-large {
@@ -38,6 +38,7 @@
 
     @include hover {
       box-shadow: 0 0px 10px 0 rgba(color(secondary), 0.8);
+      background-image: linear-gradient(#f4511e, #f4511e);
     }
   }
 
