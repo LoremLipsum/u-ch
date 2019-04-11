@@ -1,0 +1,31 @@
+mixin post-card(data)
+    +el({
+        tag: 'article',
+        class: 'post-card',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        +el({
+            tag: 'a',
+            class: 'post-card__image-link',
+        })
+            img.post-card__image(src='./assets/upload/' + data.image, alt='')
+        .post-card__content
+            +el({
+                class: 'post-card__date',
+                text: data.date,
+            })
+            +el({
+                tag: 'h3',
+                class: 'post-card__heading',
+            })
+                +el({
+                    tag: 'a',
+                    text: data.heading,
+                })
+            +el({
+                tag: 'p',
+                class: 'post-card__text',
+                text: data.text,
+            })

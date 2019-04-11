@@ -1,0 +1,29 @@
+extends ./templates/template
+
+block vars
+    - var pageTitle = 'Южхим: Статьи'
+    - var main = false
+    - var pageId = 3
+
+block content
+    main.content.content--regular
+        .content__wrap
+            h1.content__heading
+                | Статьи
+            +post-list({
+                items: posts
+            })
+            +paginator({
+                mix: 'content__paginator',
+            })
+    +modal({
+        js: 'modal-callback',
+        heading: 'Обратный звонок',
+    })
+        +form({
+            card: true,
+            user: true,
+            tel: true,
+            confirm: true,
+            submit: 'Заказать',
+        })

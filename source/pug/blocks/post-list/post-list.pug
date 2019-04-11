@@ -1,0 +1,16 @@
+mixin post-list(data)
+    +el({
+        tag: 'ul',
+        class: 'post-list',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+    })&attributes(attributes)
+        each item in data.items
+            li.post-list__item
+                +post-card({
+                    image: item.image,
+                    date: item.date,
+                    heading: item.heading,
+                    text: item.text
+                })

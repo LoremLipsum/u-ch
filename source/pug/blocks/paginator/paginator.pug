@@ -1,0 +1,48 @@
+mixin paginator(data)
+    +el({
+        class: 'paginator',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+    })&attributes(attributes)
+        +button-control({
+            mod: 'prev',
+            title: 'Назад'
+        })
+        +el({
+            tag: 'ul',
+            class: 'paginator__list',
+        })
+            li.paginator__item.active
+                +el({
+                    tag: 'a',
+                    class: 'paginator__link',
+                    text: '1',
+                })
+            li.paginator__item
+                +el({
+                    tag: 'a',
+                    class: 'paginator__link',
+                    text: '2',
+                })
+            li.paginator__item
+                +el({
+                    tag: 'a',
+                    class: 'paginator__link',
+                    text: '3',
+                })
+            li.paginator__item
+                +el({
+                    tag: 'span',
+                    text: '...',
+                })
+            li.paginator__item
+                +el({
+                    tag: 'a',
+                    class: 'paginator__link',
+                    text: '6',
+                })
+        +button-control({
+            mod: 'next',
+            title: 'Вперед'
+        })
