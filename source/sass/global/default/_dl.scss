@@ -1,5 +1,6 @@
 dl {
   margin: 0;
+  margin-bottom: $text-margin-bottom;
 }
 
 dt {
@@ -11,16 +12,16 @@ dt {
 
 dd {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: $text-margin-bottom;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @include respond-to(medium) {
   dt {
     margin-bottom: 8px;
-  }
-
-  dd {
-    margin-bottom: 30px;
   }
 }
 
@@ -28,9 +29,5 @@ dd {
   dt {
     margin-bottom: 10px;
     font-size: 18px;
-  }
-
-  dd {
-    margin-bottom: 40px;
   }
 }

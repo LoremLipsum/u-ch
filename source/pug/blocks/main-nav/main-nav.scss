@@ -47,6 +47,7 @@
     &.active {
       .main-nav__link {
         &::after {
+          transform: none;
           background-color: color(secondary);
         }
       }

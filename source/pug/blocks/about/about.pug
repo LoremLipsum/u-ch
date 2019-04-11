@@ -1,0 +1,66 @@
+mixin about(data)
+    +el({
+        tag: 'article',
+        class: 'about',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+    })&attributes(attributes)
+        .about__top
+            .about__wrap
+                h1.hidden О магазине
+                .about__row
+                    .about__col.about__col--left
+                        dl.about__dl
+                            dt
+                                | Склад-магазин «ЮжХим» работает в&nbsp;Симферополе
+                                .text-blue-xl
+                                    | с 2000 года
+                            dd
+                                | Начинали с&nbsp;торговли лакокрасочными материалами. Ежегодно ассортимент товаров расширялся.
+
+                            dt
+                                | На данный момент в&nbsp;магазине насчитывается
+                                .text-blue-xl
+                                    | до 3000 наименований продукции
+                            dd
+                                | лакокрасочные изделия, хозяйственные товары, строительные материалы, инструмент и&nbsp;т.д
+
+                            dt
+                                | Наши основные клиенты:
+                            dd
+                                ul.text-blue-lg
+                                    li хозяйственные и&nbsp;строительные магазины
+                                    li бюджетные организации
+                                    li частные лица
+                    .about__col.about__col--right
+                        picture.about__image-wrap
+                            source(srcset='./assets/images/about01.webp' type='image/webp')
+                            img.about__image(src='./assets/images/about01.jpg' width='640' alt='Полки с товарами в магазине')
+        .about__features
+            .about__wrap
+                +features({
+                    mod: 'regular',
+                    items: features
+                })
+        .about__bottom
+            .about__wrap
+                .about__row
+                    .about__col.about__col--left
+                        p.
+                            Интернет-магазин нацелен оптимизировать работу с&nbsp;клиентами. Для удобства клиента
+                            на&nbsp;сайте представлен расширенный каталог продукции нашего магазина, что позволяет
+                            ознакомиться и&nbsp;выбрать нужную позицию не&nbsp;выходя из&nbsp;дома.
+                        p.
+                            Мы&nbsp;не&nbsp;просто интернет-магазин, а&nbsp;сплоченная, уверенная в&nbsp;себе команда профессионалов.
+                            Наша работа ведется для улучшения качества услуг, повышения клиентоориентированности,
+                            расширения ассортимента.
+                        p.
+                            Наш интернет-магазин ориентирован на&nbsp;конечного покупателя и&nbsp;максимально возможный уровень
+                            сервиса. Вся продукция, предлагаемая на&nbsp;сайте имеется в&nbsp;наличие на&nbsp;складе. На&nbsp;сайте можно
+                            изучить характеристики выбранных товаров, а&nbsp;также получить грамотную консультацию, что
+                            позволит сэкономить время клиента. На&nbsp;сайте имеется возможность формирования он-лайн заказа.
+                    .about__col.about__col--right
+                        picture.about__image-wrap
+                            source(srcset='assets/images/about02.webp' type='image/webp')
+                            img.about__image(src='assets/images/about02.jpg' width='460' alt='Полки с товарами в магазине')

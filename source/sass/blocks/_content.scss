@@ -34,7 +34,7 @@
 }
 
 .content__aside-section {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
@@ -51,12 +51,6 @@
 
 @include respond-to(medium) {
   .content {
-    &--with-aside {
-      .content__wrap {
-        display: flex;
-      }
-    }
-
     &--regular {
       padding-top: 30px;
     }
@@ -75,6 +69,14 @@
 
 // Перестраиваем сайдбар
 @include respond-to(medium-lg) {
+  .content {
+    &--with-aside {
+      .content__wrap {
+        display: flex;
+      }
+    }
+  }
+
   .content__aside {
     order: 1;
     width: $width-aside-md;
