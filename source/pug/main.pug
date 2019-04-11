@@ -50,12 +50,8 @@ block content
                 +brends({
                     mix: 'content__main-section',
                 })
-            aside.content__aside
-                +catalog({
-                    mix: 'content__aside-section content__aside-section--catalog',
-                    items: catalog,
-                    js: 'catalog',
-                })
+            aside.content__aside.content__aside--with-catalog
+                .js-match-height-catalog
                 +aside-posts({
                     mix: 'content__aside-section',
                     items: aside_posts,

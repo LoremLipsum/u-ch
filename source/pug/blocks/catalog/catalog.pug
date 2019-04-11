@@ -1,14 +1,15 @@
 mixin catalog(data)
     +el({
-        class: 'catalog',
+        class: 'catalog js-match-height-catalog',
         mod: data.mod,
         mix: data.mix,
+        js: 'catalog'
     })&attributes(attributes)
         +overlay({
             mix: 'catalog__overlay',
             js: 'catalog-overlay'
         })
-        .catalog__dialog.js-catalog
+        .catalog__dialog.js-catalog-dialog
             +button-remove({
                 mix: 'catalog__close',
                 title: 'Закрыть каталог',

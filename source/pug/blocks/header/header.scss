@@ -272,7 +272,7 @@
   }
 
   .header__dialog {
-    width: calc(100% - #{$width-aside-md});
+    width: calc(100% - #{$width-aside-md}); // source/sass/global/var
   }
 
   .header__bottom {
@@ -282,12 +282,30 @@
     }
   }
 
+  .header__catalog-wrap {
+    position: relative;
+  }
+
   .header__button-catalog {
     flex-shrink: 0;
     position: static;
     transform: none;
-    width: $width-aside-md;
+    width: $width-aside-md; // source/sass/global/var
+    margin-left: 0 !important;
   }
+
+  .header__catalog {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: auto;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
 }
 
 @include respond-to(1020px) {

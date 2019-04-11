@@ -20,13 +20,13 @@ const config = {
     sassCopy      : srcPath + '/sass/**/*.scss',
     sassCopyBlock : srcPath + '/pug/**/*.scss',
     libScripts    : [
-                      'node_modules/jquery/dist/jquery.js',
+                      './node_modules/jquery/dist/jquery.js',
                       './node_modules/object-fit-images/dist/ofi.js',
                       './node_modules/svg4everybody/dist/svg4everybody.js',
                       './node_modules/imask/dist/imask.js',
                       './node_modules/picturefill/dist/picturefill.js',
-                      // 'node_modules/jquery-match-height/dist/jquery.matchHeight.js',
-                      'node_modules/slick-carousel/slick/slick.js',
+                      './node_modules/jquery-match-height/dist/jquery.matchHeight.js',
+                      './node_modules/slick-carousel/slick/slick.js',
                       // 'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
                     ],
     libStyles     : [

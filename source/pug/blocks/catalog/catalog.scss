@@ -189,15 +189,6 @@
 }
 
 @include respond-to(medium-lg) {
-  .catalog {
-    position: relative;
-    overflow: visible;
-
-    &--is-mobile {
-      display: none !important;
-    }
-  }
-
   .catalog__dialog {
     position: relative;
     transform: none;

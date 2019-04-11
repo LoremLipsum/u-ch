@@ -10,13 +10,18 @@ html(lang="ru-RU")
     block head
         +head()
 
-    body
-        block icon
-        block header
-            +header({})
-        block intro
-        block content
-        block footer
-            +footer({})
-        block scripts
-            +scripts()
+    +el({
+        tag: 'body',
+        class: 'page',
+        mod: main ? 'main' : ''
+    })
+        .page__wrap
+            block icon
+            block header
+                +header({})
+            block intro
+            block content
+            block footer
+                +footer({})
+            block scripts
+                +scripts()

@@ -33,6 +33,7 @@
   }
 }
 
+
 .content__aside-section {
   margin-bottom: 25px;
 
@@ -81,6 +82,10 @@
     order: 1;
     width: $width-aside-md;
     margin-right: 20px;
+
+    &--with-catalog {
+      padding-top: 683px;
+    }
   }
 
   .content__main {
@@ -104,6 +109,10 @@
 
   .content__aside {
     width: 290px;
+
+    &--with-catalog {
+      padding-top: 630px;
+    }
   }
 
   .content__main {

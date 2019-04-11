@@ -64,11 +64,18 @@ mixin header(data)
                 })
         .header__bottom
             .header__wrap
-                +button-catalog({
-                    mix: 'header__button-catalog',
-                    text: 'Каталог товаров',
-                    js: 'open-catalog',
+                +el({
+                    class: 'header__catalog-wrap',
                 })
+                    +button-catalog({
+                        mix: 'header__button-catalog',
+                        text: 'Каталог товаров',
+                        js: 'open-catalog',
+                    })
+                    +catalog({
+                        mix: 'header__catalog',
+                        items: catalog,
+                    })
                 nav.header__dialog.js-main-nav(aria-label='Основное меню' itemscope itemtype='http://schema.org/SiteNavigationElement')
                     +button-remove({
                         mix: 'header__button-close',

@@ -1,0 +1,15 @@
+.page {
+  &--main {
+    .logo {
+      pointer-events: none;
+    }
+
+    .header__catalog {
+      display: block !important;
+    }
+  }
+}
+
+.page__wrap {
+  overflow: hidden;
+}

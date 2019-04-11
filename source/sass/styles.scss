@@ -55,13 +55,14 @@
 @import "../pug/blocks/aside-action/aside-action";
 @import "../pug/blocks/modal/modal";
 
-@import "./blocks/content";
-@import "./blocks/aside";
-@import "./blocks/article";
-@import "./blocks/category-article";
-
 @import "../pug/blocks/checkbox-confirm/checkbox-confirm";
 @import "../pug/blocks/map/map";
 @import "../pug/blocks/contacts/contacts";
 @import "../pug/blocks/about/about";
 @import "../pug/blocks/delivery/delivery";
+
+@import "./blocks/content";
+@import "./blocks/aside";
+@import "./blocks/article";
+@import "./blocks/category-article";
+@import "./blocks/page";

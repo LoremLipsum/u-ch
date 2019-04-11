@@ -4,45 +4,52 @@
 	'use strict';
 	$(function() {
 
+    var main = $('.page--main')[0];
+    var catalog = $('.js-catalog');
     var btnOpen = $('.js-open-catalog');
     var btnClose = $('.js-close-catalog');
-    var catalog = $('.js-catalog');
-    var overlay = $('.js-catalog-overlay')
+    var dialog = $('.js-catalog-dialog');
+    var overlay = $('.js-catalog-overlay');
     var lvl1 = $('.js-catalog-lvl-1');
+    var lvl2 = $('.js-catalog-lvl-2');
+    var lvl3 = $('.js-catalog-lvl-3');
     var links1 = lvl1.find('.js-link-lvl-1');
     var links2 = lvl1.find('.js-link-lvl-2');
     var item = '.catalog__item';
-    var lvl2 = '.js-catalog-lvl-2';
-    var lvl3 = '.js-catalog-lvl-3';
+    var matchHeightCatalog = $('.js-match-height-catalog');
     var el;
     var ESC = 27;
-    var WIDTH = 768;
+    var WIDTH = 840;
 
     var toggle = function() {
-      btnOpen.toggleClass('active');
-      catalog.toggleClass('active');
-      overlay.toggleClass('active');
-
-      if (+$(window).width() > WIDTH) {
+      if (+$(window).width() < WIDTH) {
+        btnOpen.toggleClass('active');
+        dialog.toggleClass('active');
         overlay.toggleClass('active');
-        links1.parent(item).toggleClass('active');
-        links2.parent(item).toggleClass('active');
+      } else if (!main && +$(window).width() > WIDTH ) {
+        catalog.toggleClass('active');
+        overlay.toggleClass('active');
+      } else if (main && +$(window).width() > WIDTH && links1.parent(item).hasClass('active')) {
+        links1.parent(item).removeClass('active');
+        overlay.removeClass('active');
       }
     };
 
     var close = function() {
-      btnOpen.removeClass('active');
-      catalog.removeClass('active');
-      overlay.removeClass('active');
-
-      if (+$(window).width() > WIDTH) {
+      if (+$(window).width() < WIDTH) {
+        btnOpen.removeClass('active');
+        dialog.removeClass('active');
         overlay.removeClass('active');
+      } else if (!main && +$(window).width() > WIDTH ) {
+        catalog.removeClass('active');
+        overlay.removeClass('active');
+      } else if (main && +$(window).width() > WIDTH && links1.parent(item).hasClass('active')) {
         links1.parent(item).removeClass('active');
-        links2.parent(item).removeClass('active');
+        overlay.removeClass('active');
       }
     };
 
-    var onOpenClick = function(e) {
+    var onToggleClick = function(e) {
       e.preventDefault();
       toggle();
     };
@@ -58,9 +65,9 @@
       links1.not(el).parent(item).removeClass('active');
       el.parent(item).toggleClass('active');
 
-      if (+$(window).width() > WIDTH && links1.parent(item).hasClass('active')) {
+      if (main && +$(window).width() > WIDTH && links1.parent(item).hasClass('active')) {
         overlay.addClass('active');
-      } else if (+$(window).width() > WIDTH) {
+      } else if (main && +$(window).width() > WIDTH) {
         overlay.removeClass('active');
       }
     };
@@ -81,10 +88,16 @@
 
     links1.on('click', onLink1Click);
     links2.on('click', onLink2Click);
-    btnOpen.on('click', onOpenClick);
-    overlay.on('click', onCloseClick);
+    btnOpen.on('click', onToggleClick);
     btnClose.on('click', onCloseClick);
+    overlay.on('click', onCloseClick);
     $(document).on('keyup', onEscKeyup);
+
+    if(main) {
+      $('.js-match-height-catalog').matchHeight({
+        property: 'height'
+      });
+    }
 
 	});
 })(jQuery);
