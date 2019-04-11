@@ -11,5 +11,17 @@
 }
 
 .page__wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   overflow: hidden;
+}
+
+.page__wrap > * {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.footer {
+  margin-top: auto;
 }
