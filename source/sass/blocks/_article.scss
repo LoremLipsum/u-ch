@@ -1,41 +1,29 @@
 .article {
-  img {
-    border-radius: rad(sm);
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
+  .date {
+    margin-bottom: 15px;
   }
 }
 
 @include respond-to(medium) {
   .article {
-    h1 {
-      font-size: 26px;
+    &--center {
+      padding: 0 100px;
+    }
+
+    .date {
+      margin-bottom: 20px;
     }
   }
 }
 
 @include respond-to(large) {
   .article {
-    h1 {
-      font-size: 30px;
+    &--center {
+      padding: 0 195px;
     }
 
-    .left {
-      float: right;
-      margin-left: 40px;
-    }
-
-    .right {
-      float: left;
-      margin-right: 40px;
+    .date {
+      margin-bottom: 25px;
     }
   }
 }

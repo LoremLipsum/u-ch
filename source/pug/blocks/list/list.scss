@@ -15,8 +15,11 @@ $disc-top-sm: 9px;
 
   li {
     position: relative;
-    padding-left: $li-pad-sm;
     list-style: none;
+
+    *:first-child {
+      text-indent: $li-pad-sm;
+    }
 
     &::before {
       content: "";
@@ -56,7 +59,9 @@ $disc-top-sm: 9px;
 @include respond-to(medium) {
   .list {
     li {
-      padding-left: $li-pad-md;
+      *:first-child {
+        text-indent: $li-pad-md;
+      }
 
       &::before {
         width: $disc-size-md;
@@ -73,7 +78,9 @@ $disc-top-sm: 9px;
 @include respond-to(large) {
   .list {
     li {
-      padding-left: $li-pad-lg;
+      *:first-child {
+        text-indent: $li-pad-lg;
+      }
 
       &::before {
         width: $disc-size-lg;

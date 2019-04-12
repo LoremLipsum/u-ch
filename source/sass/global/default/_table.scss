@@ -31,10 +31,18 @@ td {
   td {
     padding: 16px;
   }
+
+  th {
+    font-size: 17px;
+  }
 }
 
 @include respond-to(large) {
   table {
     margin-bottom: mb(lg);
+  }
+
+  th {
+    font-size: 18px;
   }
 }

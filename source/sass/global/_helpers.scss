@@ -70,6 +70,18 @@
   }
 }
 
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.no-indent {
+  text-indent: 0;
+}
+
 @include respond-to(medium) {
   .text-lg {
     font-size: 17px;
