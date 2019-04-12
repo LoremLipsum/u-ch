@@ -46,8 +46,8 @@
 
 .content__breadcrumbs {
   width: 100%;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 
@@ -65,6 +65,11 @@
 
   .content__contacts {
     margin-bottom: 40px;
+  }
+
+  .content__breadcrumbs {
+    margin-top: -15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -141,5 +146,10 @@
 
   .content__contacts {
     margin-bottom: 50px;
+  }
+
+  .content__breadcrumbs {
+    margin-top: -25px;
+    margin-bottom: 20px;
   }
 }

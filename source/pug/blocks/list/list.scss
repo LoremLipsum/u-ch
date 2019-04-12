@@ -16,9 +16,10 @@ $disc-top-sm: 9px;
   li {
     position: relative;
     list-style: none;
+    text-indent: $li-pad-sm;
 
-    *:first-child {
-      text-indent: $li-pad-sm;
+    *:not(*:first-child) {
+      text-indent: 0;
     }
 
     &::before {
@@ -59,9 +60,7 @@ $disc-top-sm: 9px;
 @include respond-to(medium) {
   .list {
     li {
-      *:first-child {
-        text-indent: $li-pad-md;
-      }
+      text-indent: $li-pad-md;
 
       &::before {
         width: $disc-size-md;
@@ -78,9 +77,7 @@ $disc-top-sm: 9px;
 @include respond-to(large) {
   .list {
     li {
-      *:first-child {
-        text-indent: $li-pad-lg;
-      }
+      text-indent: $li-pad-lg;
 
       &::before {
         width: $disc-size-lg;
