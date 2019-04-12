@@ -1,11 +1,12 @@
 .features {
-  @include list-none;
+  margin-bottom: 0;
 }
 
 .features__item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  list-style: none;
 
   &:last-child {
     margin-bottom: 0;

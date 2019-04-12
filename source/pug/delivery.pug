@@ -6,20 +6,10 @@ block vars
     - var pageId = 1
 
 block content
-    main.content.content--regular.content--contacts
+    main.content
         .content__wrap
+            h1.content__heading
+                | Доставка и&nbsp;плата
             +delivery({
                 mix: 'content__delivery'
             })
-
-    +modal({
-        js: 'modal-callback',
-        heading: 'Обратный звонок',
-    })
-        +form({
-            card: true,
-            user: true,
-            tel: true,
-            confirm: true,
-            submit: 'Заказать',
-        })

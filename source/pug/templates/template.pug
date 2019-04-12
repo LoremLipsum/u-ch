@@ -13,7 +13,7 @@ html(lang="ru-RU")
     +el({
         tag: 'body',
         class: 'page',
-        mod: main ? 'main' : ''
+        mod: modPage
     })
         .page__wrap
             block icon
@@ -23,5 +23,18 @@ html(lang="ru-RU")
             block content
             block footer
                 +footer({})
-            block scripts
-                +scripts()
+
+        +modal({
+            js: 'modal-callback',
+            heading: 'Обратный звонок',
+        })
+            +form({
+                card: true,
+                user: true,
+                tel: true,
+                confirm: true,
+                submit: 'Заказать',
+            })
+
+        block scripts
+            +scripts()

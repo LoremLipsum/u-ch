@@ -1,6 +1,6 @@
 p {
   margin: 0;
-  margin-bottom: $text-margin-bottom;
+  margin-bottom: mb(sm);
   font-family: font(primary);
   font-size: 14px;
   line-height: 1.4;
@@ -11,6 +11,7 @@ p {
 @include respond-to(medium) {
   p {
     font-size: 15px;
+    margin-bottom: mb(md);
   }
 }
 
@@ -18,5 +19,6 @@ p {
   p {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: mb(lg);
   }
 }

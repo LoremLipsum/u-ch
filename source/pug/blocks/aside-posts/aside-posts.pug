@@ -20,8 +20,8 @@ mixin aside-posts(data)
                     tag: 'li',
                     class: 'aside-posts__item',
                 })
-                    +el({
-                        class: 'aside-posts__item-date',
+                    +date({
+                        mix: 'aside-posts__item-date',
                         text: item.date,
                     })
                     +el({

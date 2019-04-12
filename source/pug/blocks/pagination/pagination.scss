@@ -1,4 +1,4 @@
-.paginator {
+.pagination {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,15 +13,12 @@
   }
 }
 
-.paginator__list {
+.pagination__list {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
-.paginator__item {
+.pagination__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,10 +30,10 @@
   font-weight: 500;
   color: color(dark-primary);
   line-height: 20px;
-
+  list-style: none;
 
   &.active {
-    .paginator__link {
+    .pagination__link {
       &::after {
         opacity: 1;
         transform: scaleX(1);
@@ -46,7 +43,7 @@
   }
 }
 
-.paginator__link {
+.pagination__link {
   position: relative;
   display: inline-block;
   padding: 4px;
@@ -78,7 +75,7 @@
 
 
 @include respond-to(medium) {
-  .paginator {
+  .pagination {
     .button-control {
       &--prev {
         margin-right: 45px;
@@ -89,7 +86,7 @@
     }
   }
 
-  .paginator__item {
+  .pagination__item {
     width: 40px;
     height: 40px;
   }

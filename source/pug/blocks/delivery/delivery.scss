@@ -1,3 +1,49 @@
 .delivery {
-  
+
+}
+
+.delivery__phone {
+  font-family: font(secondary);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+@include respond-to(medium-lg) {
+  .delivery__phone {
+    font-size: 22px;
+  }
+
+  .delivery__row {
+    display: flex;
+    margin: 0 -15px;
+  }
+
+  .delivery__col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 15px;
+
+    .list {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-top: auto;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(large) {
+  .delivery__phone {
+    font-size: 24px;
+  }
 }

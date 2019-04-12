@@ -3,6 +3,7 @@ extends ./templates/template
 block vars
     - var pageTitle = 'Южхим'
     - var main = true
+    - var modPage = 'main'
     //- - var pageId = 1
 
 block content
@@ -59,14 +60,3 @@ block content
                 +aside-action({
                     mix: 'content__aside-section',
                 })
-    +modal({
-        js: 'modal-callback',
-        heading: 'Обратный звонок',
-    })
-        +form({
-            card: true,
-            user: true,
-            tel: true,
-            confirm: true,
-            submit: 'Заказать',
-        })

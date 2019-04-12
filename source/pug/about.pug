@@ -6,19 +6,7 @@ block vars
     - var pageId = 1
 
 block content
-    main.content.content--regular
+    main.content
         +about({
             mix: 'content__about'
-        })
-
-    +modal({
-        js: 'modal-callback',
-        heading: 'Обратный звонок',
-    })
-        +form({
-            card: true,
-            user: true,
-            tel: true,
-            confirm: true,
-            submit: 'Заказать',
         })

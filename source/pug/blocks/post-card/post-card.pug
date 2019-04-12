@@ -12,8 +12,8 @@ mixin post-card(data)
         })
             img.post-card__image(src='./assets/upload/' + data.image, alt='')
         .post-card__content
-            +el({
-                class: 'post-card__date',
+            +date({
+                mix: 'post-card__date',
                 text: data.date,
             })
             +el({

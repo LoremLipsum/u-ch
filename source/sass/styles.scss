@@ -33,14 +33,13 @@
 @import "../pug/blocks/main-nav/main-nav";
 @import "../pug/blocks/overlay/overlay";
 @import "../pug/blocks/phone/phone";
-
 @import "../pug/blocks/field/field";
 @import "../pug/blocks/checkbox/checkbox";
+@import "../pug/blocks/checkbox-confirm/checkbox-confirm";
 @import "../pug/blocks/radio-button/radio-button";
 @import "../pug/blocks/search/search";
 @import "../pug/blocks/form/form";
 @import "../pug/blocks/form-card/form-card";
-
 @import "../pug/blocks/header/header";
 @import "../pug/blocks/footer/footer";
 @import "../pug/blocks/catalog/catalog";
@@ -54,21 +53,18 @@
 @import "../pug/blocks/aside-posts/aside-posts";
 @import "../pug/blocks/aside-action/aside-action";
 @import "../pug/blocks/modal/modal";
-
-@import "../pug/blocks/checkbox-confirm/checkbox-confirm";
 @import "../pug/blocks/map/map";
 @import "../pug/blocks/contacts/contacts";
 @import "../pug/blocks/about/about";
 @import "../pug/blocks/delivery/delivery";
+@import "../pug/blocks/post-card/post-card";
+@import "../pug/blocks/date/date";
+@import "../pug/blocks/post-list/post-list";
+@import "../pug/blocks/pagination/pagination";
+@import "../pug/blocks/button-control/button-control";
 
 @import "./blocks/content";
 @import "./blocks/aside";
 @import "./blocks/article";
 @import "./blocks/category-article";
 @import "./blocks/page";
-
-@import "../pug/blocks/post-card/post-card";
-@import "../pug/blocks/date/date";
-@import "../pug/blocks/post-list/post-list";
-@import "../pug/blocks/paginator/paginator";
-@import "../pug/blocks/button-control/button-control";

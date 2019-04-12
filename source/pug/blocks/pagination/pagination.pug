@@ -1,6 +1,6 @@
-mixin paginator(data)
+mixin pagination(data)
     +el({
-        class: 'paginator',
+        class: 'pagination',
         mod: data.mod,
         mix: data.mix,
         js: data.js,
@@ -11,35 +11,35 @@ mixin paginator(data)
         })
         +el({
             tag: 'ul',
-            class: 'paginator__list',
+            class: 'pagination__list',
         })
-            li.paginator__item.active
+            li.pagination__item.active
                 +el({
                     tag: 'a',
-                    class: 'paginator__link',
+                    class: 'pagination__link',
                     text: '1',
                 })
-            li.paginator__item
+            li.pagination__item
                 +el({
                     tag: 'a',
-                    class: 'paginator__link',
+                    class: 'pagination__link',
                     text: '2',
                 })
-            li.paginator__item
+            li.pagination__item
                 +el({
                     tag: 'a',
-                    class: 'paginator__link',
+                    class: 'pagination__link',
                     text: '3',
                 })
-            li.paginator__item
+            li.pagination__item
                 +el({
                     tag: 'span',
                     text: '...',
                 })
-            li.paginator__item
+            li.pagination__item
                 +el({
                     tag: 'a',
-                    class: 'paginator__link',
+                    class: 'pagination__link',
                     text: '6',
                 })
         +button-control({

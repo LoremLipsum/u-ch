@@ -4,25 +4,14 @@ block vars
     - var pageTitle = 'Южхим: контакты'
     - var main = false
     - var pageId = 4
+    - var modPage = 'contacts'
 
 block content
-    main.content.content--regular.content--contacts
+    main.content
         .content__wrap
             h1 Контакты
             +contacts({
                 mix: 'content__contacts'
             })
         +map({
-        })
-
-    +modal({
-        js: 'modal-callback',
-        heading: 'Обратный звонок',
-    })
-        +form({
-            card: true,
-            user: true,
-            tel: true,
-            confirm: true,
-            submit: 'Заказать',
         })

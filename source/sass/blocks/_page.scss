@@ -8,6 +8,12 @@
       display: block !important;
     }
   }
+
+  &--contacts {
+    .content {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .page__wrap {

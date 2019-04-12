@@ -1,6 +1,7 @@
-dl {
+dl,
+dd {
   margin: 0;
-  margin-bottom: $text-margin-bottom;
+  margin-bottom: mb(sm);
 }
 
 dt {
@@ -11,21 +12,29 @@ dt {
 }
 
 dd {
-  margin: 0;
-  margin-bottom: $text-margin-bottom;
-
   &:last-child {
     margin-bottom: 0;
   }
 }
 
 @include respond-to(medium) {
+  dl,
+  dd {
+    margin-bottom: mb(md);
+  }
+
   dt {
     margin-bottom: 8px;
+    font-size: 17px;
   }
 }
 
 @include respond-to(large) {
+  dl,
+  dd {
+    margin-bottom: mb(lg);
+  }
+
   dt {
     margin-bottom: 10px;
     font-size: 18px;

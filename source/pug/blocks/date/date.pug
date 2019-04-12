@@ -1,2 +1,8 @@
 mixin date(data)
-  .date&attributes(attributes)
+    +el({
+        class: 'date',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+        text: data.text,
+    })&attributes(attributes)

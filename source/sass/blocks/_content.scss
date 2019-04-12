@@ -1,15 +1,6 @@
 .content {
   padding-top: 20px;
-  padding-bottom: 50px;
-  overflow: hidden;
-
-  &--regular {
-    padding-top: 20px;
-  }
-
-  &--contacts {
-    padding-bottom: 0;
-  }
+  padding-bottom: 30px;
 }
 
 .content__wrap {
@@ -33,10 +24,6 @@
   }
 }
 
-// .content__paginator {
-//   margin-top: 30px;
-// }
-
 .content__aside-section {
   margin-bottom: 25px;
 
@@ -55,9 +42,8 @@
 
 @include respond-to(medium) {
   .content {
-    &--regular {
-      padding-top: 30px;
-    }
+    padding-top: 30px;
+    padding-bottom: 40px;
 
     &--contacts {
       h1 {
@@ -69,10 +55,6 @@
   .content__contacts {
     margin-bottom: 40px;
   }
-  //
-  // .content__paginator {
-  //   margin-top: 40px;
-  // }
 }
 
 // Перестраиваем сайдбар
@@ -103,9 +85,8 @@
 
 @include respond-to(large) {
   .content {
-    &--regular {
-      padding-top: 40px;
-    }
+    padding-top: 40px;
+    padding-bottom: 50px;
 
     &--contacts {
       h1 {
@@ -133,8 +114,4 @@
   .content__contacts {
     margin-bottom: 50px;
   }
-
-  // .content__paginator {
-  //   margin-top: 50px;
-  // }
 }

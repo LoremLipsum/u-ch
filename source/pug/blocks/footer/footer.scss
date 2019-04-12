@@ -44,12 +44,9 @@
   border-bottom: 2px solid color(secondary);
 }
 
-.footer__list {
-  @include list-none;
-}
-
 .footer__item {
   margin-bottom: 5px;
+  list-style: none;
 
   a {
     text-decoration: none;

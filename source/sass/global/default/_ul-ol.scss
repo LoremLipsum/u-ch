@@ -1,35 +1,50 @@
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: $text-margin-bottom;
+  margin: 0;
+  margin-bottom: mb(sm);
+  list-style: none;
 }
 
-ul,
-ol {
-  padding-left: 16px;
+li {
+  list-style-position: outside;
+}
 
-  li {
-    margin-bottom: 4px;
-  }
+ol {
+  padding: 0;
+  counter-reset: ol;
+}
+
+ol li:before {
+  counter-increment: ol;
+  content: counter(ol) ". ";
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+ul li {
+  list-style: disc;
 }
 
 @include respond-to(medium) {
   ul,
   ol {
-    margin-bottom: 15px;
+    margin-bottom: mb(md);
   }
 
-  ul,
-  ol {
-    li {
-      margin-bottom: 6px;
-    }
+  li {
+    margin-bottom: 5px;
   }
 }
 
 @include respond-to(large) {
   ul,
   ol {
-    margin-bottom: 16px;
+    margin-bottom: mb(lg);
+  }
+
+  li {
+    margin-bottom: 6px;
   }
 }

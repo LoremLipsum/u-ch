@@ -17,38 +17,75 @@
   text-decoration: none;
 }
 
-.text-blue-lg {
+.color-blue {
   font-family: font(secondary);
-  color: #6b8bc7;
+  color: color(primary);
+}
+
+.color-red {
+  font-family: font(secondary);
+  color: color(secondary);
+}
+
+.text-lg {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.3;
 }
 
-.text-blue-xl {
-  font-family: font(secondary);
-  color: #6b8bc7;
+.text-xl {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.line {
+  overflow: hidden;
+
+  > * {
+    position: relative;
+    display: inline-block !important;
+    width: auto !important;
+    padding-right: 8px;
+    background-color: color(white);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      z-index: -1;
+      right: -9999px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+}
+
 @include respond-to(medium) {
-  .text-blue-lg {
+  .text-lg {
     font-size: 17px;
   }
 
-  .text-blue-xl {
+  .text-xl {
     font-size: 20px;
   }
 }
 
 @include respond-to(large) {
-  .text-blue-lg {
+  .text-lg {
     font-size: 18px;
   }
 
-  .text-blue-xl {
+  .text-xl {
     font-size: 24px;
   }
 }

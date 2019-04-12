@@ -28,11 +28,13 @@
 
   .header__list {
     display: flex;
+    margin-bottom: 0;
   }
 
   .header__item {
     margin-bottom: 0;
     text-align: center;
+    list-style: none;
 
     &--nav {
       margin-right: auto;
@@ -48,6 +50,11 @@
       }
     }
   }
+}
+
+.header__text {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 // средняя часть хедера
@@ -151,16 +158,6 @@
       margin-top: 20px;
     }
   }
-}
-
-// общие
-.header__text {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.header__list {
-  @include list-none;
 }
 
 // оверлей

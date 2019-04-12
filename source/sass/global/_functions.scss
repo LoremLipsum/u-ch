@@ -68,3 +68,11 @@
   @warn "Unknown `#{$key}` in $radius.";
   @return null;
 }
+
+@function mb($key) {
+  @if map-has-key($mb, $key) {
+    @return map-get($mb, $key);
+  }
+  @warn "Unknown `#{$key}` in $mb.";
+  @return null;
+}
