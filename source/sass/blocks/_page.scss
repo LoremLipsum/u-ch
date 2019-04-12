@@ -7,11 +7,9 @@
     .header__catalog {
       display: block !important;
     }
-  }
 
-  &--contacts {
     .content {
-      padding-bottom: 0;
+      padding-top: 20px;
     }
   }
 }
@@ -30,4 +28,24 @@
 
 .footer {
   margin-top: auto;
+}
+
+@include respond-to(medium-lg) {
+  .page {
+    &--main {
+      .content__aside {
+        padding-top: 683px !important;
+      }
+    }
+  }
+}
+
+@include respond-to(large) {
+  .page {
+    &--main {
+      .content__aside {
+        padding-top: 630px !important;
+      }
+    }
+  }
 }

@@ -1,0 +1,41 @@
+.breadcrumbs__list {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  margin-right: 8px;
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+
+    .breadcrumbs__link {
+      pointer-events: none;
+      opacity: 0.6;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrumbs__link {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+  text-decoration: none;
+
+  &::after {
+    content: "/";
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @include hover {
+    opacity: 0.6;
+  }
+}

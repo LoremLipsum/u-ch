@@ -3,60 +3,74 @@ mixin form(data)
         class: 'form',
     })
         .form__inner
-            if data.card
-                .form__field-group
-                    if data.user
+            each item in data.group
+                +el({
+                    class: 'form__group',
+                    mod: item.modGroup
+                })
+                    if item.firstName
                         +field({
                             mix: 'form__field',
-                            icon: 'user-circle',
-                            mod: ['with-icon', 'border-bottom'],
-                            label: 'Имя пользователя',
+                            icon: item.icon ? 'user-circle' : '',
+                            mod:  item.modField,
+                            label: 'Имя',
                             name: 'user',
-                            required: true,
                             placeholder: 'Имя'
                         })
-                    if data.email
+                    if item.lastName
                         +field({
                             mix: 'form__field',
-                            icon: 'email-circle',
-                            mod: ['with-icon', 'border-bottom'],
+                            icon: item.icon ? 'user-circle' : '',
+                            mod:  item.modField,
+                            label: 'Фамилия',
+                            name: 'user',
+                            placeholder: 'Фамилия'
+                        })
+                    if item.email
+                        +field({
+                            mix: 'form__field',
+                            icon: item.icon ? 'email-circle' : '',
+                            mod: item.modField,
                             label: 'E-mail',
                             type: 'email',
                             name: 'email',
                             placeholder: 'E-mail'
                         })
-                    if data.tel
+                    if item.tel
                         +field({
                             mix: 'form__field',
-                            icon: 'tel-circle',
-                            mod: ['with-icon', 'border-bottom'],
+                            icon: item.icon ? 'tel-circle' : '',
+                            mod: item.modField,
                             label: 'Телефон',
                             type: 'tel',
                             name: 'tel',
                             placeholder: '+7(___)___-__-__'
                         })
-                    if data.message
+                    if item.message
                         +field({
                             tag: 'textarea',
                             mix: 'form__field',
-                            icon: 'message-circle',
-                            mod: ['with-icon', 'border-bottom'],
+                            icon: item.icon ? 'message-circle' : '',
+                            mod: item.modField,
                             label: 'Вопрос',
                             type: 'email',
                             name: 'message',
                             placeholder: data.message
                         })
-                .form__submit-wrap
-                    +button({
-                        mix: 'form__submit',
-                        mod: 'bg-secondary-large',
-                        type: 'submit',
-                        text: data.submit
+            +el({
+                class: 'form__submit-wrap',
+                mod: data.modSubmit
+            })
+                +button({
+                    mix: 'form__submit',
+                    mod: 'bg-secondary-large',
+                    type: 'submit',
+                    text: data.submit
+                })
+            if data.confirm
+                .form__confirm
+                    +checkbox-confirm({
+                        mod: 'small',
+                        label: 'Согласие на обработку персональных данных',
+                        required: true,
                     })
-                if data.confirm
-                    .form__confirm
-                        +checkbox-confirm({
-                            mod: 'small',
-                            label: 'Согласие на обработку персональных данных',
-                            required: true,
-                        })

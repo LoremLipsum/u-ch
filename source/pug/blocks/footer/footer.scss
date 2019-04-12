@@ -34,6 +34,11 @@
   margin-bottom: 15px;
 }
 
+.footer__list {
+  margin: 0;
+  padding: 0;
+}
+
 .footer__title {
   display: inline-block;
   margin-bottom: 15px;
@@ -94,6 +99,10 @@
     text-align: left;
   }
 
+  .footer__top {
+    margin-bottom: 30px;
+  }
+
   .footer__wrap {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +121,7 @@
 
     &--catalog {
       width: 100%;
+      margin-bottom: 0;
     }
   }
 
@@ -148,12 +158,17 @@
   .footer__nav {
     &--info {
       width: 200px;
+      margin-bottom: 0;
       padding-right: 15px;
     }
 
     &--catalog {
       width: calc(100% - 250px - 200px);
     }
+  }
+
+  .footer__company {
+    margin-bottom: 0;
   }
 
   .footer__list-row {

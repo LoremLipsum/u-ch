@@ -1,9 +1,11 @@
 .products {
-  @include list-none;
+  padding: 0;
+  margin: 0;
 }
 
 .products__item {
   margin-bottom: 20px;
+  list-style: none;
 }
 
 @include respond-to(520px) {

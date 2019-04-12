@@ -1,6 +1,10 @@
 .content {
   padding-top: 20px;
   padding-bottom: 30px;
+
+  &--no-bottom-pad {
+    padding-bottom: 0 !important;
+  }
 }
 
 .content__wrap {
@@ -40,6 +44,12 @@
   margin-bottom: 30px;
 }
 
+.content__breadcrumbs {
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
 @include respond-to(medium) {
   .content {
     padding-top: 30px;
@@ -60,26 +70,41 @@
 // Перестраиваем сайдбар
 @include respond-to(medium-lg) {
   .content {
-    &--with-aside {
+    &--with-aside,
+    &--with-aside-nav {
       .content__wrap {
         display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &--with-aside {
+      .content__main {
+        padding-left: 20px;
+      }
+    }
+
+    &--with-aside-nav {
+      .content__main {
+        padding-left: 40px;
+        padding-right: 100px;
       }
     }
   }
 
+
   .content__aside {
     order: 1;
     width: $width-aside-md;
-    margin-right: 20px;
-
-    &--with-catalog {
-      padding-top: 683px;
-    }
   }
 
   .content__main {
     order: 2;
-    width: calc(100% - #{$width-aside-md} - 20px);
+    width: calc(100% - #{$width-aside-md});
+  }
+
+  .content__aside-nav {
+    width: $width-aside-md;
   }
 }
 
@@ -88,23 +113,25 @@
     padding-top: 40px;
     padding-bottom: 50px;
 
-    &--contacts {
+    &--with-aside-nav {
+      .content__main {
+        padding-left: 60px;
+        padding-right: 170px;
+      }
+
       h1 {
-        margin-bottom: 36px;
+        margin-bottom: 40px;
       }
     }
   }
 
-  .content__aside {
+  .content__aside,
+  .content__aside-nav {
     width: 290px;
-
-    &--with-catalog {
-      padding-top: 630px;
-    }
   }
 
   .content__main {
-    width: calc(100% - 310px);
+    width: calc(100% - 290px);
   }
 
   .content__slider {

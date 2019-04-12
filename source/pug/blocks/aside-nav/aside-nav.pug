@@ -1,0 +1,24 @@
+mixin aside-nav(data)
+    +el({
+        class: 'aside-nav',
+        mix: data.mix,
+        js: data.js,
+        mod: data.mod,
+    })&attributes(attributes)
+        +button({
+            mix: 'aside-nav__button',
+            text: 'Меню личного кабинета',
+            js: 'aside-nav-button',
+        })
+        +el({
+            tag: 'ul',
+            class: 'aside-nav__list',
+        })
+            each item in data.items
+                li.aside-nav__item
+                    +el({
+                        tag: 'a',
+                        class: 'aside-nav__link',
+                        text: item.text,
+                        href: item.href
+                    })

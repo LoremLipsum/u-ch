@@ -29,11 +29,17 @@ html(lang="ru-RU")
             heading: 'Обратный звонок',
         })
             +form({
-                card: true,
-                user: true,
-                tel: true,
+                group: [
+                    {
+                        icon: true,
+                        firstName: true,
+                        tel: true,
+                        modField: ['with-icon', 'border-bottom'],
+                    }
+                ],
                 confirm: true,
                 submit: 'Заказать',
+                modSubmit: 'center'
             })
 
         block scripts

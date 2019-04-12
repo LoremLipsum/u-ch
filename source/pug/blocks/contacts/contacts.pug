@@ -46,10 +46,16 @@ mixin contacts(data)
             heading: 'Обратная связь'
         })
             +form({
-                card: true,
-                user: true,
-                tel: true,
-                message: 'Сообщение',
+                group: [
+                    {
+                        icon: true,
+                        firstName: true,
+                        tel: true,
+                        modField: ['with-icon', 'border-bottom'],
+                        message: 'Сообщение',
+                    }
+                ],
                 confirm: true,
                 submit: 'Отправить',
+                modSubmit: 'center'
             })
