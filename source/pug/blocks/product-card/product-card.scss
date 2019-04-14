@@ -1,42 +1,41 @@
-.products-card {
+.product-card {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  border: 1px solid #e1e8f4;
+  padding: 20px;
+  border: 1px solid color(border);
   border-radius: radius(xs);
 }
 
-.products-card__image-wrap {
+.product-card__image-wrap {
   display: block;
   width: 100%;
   height: 200px;
-  padding: 15px;
+  padding: 20px;
 }
 
-.products-card__image {
+.product-card__image {
   display: block;
   width: 100%;
   height: 100%;
   @include ofi(contain, center);
 }
 
-.products-card__content {
+.product-card__content {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  padding-top: 5px;
 }
 
-.products-card__heading {
+.product-card__heading {
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: 700;
 }
 
-.products-card__heading-link {
+.product-card__heading-link {
   text-decoration: none;
 
   @include hover {
@@ -44,14 +43,17 @@
   }
 }
 
-.products-card__bottom {
+.product-card__bottom {
+  flex-grow: 0 !important;
   margin-top: auto;
   padding-top: 15px;
   border-top: 1px solid color(light-gray);
 }
 
-.products-card__row {
+.product-card__row {
   display: flex;
+  flex-direction: row !important;
+  flex-grow: 0 !important;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 17px;
@@ -61,64 +63,47 @@
   }
 }
 
-.products-card__old-price,
-.products-card__new-price,
-.products-card__art {
+.product-card__price-new,
+.product-card__price-old,
+.product-card__art {
+  display: block;
   width: 50%;
 }
 
-.products-card__art {
+.product-card__art {
   width: calc(50% - 15px);
 }
 
-.products-card__old-price,
-.products-card__art {
+.product-card__art {
+  text-align: right;
   font-size: 14px;
   line-height: 1;
+  margin-right: 0;
   color: color(gray);
 }
 
-.products-card__art {
-  text-align: right;
-  margin-right: 0;
-}
-
-.products-card__old-price {
+.product-card__price-old {
   padding-right: 5px;
-  text-decoration: line-through;
 }
 
-.products-card__new-price {
+.product-card__price-new {
   padding-right: 5px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
 }
 
-.products-card__button {
+.product-card__button {
   width: auto;
 }
 
-.products-card__sticker-wrap {
+.product-card__sticker-wrap {
   position: absolute;
   top: -1px;
   left: -3px;
 }
 
-.products-card__sticker {
+.product-card__sticker {
   margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
-  }
-}
-
-@include respond-to(850px) {
-  .products-card__new-price {
-    font-size: 18px;
-  }
-
-  .products-card__button {
-    padding: 8px 18px;
   }
 }

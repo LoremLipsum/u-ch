@@ -1,0 +1,10 @@
+mixin product-image(data)
+    +el({
+        tag: data.tag,
+        class: 'product-image',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        .product-image__wrap
+            img.product-image__image(src="assets/upload/" + data.image alt="")

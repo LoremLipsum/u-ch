@@ -1,0 +1,21 @@
+extends ./templates/template
+
+block vars
+    - var pageTitle = 'Южхим: Продукт'
+    - var main = false
+    - var pageId = 3
+
+block content
+    main.content
+        .content__wrap
+            +breadcrumbs({
+                mix: 'content__breadcrumbs',
+                items: ['Главная', 'Лакокрасочные материалы', ' Краски и лаки', 'Краски']
+            })
+            +product({
+                mix: 'content__product',
+            })
+            +product-line({
+              items: products_row,
+              heading: 'недавно просмотренные'
+            })

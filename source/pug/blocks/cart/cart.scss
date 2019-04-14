@@ -1,0 +1,294 @@
+.cart {
+  width: 100%;
+}
+
+.cart__table {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: color(light);
+}
+
+.cart__row {
+  &--head {
+    display: none;
+    font-family: font(secondary);
+    color: color(dark-primary);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    .cart__col {
+      &--total {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.cart__col {
+  margin-bottom: 10px;
+  font-size: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--price {
+    .cart__value {
+      font-size: 18px;
+    }
+  }
+
+  &--counter {
+    .cart__descr {
+      margin-bottom: 6px;
+      // margin-right: 6px;
+    }
+  }
+
+  &--total {
+    .cart__descr {
+      font-weight: 700;
+    }
+
+    .cart__unit {
+      font-weight: 700;
+      font-family: font(secondary);
+      font-size: 16px;
+    }
+
+    .cart__value {
+      font-size: 24px;
+      font-weight: 700;
+      font-family: font(secondary);
+    }
+  }
+}
+
+.cart__group {
+  &--left {
+    margin-bottom: 20px;
+  }
+}
+
+.cart__image-wrap {
+  border: 1px solid color(border);
+  background-color: color(white);
+}
+
+.cart__image-link {
+  display: block;
+  padding: 15px;
+}
+
+.cart__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  @include ofi(contain, center);
+}
+
+.cart__name {
+  margin-bottom: 10px;
+  font-family: font(secondary);
+  color: color(dark-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cart__articul {
+  font-weight: 600;
+
+  .cart__value {
+    color: color(dark-primary);
+  }
+}
+
+.cart__link {
+  text-decoration: none;
+}
+
+.cart__descr {
+  display: inline-block;
+  margin-right: 6px;
+  font-weight: 600;
+}
+
+.cart__label {
+  display: block;
+}
+
+.cart__footer-col {
+  &--left {
+    margin-bottom: 15px;
+  }
+}
+
+.cart__button-reset {
+  width: 100%;
+}
+
+.cart__total-sum {
+  margin-bottom: 15px;
+  font-family: font(secondary);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+
+  .cart__value {
+    font-size: 22px;
+  }
+}
+
+@include respond-to(460px) {
+  .cart__row {
+    &--content {
+      display: flex;
+    }
+  }
+
+  .cart__image-wrap,
+  .cart__image-link,
+  .cart__image {
+    width: 130px;
+  }
+
+  .cart__group {
+    &--left {
+      flex-shrink: 0;
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+
+    &--right {
+      flex-grow: 1;
+    }
+  }
+
+}
+
+@include respond-to(620px) {
+  .cart__footer {
+    display: flex;
+  }
+
+  .cart__footer-col {
+    width: 50%;
+
+    &--left {
+      margin-bottom: 0;
+      padding-right: 15px;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  .cart__total-sum {
+    text-align: right;
+  }
+
+  .cart__button-reset {
+    width: auto;
+  }
+
+  .cart__button-submit {
+    display: inline-block;
+    width: 215px;
+  }
+
+  .cart__total-sum {
+    margin-bottom: 25px;
+    font-size: 20px;
+
+    .cart__value {
+      font-size: 26px;
+    }
+  }
+}
+
+@include respond-to(medium-lg) {
+  .cart__table {
+    padding: 20px 10px;
+  }
+
+  .cart__row {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--head {
+      display: flex;
+    }
+  }
+
+  .cart__col {
+    margin-bottom: 0;
+    padding: 0 10px;
+    text-align: center;
+
+    &--image {
+      flex-shrink: 0;
+      width: 150px;
+    }
+
+    &--name {
+      text-align: left;
+    }
+  }
+
+  .cart__group {
+    &--left {
+      margin-right: 30px;
+    }
+
+    &--right {
+      display: flex;
+      align-items: center;
+
+      .cart__col {
+        flex-grow: 1;
+        width: 2%;
+      }
+    }
+  }
+
+  .cart__name {
+    margin-bottom: 20px;
+  }
+
+  .cart__descr {
+    display: none;
+  }
+
+  .cart__articul {
+    .cart__descr {
+      display: inline-block;
+      font-weight: 400;
+    }
+  }
+
+  .cart__counter {
+    margin: 0 auto;
+  }
+}
+
+@include respond-to(large) {
+  .cart__group {
+    &--left {
+      margin-right: 50px;
+    }
+  }
+
+  .cart__total-sum {
+    margin-bottom: 35px;
+    font-size: 24px;
+
+    .cart__value {
+      font-size: 30px;
+    }
+  }
+}

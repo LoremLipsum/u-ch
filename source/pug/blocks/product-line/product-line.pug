@@ -1,0 +1,30 @@
+mixin product-line(data)
+  +el({
+      class: 'product-line',
+      mod: data.mod,
+      mix: data.mix,
+      js: data.js
+  })&attributes(attributes)
+      +el({
+          tag: 'h3',
+          class: 'product-line__heading',
+          text: data.heading,
+      })
+      +el({
+          class: 'product-line__list',
+          js: 'product-line-slider'
+      })
+          each item in data.items
+              +el({
+                  class: 'product-line__item',
+              })
+                  +product-card({
+                      image: item.image,
+                      heading: item.heading,
+                      oldPrice: item.oldPrice,
+                      art: item.art,
+                      newPrice: item.newPrice,
+                      hit: item.hit,
+                      new: item.new,
+                      action: item.action
+                  })

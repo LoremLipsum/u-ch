@@ -1,0 +1,50 @@
+.specification {
+  th,
+  td {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    font-size: 13px;
+    background-color: color(white);
+    vertical-align: top;
+  }
+
+  th {
+    padding-bottom: 3px;
+  }
+
+  td {
+    padding-bottom: 10px;
+  }
+}
+
+@include respond-to(620px) {
+  .specification {
+    table-layout: fixed;
+
+    th,
+    td {
+      display: table-cell;
+      width: 50%;
+      padding: 5px;
+      font-size: 15px;
+    }
+
+    th {
+      width: 200px;
+      padding-left: 0;
+    }
+
+    td {
+      width: auto;
+    }
+  }
+}
+
+@include respond-to(large) {
+  th,
+  td {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,54 @@
+mixin product-info(data)
+    +el({
+        class: 'product-info',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        +f({
+            mix: 'product-info__form'
+        })
+            .product-info__inner
+                +el({
+                    tag: 'h1',
+                    class: 'product-info__heading',
+                    text: 'Краска латексная Tikkurila Euro Matt-3 основа C 9 л'
+                })
+                +el({
+                    class: 'product-info__line product-info__line--articul',
+                    text: 'Артикул: <span class="product-info__value">079643</span>'
+                })
+                +el({
+                    class: 'product-info__line product-info__line--sertificat',
+                    text: 'Сертификат: <a class="product-info__value" href="#">Скачать</a>'
+                })
+                +el({
+                    class: 'product-info__line product-info__line--availability',
+                    text: 'Наличие: <span class="product-info__value">в наличии</span>'
+                })
+                +el({
+                    class: 'product-info__line product-info__line--price',
+                })
+                    +price-old({
+                        mix: 'product-info__price-old',
+                        mod: 'large',
+                        value: '5 200',
+                    })
+                    +price-new({
+                        mix: 'product-info__price-new',
+                        mod: 'large',
+                        value: '4 760',
+                    })
+                +el({
+                    class: 'product-info__line product-info__line--footer',
+                })
+                    +counter({
+                        mix: 'product-info__counter',
+                        mod: 'vertical'
+                    })
+                    +button({
+                        mix: 'product-info__submit',
+                        mod: 'bg-secondary-large',
+                        type: 'submit',
+                        text: 'В корзину',
+                    })

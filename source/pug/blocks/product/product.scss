@@ -1,0 +1,27 @@
+.product__top {
+  margin-bottom: 30px;
+}
+
+@include respond-to(medium-lg) {
+  .product__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .product__gallery {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .product__info {
+    flex-grow: 1;
+  }
+}
+
+@include respond-to(large) {
+  .product__top {
+    display: flex;
+    margin-bottom: 50px;
+  }
+}

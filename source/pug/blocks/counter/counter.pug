@@ -1,0 +1,49 @@
+mixin counter(data)
+    +el({
+        class: 'counter',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+    })&attributes(attributes)
+        .counter__inner
+            +el({
+                tag: 'label',
+                class: 'counter__label',
+                mod: 'minus',
+                js: 'counter-minus'
+            })
+                +el({
+                    tag: 'input',
+                    class: 'hidden',
+                    type: 'button',
+                    value: '-',
+                })
+            +el({
+                tag: 'label',
+                class: 'counter__label',
+                mod: 'value',
+            })
+                +el({
+                    tag: 'input',
+                    class: 'hidden',
+                    type: 'number',
+                    value: '1',
+                    name: "quantity"
+                })
+                +el({
+                    tag: 'span',
+                    class: 'counter__value',
+                    text: '1'
+                })
+            +el({
+                tag: 'label',
+                class: 'counter__label',
+                mod: 'plus',
+                js: 'counter-plus'
+            })
+                +el({
+                    tag: 'input',
+                    class: 'hidden',
+                    type: 'button',
+                    value: '+'
+                })

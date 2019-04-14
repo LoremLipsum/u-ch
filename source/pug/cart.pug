@@ -1,0 +1,21 @@
+extends ./templates/template
+
+block vars
+    - var pageTitle = 'Южхим: Корзина'
+    - var main = false
+    - var pageId = 3
+
+block content
+    main.content
+        .content__wrap
+            +breadcrumbs({
+                mix: 'content__breadcrumbs',
+                items: ['Главная', 'Корзина']
+            })
+            +cart({
+                mix: 'content__cart',
+            })
+            +product-line({
+              items: products_row,
+              heading: 'недавно просмотренные'
+            })

@@ -1,7 +1,7 @@
-mixin products(data)
+mixin product-list(data)
     +el({
         tag: 'ul',
-        class: 'products',
+        class: 'product-list',
         mod: data.mod,
         mix: data.mix,
         js: data.js
@@ -9,9 +9,9 @@ mixin products(data)
         each item in data.items
             +el({
                 tag: 'li',
-                class: 'products__item',
+                class: 'product-list__item',
             })
-                +products-card({
+                +product-card({
                     image: item.image,
                     heading: item.heading,
                     oldPrice: item.oldPrice,

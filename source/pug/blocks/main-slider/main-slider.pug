@@ -1,0 +1,17 @@
+mixin main-slider(data)
+    +el({
+        class: 'main-slider',
+        mod: data.mod,
+        mix: data.mix,
+        js: 'main-slider'
+    })&attributes(attributes)
+        each item in data.items
+            +el({
+                class: 'main-slider__item',
+                style: 'background-image: url(\"assets/images/main-slider/' + item.image + '\");'
+            })
+                .main-slider__inner
+                    +el({
+                        class: 'main-slider__text',
+                        text: item.text
+                    })

@@ -10,7 +10,7 @@ block content
     main.content.content--with-aside
         .content__wrap
             .content__main
-                +slider({
+                +main-slider({
                     mix: 'content__main-section',
                     js: 'slider',
                     items: slider,
@@ -20,7 +20,7 @@ block content
                     mod: 'main',
                     items: features
                 })
-                .content__main-section.content__main-section--products
+                .content__main-section.content__main-section--product-list
                     +tabs({
                         mix: '',
                         items: [
@@ -37,16 +37,16 @@ block content
                         ],
                     })
                     .tab-1.js-content-tabs.active
-                        +products({
-                            items: products,
-                        })
-                    .tab-2.js-content-tabs
-                        +products({
+                        +product-list({
                             items: products1,
                         })
-                    .tab-3.js-content-tabs
-                        +products({
+                    .tab-2.js-content-tabs
+                        +product-list({
                             items: products2,
+                        })
+                    .tab-3.js-content-tabs
+                        +product-list({
+                            items: products3,
                         })
                 +brends({
                     mix: 'content__main-section',

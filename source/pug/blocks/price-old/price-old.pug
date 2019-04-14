@@ -1,0 +1,18 @@
+mixin price-old(data)
+    +el({
+        class: 'price-old',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+        text: data.text
+    })&attributes(attributes)
+        +el({
+            tag: 'span',
+            class: 'price-old__value',
+            text: data.value
+        })
+        +el({
+            tag: 'span',
+            class: 'price-old__unit',
+            text: ' р./шт'
+        })

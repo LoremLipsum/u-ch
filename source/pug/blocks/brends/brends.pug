@@ -9,7 +9,7 @@ mixin brends(data)
         js: data.js,
     })&attributes(attributes)
         h2.brends__heading Бренды
-        .brends__list.js-brends
+        .brends__list.js-brends-slider
             each item in brends
                 +el({
                     class: 'brends__item',

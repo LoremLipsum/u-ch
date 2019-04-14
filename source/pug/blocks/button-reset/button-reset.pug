@@ -1,0 +1,20 @@
+mixin button-reset(data)
+    +el({
+        tag: 'label',
+        class: 'button-reset',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+    })
+        +el({
+            tag: 'input',
+            class: 'hidden',
+            type: 'reset',
+            disabled: data.disabled,
+        })&attributes(attributes)
+        | #{data.text}
+        +el({
+            tag: 'span',
+            class: 'button-reset__icon',
+            icon: data.icon,
+        })

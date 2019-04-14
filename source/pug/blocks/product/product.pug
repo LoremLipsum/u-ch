@@ -1,0 +1,18 @@
+mixin product(data)
+    +el({
+        class: 'product',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        .product__top
+            +product-gallery({
+                mix: 'product__gallery',
+                aside: ['product-small-01.jpg', '', ''],
+                main: ['product-large-01.jpg', '', '']
+            })
+            +product-info({
+                mix: 'product__info'
+            })
+        +product-tabs({
+        })
