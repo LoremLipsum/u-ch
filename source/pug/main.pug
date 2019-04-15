@@ -7,7 +7,7 @@ block vars
     //- - var pageId = 1
 
 block content
-    main.content.content--with-aside
+    main.content.content--with-aside-bottom
         .content__wrap
             .content__main
                 +main-slider({
@@ -20,7 +20,7 @@ block content
                     mod: 'main',
                     items: features
                 })
-                .content__main-section.content__main-section--product-list
+                .content__main-section.content__main-section--product
                     +tabs({
                         mix: '',
                         items: [
@@ -52,7 +52,6 @@ block content
                     mix: 'content__main-section',
                 })
             aside.content__aside
-                .js-match-height-catalog
                 +aside-posts({
                     mix: 'content__aside-section',
                     items: aside_posts,

@@ -22,10 +22,10 @@ $retina-dppx: 1.5dppx;
 $colors: (
   primary: #6b8bc7,
   dark-primary: #485e88,
-  light-primary: #eaf0fc,
+  light-primary: #e3e8f1,
   secondary: #ff7043,
   acсent: #6da93d,
-  light: #f6f6f6,
+  light: #f4f4f4,
   light-gray: #c9c9c6,
   gray: #999,
   dark-gray: #ababab,
@@ -57,7 +57,11 @@ $func: (
 
 $change-color: 10%;
 $icon-thickness: 1px;
+$width-aside-sm: 290px;
 $width-aside-md: 260px;
+$width-aside-lg: 290px;
+$height-catalog-nav-md: 680px;
+$height-catalog-nav-lg: 622px;
 
 // для текста
 $mb: (

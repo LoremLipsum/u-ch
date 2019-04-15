@@ -13,7 +13,7 @@ mixin button-cart(data)
         href: data.href,
         title: 'Корзина'
     })&attributes(attributes)
-        .button-cart__inner
+        span.button-cart__inner
             +el({
                 tag: 'svg',
                 icon: data.icon,

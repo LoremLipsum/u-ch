@@ -1,0 +1,116 @@
+.sorting {
+  background-color: color(light);
+}
+
+.sorting__label {
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+
+  &--type {
+    width: 100%;
+    border-bottom: 1px solid color(border);
+
+    .sorting__select {
+      max-width: 120px;
+    }
+  }
+
+  &--quantity {
+    margin-right: auto;
+
+    .sorting__select {
+      width: 50px;
+    }
+  }
+}
+
+.sorting__descr {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 5px;
+  font-size: inherit;
+}
+
+.sorting__select {
+  flex-shrink: 0;
+  display: block;
+  height: 24px;
+  padding: 4px 2px;
+  background-color: transparent;
+  border: none;
+  font-family: font(secondary);
+  font-weight: 500;
+  font-size: inherit;
+  color: color(dark-primary);
+  outline: none;
+}
+
+.sorting__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  border-left: 1px solid color(border);
+
+  @include hover {
+    svg {
+      fill: color(dark-primary);
+    }
+  }
+
+  svg {
+    display: block;
+    fill: color(primary);
+  }
+
+  &--vert {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &--horizontal {
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.sorting__button-group {
+  display: none;
+}
+
+@include respond-to(520px) {
+  .sorting__right,
+  .sorting__button-group {
+    display: flex;
+  }
+}
+
+
+@include respond-to(620px) {
+  .sorting {
+    display: flex;
+    min-height: 47px;
+  }
+
+  .sorting__label {
+    font-size: 14px;
+
+    &--type {
+      width: auto;
+      margin-right: auto;
+      border-bottom: none;
+
+      .sorting__select {
+        max-width: none;
+        width: 150px;
+      }
+    }
+  }
+}

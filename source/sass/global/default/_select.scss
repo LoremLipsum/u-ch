@@ -1,8 +1,26 @@
 select {
   display: inline-block;
   width: 100%;
+  padding-right: 20px;
   font: inherit;
   color: inherit;
   text-transform: inherit;
   transition: duration(md);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(72, 94, 136)' viewBox='0 0 24 24'%3E%3Cpath d='M10.8 18.5L0.5 8.2c-0.7-0.7-0.7-1.7 0-2.4s1.7-0.7 2.4 0l9.1 9.1 9.1-9c0.7-0.7 1.8-0.7 2.4 0 0.7 0.7 0.7 1.7 0 2.4L13.2 18.6c-0.3 0.3-0.8 0.5-1.2 0.5C11.6 19 11.1 18.9 10.8 18.5z'/%3E%3C/svg%3E");  background-position: calc(100% - 5px) center;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+   user-select: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+  option {
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 10px 100px color(light-primary) inset !important;
+    }
+  }
 }

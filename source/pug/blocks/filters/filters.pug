@@ -1,0 +1,240 @@
+
+mixin filters(data)
+    +f({
+        class: 'filters',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        +el({
+            tag: 'button',
+            text: 'Фильтры',
+            class: 'filters__button',
+            js: 'filters-button'
+        })
+            +arrow({
+                tag: 'span',
+                mod: ['down-small'],
+                mix: 'filters__arrow',
+            })
+        .filters__content.js-filters-content
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset',
+                heading: 'Цена',
+                js: 'aside-dropdown-open-tablet'
+            })
+                +range({
+                    mix: 'filters__range',
+                })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset',
+                heading: 'Бренды',
+                link: 'Показать еще',
+                js: 'aside-dropdown-open-tablet'
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in filterBrends
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +checkbox({
+                                label: item.label,
+                                mix: 'filters__checkbox',
+                                name: 'name',
+                            })
+                                +el({
+                                    tag: 'span',
+                                    class: 'quantity',
+                                    text: item.quantity
+                                })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset',
+                heading: 'Тип краски',
+                link: 'Показать еще',
+                js: 'aside-dropdown-open-tablet'
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in filterTypeColor
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +checkbox({
+                                label: item.label,
+                                mix: 'filters__checkbox',
+                                name: 'name',
+                            })
+                                +el({
+                                    tag: 'span',
+                                    class: 'quantity',
+                                    text: item.quantity
+                                })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset filters__fieldset--color',
+                heading: 'Цвет',
+                link: 'Показать еще',
+                js: 'aside-dropdown-open-tablet'
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in filterColor
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +checkbox({
+                                label: item.label,
+                                mix: 'filters__checkbox',
+                                name: 'name',
+                            })
+                                +el({
+                                    tag: 'span',
+                                    class: 'quantity',
+                                    text: item.quantity
+                                })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset filters__fieldset--other',
+                heading: 'Аэрозоль',
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in ['Да', 'Нет']
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +radio-button({
+                                label: item,
+                                mix: 'filters__radio-button',
+                                name: 'spray',
+                                value: item == 'Да' ? 'yes' : 'no',
+                            })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset filters__fieldset--other',
+                heading: 'Моющаяся',
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in ['Да', 'Нет']
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +radio-button({
+                                label: item,
+                                mix: 'filters__radio-button',
+                                name: 'washable',
+                                value: item == 'Да' ? 'yes' : 'no',
+                            })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset filters__fieldset--other',
+                heading: 'Без запаха',
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in ['Да', 'Нет']
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +radio-button({
+                                label: item,
+                                mix: 'filters__radio-button',
+                                name: 'no-smell',
+                                value: item == 'Да' ? 'yes' : 'no',
+                            })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset filters__fieldset--other',
+                heading: 'Разбавитель',
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in ['Вода', 'Ацетон']
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +radio-button({
+                                label: item,
+                                mix: 'filters__radio-button',
+                                name: 'diluent',
+                                value: item == 'Вода' ? 'watter' : 'aceton',
+                            })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset filters__fieldset--other',
+                heading: 'Огнезащитность',
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in ['Да', 'Нет']
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +radio-button({
+                                label: item,
+                                mix: 'filters__radio-button',
+                                name: 'resistance-fire',
+                                value: item == 'Да' ? 'yes' : 'no',
+                        })
+            +aside-dropdown({
+                tag: 'fieldset',
+                mix: 'filters__fieldset filters__fieldset--other',
+                heading: 'Влагостойкость',
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'filters__list'
+                })
+                    each item in ['Да', 'Нет']
+                        +el({
+                            tag: 'li',
+                            class: 'filters__item'
+                        })
+                            +radio-button({
+                                label: item,
+                                mix: 'filters__radio-button',
+                                name: 'resistance-watter',
+                                value: item == 'Да' ? 'yes' : 'no',
+                            })
+            .filters__button-group
+                +button({
+                    type: 'submit',
+                    mix: 'filters__submit',
+                    text: 'Применить',
+                    mod: ['secondary', 'small'],
+                })
+                +button({
+                    type: 'reset',
+                    mix: 'filters__reset',
+                    text: 'Очистить',
+                    mod: ['border', 'small'],
+                })

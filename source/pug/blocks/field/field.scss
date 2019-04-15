@@ -69,25 +69,6 @@
     }
   }
 
-  &--button-secondary {
-    .field__input {
-      border-radius: 0 radius(sm) radius(sm) 0;
-    }
-
-    .field__button {
-      background-color: color(secondary);
-      border-radius: radius(sm);
-
-      @include hover {
-        background-color: #f4511e;
-      }
-
-      .button__icon {
-        fill: color(white);
-      }
-    }
-  }
-
   &--small {
     .field__input {
       height: 40px;
@@ -111,11 +92,6 @@
 .field--small.field--with-button {
   .field__input {
     padding-right: 50px;
-  }
-
-  .field__button {
-    width: 40px;
-    height: 40px;
   }
 }
 

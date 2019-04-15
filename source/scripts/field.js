@@ -10,7 +10,7 @@
         mask: '+{7}(000)000-00-00',
       }
     );
-  }
+  };
 
   for (var i = 0; i < textareas.length; i += 1) {
     textareas[i].innerHTML = textareas[i].innerHTML.trim();

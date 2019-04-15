@@ -1,0 +1,66 @@
+mixin range(data)
+    +el({
+        class: 'range',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        +el({
+            class: 'range__scale',
+        })
+            +el({
+                class: 'range__bar',
+                style: 'left: 20px; right: 30px;'
+            })
+        +el({
+            tag: 'label',
+            class: 'range__input-label',
+            mod: 'min',
+            style: 'left: 20px'
+        })(aria-hidden='true')
+            +el({
+                tag: 'input',
+                class: 'range__input',
+                mix: 'hidden',
+                id: 'price-min',
+                type: 'range',
+                name: 'price',
+            })(aria-hidden='true', min='0' max='30000' step='100' value='0')
+
+        +el({
+            tag: 'label',
+            class: 'range__input-label',
+            mod: 'max',
+            style: 'right: 30px'
+        })(aria-hidden='true')
+            +el({
+                tag: 'input',
+                class: 'range__input',
+                mix: 'hidden',
+                id: 'price-max',
+                type: 'range',
+                name: 'price',
+            })(aria-hidden='true' min='0' max='30000' step='100' value='22890')
+
+        .range__output-wrap
+            +el({
+                tag: 'label',
+                class: 'range__output-label',
+                mod: 'min',
+            })(aria-hidden='true')
+                +el({
+                    tag: 'output',
+                    class: 'range__output',
+                    text: '0'
+                })(for='price-min' aria-hidden='true')
+
+            +el({
+                tag: 'label',
+                class: 'range__output-label',
+                mod: 'max',
+            })(aria-hidden='true')
+                +el({
+                    tag: 'output',
+                    class: 'range__output',
+                    text: '22890'
+                })(for='price-max' aria-hidden='true')

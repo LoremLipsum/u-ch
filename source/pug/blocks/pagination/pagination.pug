@@ -5,10 +5,12 @@ mixin pagination(data)
         mix: data.mix,
         js: data.js,
     })&attributes(attributes)
-        +button-arrow({
-            mod: 'prev',
+        +arrow({
+            tag: 'button',
+            mod: 'left',
+            mix: 'pagination__button disabled',
             title: 'Назад'
-        })
+        })(tabindex='0')
         +el({
             tag: 'ul',
             class: 'pagination__list',
@@ -42,7 +44,9 @@ mixin pagination(data)
                     class: 'pagination__link',
                     text: '6',
                 })
-        +button-arrow({
-            mod: 'next',
+        +arrow({
+            tag: 'button',
+            mod: 'right',
+            mix: 'pagination__button',
             title: 'Вперед'
-        })
+        })(tabindex='0')

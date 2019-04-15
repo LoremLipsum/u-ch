@@ -2,10 +2,15 @@
   margin-bottom: 30px;
 }
 
+.product__gallery {
+  margin-bottom: 30px;
+}
+
 @include respond-to(medium-lg) {
   .product__top {
     display: flex;
     margin-bottom: 40px;
+    padding: 20px 0;
   }
 
   .product__gallery {

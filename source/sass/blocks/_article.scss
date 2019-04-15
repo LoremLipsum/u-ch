@@ -6,10 +6,6 @@
 
 @include respond-to(medium) {
   .article {
-    &--center {
-      padding: 0 100px;
-    }
-
     .date {
       margin-bottom: 20px;
     }
@@ -18,10 +14,6 @@
 
 @include respond-to(large) {
   .article {
-    &--center {
-      padding: 0 195px;
-    }
-
     .date {
       margin-bottom: 25px;
     }

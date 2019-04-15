@@ -10,10 +10,11 @@ mixin search(data)
                 type: 'search',
                 mod: ['with-button', 'button-primary-light', 'shadow', 'bg-light'],
                 placeholder: 'Поиск',
-                button: {
-                    type: 'submit',
-                    icon: 'search',
-                    mod: 'submit',
-                    js: 'submit-search'
-                }
+            })
+            +button({
+                mix: 'search__button',
+                type: 'submit',
+                icon: 'search',
+                mod: 'submit',
+                js: 'submit-search'
             })

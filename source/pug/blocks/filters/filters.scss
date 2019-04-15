@@ -1,0 +1,175 @@
+.filters {
+  background-color: color(light);
+  overflow: hidden;
+
+  &.active {
+    .filters__content {
+      display: block;
+    }
+
+    .filters__arrow {
+      transform: rotate(180deg);
+
+      &::after {
+        top: 7px;
+        left: 8px;
+      }
+    }
+  }
+}
+
+.filters__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  background-color: color(light-primary);
+  text-align: left;
+  font-family: font(secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: color(dark-primary);
+  text-transform: uppercase;
+  outline: none;
+}
+
+.filters__arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: color(white);
+}
+
+.filters__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid color(white);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--color {
+    .checkbox__label {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.filters__content {
+  display: none;
+  border-top: 1px solid color(border);
+
+  &.active {
+    display: block;
+  }
+}
+
+.filters__button-group {
+  display: flex;
+  padding: 15px 20px;
+  background-color: color(light);
+}
+
+.filters__submit,
+.filters__reset {
+  width: calc(50% - 3px);
+  padding-right: 5px;
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+.filters__submit {
+  margin-right: 6px;
+}
+
+.filters__checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 4px 0;
+
+  .quantity {
+    flex-shrink: 0;
+    margin-left: 5px;
+  }
+
+  .checkbox__label {
+    width: 100%;
+  }
+}
+
+.filters__list {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.filters__item {
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.filters__color {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.filters__radio-button {
+  display: block;
+  width: 100%;
+  padding: 4px 0;
+
+  .radio-button__label {
+    width: 100%;
+  }
+}
+
+.filters__range {
+  margin-top: 10px;
+}
+
+@include respond-to(420px) {
+  .filters__submit,
+  .filters__reset {
+    width: calc(50% - 8px);
+  }
+
+  .filters__submit {
+    margin-right: 16px;
+  }
+}
+
+@include respond-to(medium-lg) {
+  .filters {
+    background-color: transparent;
+  }
+
+  .filters__content {
+    display: block;
+    border-top: none;
+  }
+
+  .filters__button {
+    display: none;
+  }
+
+  .filters__fieldset {
+    margin-bottom: 20px;
+
+    &--other {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include respond-to(large) {
+
+}

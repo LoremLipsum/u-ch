@@ -5,6 +5,8 @@ mixin checkbox(data)
         mod: data.mod,
         mix: data.mix,
         js: data.js,
+        before: data.before,
+        after: data.after
     })
         +el({
             tag: 'input',
@@ -20,3 +22,4 @@ mixin checkbox(data)
             class: 'checkbox__label',
             text: data.label
         })
+        block

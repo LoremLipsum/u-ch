@@ -1,0 +1,36 @@
+mixin aside-dropdown(data)
+    +el({
+        tag: data.tag,
+        class: 'aside-dropdown',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        +el({
+            tag: 'button',
+            class: 'aside-dropdown__button',
+            js: 'aside-dropdown-button',
+        })
+            +el({
+                class: 'aside-dropdown__heading',
+                tag: 'span',
+                text: data.heading
+            })
+            +arrow({
+                tag: 'span',
+                mod: ['down-small'],
+                mix: 'aside-dropdown__arrow',
+            })
+        +el({
+            class: 'aside-dropdown__content',
+        })
+            +el({
+                class: 'aside-dropdown__inner',
+            })
+                block
+                if data.link
+                    +aside-link({
+                        tag: 'button',
+                        text: data.link,
+                        mix: 'aside-dropdown__link-bottom'
+                    })

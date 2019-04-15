@@ -5,18 +5,18 @@
 	$(function() {
 
     var main = $('.page--main')[0];
-    var catalog = $('.js-catalog');
-    var btnOpen = $('.js-open-catalog');
-    var btnClose = $('.js-close-catalog');
-    var dialog = $('.js-catalog-dialog');
-    var overlay = $('.js-catalog-overlay');
-    var lvl1 = $('.js-catalog-lvl-1');
-    var lvl2 = $('.js-catalog-lvl-2');
-    var lvl3 = $('.js-catalog-lvl-3');
+    var catalog = $('.js-catalog-nav');
+    var btnOpen = $('.js-open-catalog-nav');
+    var btnClose = $('.js-close-catalog-nav');
+    var dialog = $('.js-catalog-nav-dialog');
+    var overlay = $('.js-catalog-nav-overlay');
+    var lvl1 = $('.js-catalog-nav-lvl-1');
+    var lvl2 = $('.js-catalog-nav-lvl-2');
+    var lvl3 = $('.js-catalog-nav-lvl-3');
     var links1 = lvl1.find('.js-link-lvl-1');
     var links2 = lvl1.find('.js-link-lvl-2');
-    var item = '.catalog__item';
-    var matchHeightCatalog = $('.js-match-height-catalog');
+    var item = '.catalog-nav__item';
+    var matchHeightCatalog = $('.js-match-height-catalog-nav');
     var el;
     var ESC = 27;
     var WIDTH = 840;
@@ -92,12 +92,6 @@
     btnClose.on('click', onCloseClick);
     overlay.on('click', onCloseClick);
     $(document).on('keyup', onEscKeyup);
-
-    if(main) {
-      $('.js-match-height-catalog').matchHeight({
-        property: 'height'
-      });
-    }
 
 	});
 })(jQuery);

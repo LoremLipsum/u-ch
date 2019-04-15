@@ -5,6 +5,8 @@
     var sliderMain = $('.js-main-slider');
     var sliderBrends = $('.js-brends-slider');
     var sliderProductLine = $('.js-product-line-slider');
+    var sliderProductGalleryPreview = $('.js-product-gallery-preview');
+    var sliderProductGallery = $('.js-product-gallery');
 
     if(sliderMain) {
       sliderMain.slick({
@@ -20,7 +22,7 @@
         prevArrow: '<button class="slider-button slider-button--prev" type="button" tabindex="0" aria-lable="Назад"></button>',
         nextArrow: '<button class="slider-button slider-button--next" type="button" tabindex="0" aria-lable="Вперёд"></button>',
       });
-    }
+    };
 
     if(sliderBrends) {
       sliderBrends.slick({
@@ -67,7 +69,7 @@
           },
         ]
       });
-    }
+    };
 
     if(sliderProductLine) {
       sliderProductLine.slick({
@@ -79,8 +81,8 @@
         autoplay: true,
         autoplaySpeed: 5000,
         infinite: true,
-        prevArrow: '<button class="button-arrow button-arrow--prev" type="button" tabindex="0" aria-lable="Назад"></button>',
-        nextArrow: '<button class="button-arrow button-arrow--next" type="button" tabindex="0" aria-lable="Вперёд"></button>',
+        prevArrow: '<button class="arrow arrow--left" type="button" tabindex="0" title="Назад"></button>',
+        nextArrow: '<button class="arrow arrow--right" type="button" tabindex="0" title="Вперёд"></button>',
         responsive: [
           {
             breakpoint: 1020,
@@ -102,7 +104,42 @@
           },
         ]
       });
-    }
+    };
+
+    if(sliderProductGalleryPreview) {
+      sliderProductGalleryPreview.slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        vertical: true,
+        adaptiveHeight: true,
+        asNavFor: sliderProductGallery,
+        focusOnSelect: true,
+        prevArrow: '<button class="arrow arrow--left" type="button" tabindex="0" title="Назад"></button>',
+        nextArrow: '<button class="arrow arrow--right" type="button" tabindex="0" title="Вперёд"></button>',
+        responsive: [
+          {
+            breakpoint: 520,
+            settings: {
+              vertical: false,
+              adaptiveHeight: false,
+            }
+          },
+        ]
+      });
+    };
+    if(sliderProductGallery) {
+      sliderProductGallery.slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        asNavFor: sliderProductGalleryPreview,
+      });
+    };
 
 	});
 })(jQuery);

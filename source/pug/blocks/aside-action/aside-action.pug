@@ -26,12 +26,13 @@ mixin aside-action(data)
             })
                 +field({
                     class: 'aside-action__field',
-                    mod: ['with-button', 'button-secondary', 'bg-light', 'small'],
+                    mod: ['with-button', 'bg-light', 'small'],
                     label: 'Ваш e-mail:',
                     placeholder: 'Ваш e-mail:',
                     type: 'email',
-                    button: {
-                        icon: 'telegram',
-                        type: 'submit'
-                    }
+                })
+                +button({
+                    icon: 'telegram',
+                    type: 'submit',
+                    mix: 'aside-action__submit',
                 })

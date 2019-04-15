@@ -1,0 +1,24 @@
+mixin aside-category(data)
+    +el({
+        class: 'aside-category',
+        mix: data.mix,
+        js: data.js,
+        mod: data.mod,
+    })&attributes(attributes)
+        h4.hidden Категории товаров
+        +el({
+            tag: 'ul',
+            class: 'aside-category__list',
+        })
+            each item in data.items
+                li.aside-category__item
+                    +el({
+                        tag: 'a',
+                        class: 'aside-category__link',
+                        text: item.text,
+                        after: {
+                            tag: 'span',
+                            class: 'quantity',
+                            text: item.quantity
+                        }
+                    })

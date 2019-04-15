@@ -5,13 +5,12 @@
   text-decoration: none;
   cursor: pointer;
 
-  &--bg-primary,
-  &--bg-secondary,
-  &--bg-secondary-large,
-  &--bg-disabled,
-  &--border {
+  &--primary,
+  &--secondary,
+  &--shadow-secondary,
+  &--border,
+  &--disabled {
     min-height: 34px;
-    color: color(white);
     font-weight: 500;
     text-align: center;
     text-decoration: none;
@@ -19,22 +18,25 @@
   }
 
   &:disabled,
-  &--bg-disabled {
+  &--disabled {
     pointer-events: none;
+    background-color: color(light-gray);
+    color: color(white);
   }
 
-  // &--bg-primary {
-  //   background-color: color(primary);
-  //
-  //   @include hover {
-  //     background-color: darken(color(primary), $change-color);
-  //   }
-  // }
+  &--primary {
+    background-color: color(primary);
+    color: color(white);
 
-  &--bg-secondary,
-  &--bg-secondary-large {
+    @include hover {
+      background-color: darken(color(primary), $change-color);
+    }
+  }
+
+  &--shadow-secondary {
     background-image: linear-gradient(#f4511e, #ff7043);
     box-shadow: 0 3px 15px 0 rgba(color(secondary), 0.8);
+    color: color(white);
 
     @include hover {
       box-shadow: 0 0px 10px 0 rgba(color(secondary), 0.8);
@@ -42,24 +44,33 @@
     }
   }
 
-  &--bg-secondary {
+  &--secondary {
+    background-color: color(secondary);
+    color: color(white);
+
+    @include hover {
+      background-image: darken(color(secondary), $change-color);
+    }
+  }
+
+  &--small {
     padding: 8px 18px;
     font-size: 14px;
     line-height: 18px;
   }
 
-  &--bg-secondary-large {
+  &--large {
     padding: 10px 16px;
     font-size: 14px;
     line-height: 18px;
   }
 
   &--border {
-    border: 1px solid color(primary);
+    border: 1px solid color(border);
+    color: color(dark-primary);
 
     @include hover {
-      background-color: color(primary);
-      color: color(white);
+      background-color: color(border);
     }
   }
 
@@ -81,25 +92,11 @@
   fill: currentColor;
   width: 22px;
   width: 22px;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%) scale(0);
-  //   opacity: 0.2;
-  //   width: 120%;
-  //   height: 120%;
-  //   border-radius: 50%;
-  //   background-color: currentColor;
-  //   transition: transform duration(md) func(primary);
-  // }
 }
 
 @include respond-to(medium) {
   .button {
-    &--bg-secondary-large {
+    &--large {
       padding: 10px 20px;
       font-size: 16px;
       line-height: 19px;
@@ -109,7 +106,7 @@
 
 @include respond-to(medium) {
   .button {
-    &--bg-secondary-large {
+    &--large {
       padding: 13px 20px;
       font-size: 18px;
       line-height: 20px;

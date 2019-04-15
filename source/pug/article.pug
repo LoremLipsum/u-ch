@@ -6,7 +6,7 @@ block vars
     - var pageId = 3
 
 block content
-    main.content.content--with-article
+    main.content.content--centred
         .content__wrap
             +breadcrumbs({
                 mix: 'content__breadcrumbs',
@@ -16,7 +16,7 @@ block content
                     'Статья заголовок'
                 ]
             })
-            article.article.article--center
+            article.article
                 +date({
                     text: '21 марта 2019',
                 })

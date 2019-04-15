@@ -1,2 +1,26 @@
 mixin radio-button(data)
-  .radio-button&attributes(attributes)
+    +el({
+        tag: 'label',
+        class: 'radio-button',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js,
+        before: data.before,
+        after: data.after
+    })
+        +el({
+            tag: 'input',
+            class: 'hidden radio-button__input',
+            type: 'radio',
+            name: data.name,
+            checked: data.checked,
+            disabled: data.disabled,
+            required: data.required,
+            value: data.value
+        })&attributes(attributes)
+        +el({
+            tag: 'span',
+            class: 'radio-button__label',
+            text: data.label
+        })
+        block

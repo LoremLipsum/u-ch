@@ -65,15 +65,15 @@ mixin header(data)
         .header__bottom
             .header__wrap
                 +el({
-                    class: 'header__catalog-wrap',
+                    class: 'header__catalog-nav-wrap',
                 })
                     +button-catalog({
-                        mix: 'header__button-catalog',
+                        mix: 'header__button-catalog-nav',
                         text: 'Каталог товаров',
-                        js: 'open-catalog',
+                        js: 'open-catalog-nav',
                     })
-                    +catalog({
-                        mix: 'header__catalog',
+                    +catalog-nav({
+                        mix: 'header__catalog-nav',
                         items: catalog,
                     })
                 nav.header__dialog.js-main-nav(aria-label='Основное меню' itemscope itemtype='http://schema.org/SiteNavigationElement')

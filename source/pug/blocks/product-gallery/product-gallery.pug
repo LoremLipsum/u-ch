@@ -7,7 +7,8 @@ mixin product-gallery(data)
     })&attributes(attributes)
         +el({
             class: 'product-gallery__list',
-            mod: 'main'
+            mod: 'main',
+            js: 'product-gallery'
         })
             each item in data.main
                 +el({
@@ -19,7 +20,8 @@ mixin product-gallery(data)
                     })
         +el({
             class: 'product-gallery__list',
-            mod: 'preview'
+            mod: 'preview',
+            js: 'product-gallery-preview'
         })
             each item in data.aside
                 +el({

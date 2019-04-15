@@ -179,12 +179,8 @@
 @include respond-to(960px) {
   .footer__list-row {
     display: flex;
-  }
 
-  .footer__list {
-    width: 50%;
-
-    &:first-child {
+    .footer__list {
       width: 50%;
     }
   }

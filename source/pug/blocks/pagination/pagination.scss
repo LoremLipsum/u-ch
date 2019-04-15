@@ -3,12 +3,25 @@
   align-items: center;
   justify-content: center;
 
-  .button-arrow {
-    &--prev {
+  .arrow {
+    &--left {
       margin-right: 20px;
     }
-    &--next {
+
+    &--right {
       margin-left: 20px;
+    }
+  }
+}
+
+.pagination__button {
+  &.disabled,
+  &:disabled {
+    pointer-events: none;
+
+    &::after {
+      border-top: 1px solid color(gray);
+      border-right: 1px solid color(gray);
     }
   }
 }
@@ -78,11 +91,11 @@
 
 @include respond-to(medium) {
   .pagination {
-    .button-arrow {
-      &--prev {
+    .arrow {
+      &--left {
         margin-right: 45px;
       }
-      &--next {
+      &--right {
         margin-left: 45px;
       }
     }

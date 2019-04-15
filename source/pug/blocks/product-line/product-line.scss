@@ -26,17 +26,17 @@
   flex-wrap: wrap;
   margin: 0 -15px;
 
-  .button-arrow {
+  .arrow {
     position: absolute;
     top: 50%;
     z-index: 1;
     margin-top: -50px;
 
-    &--prev {
+    &--left {
       left: -8px;
     }
 
-    &--next {
+    &--right {
       right: -8px;
     }
   }
@@ -83,12 +83,12 @@
 
 @include respond-to(1300px) {
   .product-line__list {
-    .button-arrow {
-      &--prev {
+    .arrow {
+      &--left {
         left: -40px;
       }
 
-      &--next {
+      &--right {
         right: -40px;
       }
     }

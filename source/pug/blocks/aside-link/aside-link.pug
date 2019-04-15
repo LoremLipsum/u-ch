@@ -1,0 +1,9 @@
+mixin aside-link(data)
+    +el({
+        tag: data.tag,
+        class: 'aside-link',
+        text: data.text,
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js
+    })&attributes(attributes)

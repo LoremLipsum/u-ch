@@ -99,7 +99,7 @@
   transform: translateX(-100%);
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: $width-aside-sm;
   height: 100vh;
   padding-top: 60px;
   background-color: color(white);
@@ -112,7 +112,7 @@
 }
 
 // кнопка для каталога
-.header__button-catalog {
+.header__button-catalog-nav {
   position: fixed;
   top: 50%;
   left: 0;
@@ -122,7 +122,7 @@
   margin-left: 0;
 
   &.active {
-    margin-left: 290px;
+    margin-left: $width-aside-sm;
   }
 }
 
@@ -279,11 +279,11 @@
     }
   }
 
-  .header__catalog-wrap {
+  .header__catalog-nav-wrap {
     position: relative;
   }
 
-  .header__button-catalog {
+  .header__button-catalog-nav {
     flex-shrink: 0;
     position: static;
     transform: none;
@@ -291,7 +291,7 @@
     margin-left: 0 !important;
   }
 
-  .header__catalog {
+  .header__catalog-nav {
     position: absolute;
     top: 50px;
     left: 0;
@@ -302,7 +302,6 @@
       display: block;
     }
   }
-
 }
 
 @include respond-to(1020px) {
@@ -392,10 +391,10 @@
   }
 
   .header__dialog {
-    width: calc(100% - 290px);
+    width: calc(100% - $width-aside-lg);
   }
 
-  .header__button-catalog {
-    width: 290px;
+  .header__button-catalog-nav {
+    width: $width-aside-lg;
   }
 }

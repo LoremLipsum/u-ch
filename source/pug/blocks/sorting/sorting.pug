@@ -1,0 +1,85 @@
+mixin sorting(data)
+    +el({
+        class: 'sorting',
+        mod: data.mod,
+        mix: data.mix,
+        js: data.js
+    })&attributes(attributes)
+        +el({
+            tag: 'label',
+            class: 'sorting__label',
+            mod: 'type',
+        })
+            +el({
+                tag: 'span',
+                class: 'sorting__descr',
+                text: 'Сортировать&nbsp;по: '
+            })
+            +el({
+                tag: 'select',
+                class: 'sorting__select'
+            })
+                +el({
+                    tag: 'option',
+                    text: 'По умолчанию'
+                })
+                +el({
+                    tag: 'option',
+                    text: 'Хиты'
+                })
+                +el({
+                    tag: 'option',
+                    text: 'Новинки'
+                })
+                +el({
+                    tag: 'option',
+                    text: 'Акции'
+                })
+        .sorting__right
+            +el({
+                tag: 'label',
+                class: 'sorting__label',
+                mod: 'quantity',
+            })
+                +el({
+                    tag: 'span',
+                    class: 'sorting__descr',
+                    text: 'Показывать&nbsp;по: '
+                })
+                +el({
+                    tag: 'select',
+                    class: 'sorting__select'
+                })
+                    +el({
+                        tag: 'option',
+                        text: '12'
+                    })
+                    +el({
+                        tag: 'option',
+                        text: '24'
+                    })
+                    +el({
+                        tag: 'option',
+                        text: '36'
+                    })
+            .sorting__button-group
+                +el({
+                    tag: 'button',
+                    class: 'sorting__button',
+                    mod: 'vert',
+                    js: 'vertical-direction',
+                    before: {
+                        tag: 'svg',
+                        icon: 'vertical-cards',
+                    }
+                })
+                +el({
+                    tag: 'button',
+                    class: 'sorting__button',
+                    mod: 'horizontal',
+                    js: 'horizontal-direction',
+                    before: {
+                        tag: 'svg',
+                        icon: 'horizontal-cards',
+                    }
+                })

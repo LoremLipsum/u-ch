@@ -15,7 +15,6 @@
 // blocks
 @import "./blocks/attention";
 @import "./blocks/specification";
-
 @import "./blocks/slider-button";
 @import "./blocks/slider-dots";
 @import "../pug/blocks/button/button";
@@ -26,7 +25,7 @@
 @import "../pug/blocks/button-toggle/button-toggle";
 @import "../pug/blocks/button-cart/button-cart";
 @import "../pug/blocks/button-reset/button-reset";
-
+@import "../pug/blocks/arrow/arrow";
 @import "../pug/blocks/field/field";
 @import "../pug/blocks/checkbox/checkbox";
 @import "../pug/blocks/checkbox-confirm/checkbox-confirm";
@@ -34,7 +33,6 @@
 @import "../pug/blocks/search/search";
 @import "../pug/blocks/form/form";
 @import "../pug/blocks/form-card/form-card";
-
 @import "../pug/blocks/list/list";
 @import "../pug/blocks/price-old/price-old";
 @import "../pug/blocks/price-new/price-new";
@@ -43,17 +41,20 @@
 @import "../pug/blocks/overlay/overlay";
 @import "../pug/blocks/phone/phone";
 @import "../pug/blocks/product-card/product-card";
+@import "../pug/blocks/counter/counter";
 
-@import "../pug/blocks/header/header";
-@import "../pug/blocks/footer/footer";
-@import "../pug/blocks/catalog/catalog";
+@import "../pug/blocks/catalog-nav/catalog-nav";
 @import "../pug/blocks/main-slider/main-slider";
 @import "../pug/blocks/features/features";
 @import "../pug/blocks/product-list/product-list";
 @import "../pug/blocks/sticker/sticker";
 @import "../pug/blocks/date/date";
 @import "../pug/blocks/product-image/product-image";
-
+@import "../pug/blocks/aside-dropdown/aside-dropdown";
+@import "../pug/blocks/aside-category/aside-category";
+@import "../pug/blocks/aside-link/aside-link";
+@import "../pug/blocks/range/range";
+@import "../pug/blocks/sorting/sorting";
 @import "../pug/blocks/tabs/tabs";
 @import "../pug/blocks/brends/brends";
 @import "../pug/blocks/aside-posts/aside-posts";
@@ -66,19 +67,17 @@
 @import "../pug/blocks/post-card/post-card";
 @import "../pug/blocks/post-list/post-list";
 @import "../pug/blocks/pagination/pagination";
-@import "../pug/blocks/button-arrow/button-arrow";
 @import "../pug/blocks/aside-nav/aside-nav";
 @import "../pug/blocks/breadcrumbs/breadcrumbs";
 @import "../pug/blocks/cart/cart";
-@import "../pug/blocks/counter/counter";
 @import "../pug/blocks/product-line/product-line";
 @import "../pug/blocks/product-gallery/product-gallery";
 @import "../pug/blocks/product-info/product-info";
 @import "../pug/blocks/product-tabs/product-tabs";
 @import "../pug/blocks/product/product";
-
+@import "../pug/blocks/filters/filters";
+@import "../pug/blocks/header/header";
+@import "../pug/blocks/footer/footer";
 @import "./blocks/content";
-@import "./blocks/aside";
 @import "./blocks/article";
-@import "./blocks/category-article";
 @import "./blocks/page";

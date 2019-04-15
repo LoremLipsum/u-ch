@@ -25,12 +25,12 @@ mixin product-card(data)
                         mod: 'action',
                         text: 'Акция'
                     })
-        +el({
+        +product-image({
             tag: 'a',
             href: data.href,
-            class: 'product-card__image-wrap',
+            mix: 'product-card__image-wrap',
+            image: data.image
         })
-            img.product-card__image(src='./assets/upload/' + data.image, alt='')
         +el({
             class: 'product-card__content',
         })
@@ -68,7 +68,7 @@ mixin product-card(data)
                         value: data.newPrice,
                     })
                     +button({
-                        mod: 'bg-secondary',
+                        mod: ['shadow-secondary', 'small'],
                         mix: 'product-card__button',
                         text: 'В корзину',
                     })

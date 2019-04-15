@@ -27,7 +27,7 @@ mixin button-toggle(data)
         if data.text && !data.icon
             #{data.text}
         if data.icon && data.badge
-            .button-toggle__inner
+            span.button-toggle__inner
                 +el({
                     tag: 'svg',
                     icon: data.icon,

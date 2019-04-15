@@ -1,0 +1,82 @@
+mixin catalog-nav(data)
+    +el({
+        class: 'catalog-nav',
+        mod: data.mod,
+        mix: data.mix,
+        js: 'catalog-nav'
+    })&attributes(attributes)
+        +overlay({
+            mix: 'catalog-nav__overlay',
+            js: 'catalog-nav-overlay'
+        })
+        .catalog-nav__dialog.js-catalog-nav-dialog
+            +button-remove({
+                mix: 'catalog-nav__close',
+                title: 'Закрыть каталог',
+                js: 'close-catalog-nav'
+            })
+            +el({
+                class: 'catalog-nav__lvl-1',
+                js: 'catalog-nav-lvl-1',
+            })
+                +el({
+                    tag: 'ul',
+                    class: 'catalog-nav__list',
+                })
+                    each item in data.items
+                        +el({
+                            tag: 'li',
+                            class: 'catalog-nav__item',
+                        })
+                            +el({
+                                tag: 'a',
+                                href: item.href,
+                                class: 'catalog-nav__link',
+                                text: item.text,
+                                js: 'link-lvl-1',
+                                before: {
+                                    tag: 'svg',
+                                    class: 'catalog-nav__icon',
+                                    icon: item.icon,
+                                }
+                            })
+                            +el({
+                                class: 'catalog-nav__lvl-2',
+                                js: 'catalog-nav-lvl-2',
+                            })
+                                +el({
+                                    tag: 'ul',
+                                    class: 'catalog-nav__list',
+                                })
+                                    each item_lvl_2 in item.items
+                                        +el({
+                                            tag: 'li',
+                                            class: 'catalog-nav__item',
+                                        })
+                                            +el({
+                                                tag: 'a',
+                                                href: item_lvl_2.href,
+                                                class: 'catalog-nav__link',
+                                                text: item_lvl_2.text,
+                                                js: 'link-lvl-2',
+                                            })
+                                            +el({
+                                                class: 'catalog-nav__lvl-3',
+                                                js: 'catalog-nav-lvl-3',
+                                            })
+                                                +el({
+                                                    tag: 'ul',
+                                                    class: 'catalog-nav__list',
+                                                })
+                                                    each item_lvl_3 in item_lvl_2.items
+                                                        +el({
+                                                            tag: 'li',
+                                                            class: 'catalog-nav__item',
+                                                        })
+                                                            +el({
+                                                                tag: 'a',
+                                                                href: item_lvl_3.href,
+                                                                class: 'catalog-nav__link',
+                                                                text: item_lvl_3.text,
+                                                                js: 'link-lvl-3',
+                                                            })

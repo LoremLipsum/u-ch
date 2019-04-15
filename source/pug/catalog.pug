@@ -1,0 +1,36 @@
+extends ./templates/template
+
+block vars
+    - var pageTitle = 'Южхим: Каталог'
+    //- - var pageId = 1
+
+block content
+    main.content.content--with-aside-top
+        .content__wrap
+            aside.content__aside
+                +aside-dropdown({
+                    tag: 'section',
+                    mix: 'content__aside-dropdown',
+                    heading: 'Категории',
+                    link: '+6 категорий',
+                    js: 'aside-dropdown-open-tablet',
+                })
+                    +aside-category({
+                        items: categoryNav,
+                    })
+                +filters({
+                    mix: 'content__aside-filters',
+                })
+            .content__main
+                +sorting({
+                    mix: 'content__sorting',
+                })
+                .content__catalog
+                    +product-list({
+                        mix: 'content__product-list',
+                        items: productCatalog,
+                        js: 'product-list'
+                    })
+            +pagination({
+                mix: 'content__pagination',
+            })

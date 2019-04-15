@@ -1,0 +1,22 @@
+.aside-category__list {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.aside-category__item {
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.aside-category__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 4px 0;
+
+  .quantity {
+    flex-shrink: 0;
+    margin-left: 5px;
+  }
+}

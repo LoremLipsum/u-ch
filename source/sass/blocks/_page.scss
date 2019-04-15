@@ -4,7 +4,7 @@
       pointer-events: none;
     }
 
-    .header__catalog {
+    .header__catalog-nav {
       display: block !important;
     }
 
@@ -34,7 +34,7 @@
   .page {
     &--main {
       .content__aside {
-        padding-top: 683px !important;
+        padding-top: $height-catalog-nav-md !important;
       }
     }
   }
@@ -44,7 +44,7 @@
   .page {
     &--main {
       .content__aside {
-        padding-top: 630px !important;
+        padding-top: $height-catalog-nav-lg + 5px !important;
       }
     }
   }

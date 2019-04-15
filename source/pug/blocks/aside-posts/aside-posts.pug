@@ -33,8 +33,8 @@ mixin aside-posts(data)
                             text: item.heading,
                         }
                     })
-        +el({
-            tag: 'a',
-            class: 'aside-posts__link',
-            text: 'Все статьи'
-        })
+        .aside-posts__link
+            +aside-link({
+                tag: 'a',
+                text: 'Все статьи'
+            })
