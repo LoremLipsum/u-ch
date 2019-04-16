@@ -16,7 +16,6 @@
     var links1 = lvl1.find('.js-link-lvl-1');
     var links2 = lvl1.find('.js-link-lvl-2');
     var item = '.catalog-nav__item';
-    var matchHeightCatalog = $('.js-match-height-catalog-nav');
     var el;
     var ESC = 27;
     var WIDTH = 840;
