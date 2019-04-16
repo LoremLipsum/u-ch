@@ -1,0 +1,46 @@
+.aside-posts {
+  padding: 30px;
+  background-color: color(light);
+}
+
+.aside-posts__heading {
+  margin-bottom: 30px;
+  color: color(dark-primary);
+  font-family: font(secondary);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.aside-posts__list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.aside-posts__item {
+  margin-bottom: 40px;
+  list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
+}
+
+.aside-posts__item-date {
+  margin-bottom: 15px;
+  color: color(gray);
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+.aside-posts__item-heading {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.aside-posts__link {
+  text-align: center;
+}

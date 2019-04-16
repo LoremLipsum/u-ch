@@ -1,0 +1,25 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: auto;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  background-color: rgba(color(black), 0.5);
+  opacity: 0;
+  transition-property: width, height, margin, opacity;
+  transition-delay: 0.6s;
+  transition-duration: 0;
+
+  &.active {
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+}

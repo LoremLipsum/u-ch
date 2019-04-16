@@ -1,0 +1,71 @@
+$fonts: (
+  primary: #{"Open Sans", "Roboto", "Pragmatica", "Myriad", sans-serif, "Nimbus Sans L", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"},
+  secondary: #{"Roboto", "Pragmatica", "Myriad", sans-serif, "Nimbus Sans L", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"},
+);
+
+$breakpoints: (
+  small: 320px,
+  medium: 768px,
+  medium-lg: 840px,
+  large: 1220px,
+);
+
+$pads: (
+  small: 36px,
+  medium: 40px,
+  large: 40px,
+);
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$colors: (
+  primary: #6b8bc7,
+  dark-primary: #485e88,
+  light-primary: #e3e8f1,
+  secondary: #ff7043,
+  acсent: #6da93d,
+  light: #fafafa,
+  light-gray: #c9c9c6,
+  gray: #999,
+  dark-gray: #ababab,
+  black: #0a1123,
+  white: #fff,
+  error: #d0021b,
+  disabled: #c9c9c6,
+  hit: #dc5078,
+  new: #6da93d,
+  action: #45a7eb,
+  border: #cedaef,
+);
+
+// время анимаций
+$durations: (
+  md: 0.3s,
+  lg: 0.6s,
+);
+
+// для бордер-радиусов
+$radius: (
+  xs: 3px,
+  sm: 6px,
+);
+
+$func: (
+  primary: cubic-bezier(0.25, 0.1, 0.25, 1),
+);
+
+$change-color: 10%;
+$icon-thickness: 1px;
+$width-aside-sm: 290px;
+$width-aside-md: 260px;
+$width-aside-lg: 290px;
+$height-catalog-nav-md: 680px;
+$height-catalog-nav-lg: 622px;
+
+// для текста
+$mb: (
+  sm: 18px,
+  md: 20px,
+  lg: 22px,
+);

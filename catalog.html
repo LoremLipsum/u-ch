@@ -1,0 +1,2768 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Южхим: Каталог</title>
+    <meta name="description" content="Южхим. Строительные материалы. Хозяйственные товары. Склад-магазин строительных, лакокрасочных материалов и хозяйственных товаров">
+    <meta name="keywords" content="Южхим, строительные материалы, хозяйственные товары, склад-магазин, лакокрасочные материалы">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body class="page">
+    <div class="page__wrap">
+      <header class="header">
+        <div class="header__top">
+          <div class="header__wrap">
+            <div class="header__company">
+              <div class="header__text">г. Симферополь, ул. Глинки, 55
+              </div>
+              <div class="header__text">пн-пт с 8:00 до 18:00, сб - с 8:00 до 15:00, вс - выходной
+              </div>
+            </div>
+            <ul class="header__list">
+              <li class="header__item header__item--nav">
+                <button class="button-nav js-open-nav" aria-label="Открыть главное меню" type="button">
+                  <span class="button-nav__icon">
+                    <span class="button-nav__icon-items">
+                    </span>
+                  </span>
+                </button>
+              </li>
+              <li class="header__item header__item--search">
+                <button class="button-toggle js-toggle-search" type="button">
+                  <svg class="button-toggle__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__item header__item--user">
+                <button class="button-toggle" type="button">
+                  <svg class="button-toggle__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                  </svg>
+                  <span class="button-toggle__text">Вход / Регистрация
+                  </span>
+                </button>
+              </li>
+              <li class="header__item header__item--cart">
+                <button class="button-toggle button-toggle--cart js-button-cart" type="button"><span class="button-toggle__inner">
+                    <svg class="button-toggle__icon">
+                      <use xlink:href="./assets/images/sprites/sprite.svg#cart01"></use>
+                    </svg>
+                    <span class="button-toggle__badge">10
+                    </span></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__middle">
+          <div class="header__wrap">
+            <div class="search header__search js-search">
+              <form action="/" method="post" accept-charset="UTF-8">
+                <label class="field field--bg-light field__search">
+                  <span class="hidden">
+                  </span>
+                  <input class="field__input" tabindex="0" placeholder="Поиск" type="search">
+                </label>
+                <label class="button button--submit search__button js-submit-search">
+                  <input class="hidden" type="submit">
+                  <svg class="button__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#search"></use>
+                  </svg>
+                </label>
+              </form>
+            </div>
+            <div class="header__company">
+              <a class="logo header__logo" title="Перейти на главную страницу" href="main.html">
+                <img class="logo__image" src="./assets/images/logo.svg" alt=" ">
+              </a>
+              <div class="header__text">Склад-магазин строительных, <br>лакокрасочных материалов <br>и&nbsp;хозяйственных товаров</div>
+            </div>
+            <button class="button-cart header__button-cart js-button-cart" title="Корзина" type="button"><span class="button-cart__inner">
+                <svg class="button-cart__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#cart"></use>
+                </svg>
+                <span class="button-cart__badge">10
+                </span></span>
+            </button>
+            <div class="phone header__phone js-open-callback">
+              <a class="phone__link" href="tel:79788400180">+7 (978) <span class="phone__num">840-01-80</span>
+              </a>
+              <button class="button phone__button dotted dotted--button" type="button">Обратный звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__wrap">
+            <div class="header__catalog-nav-wrap">
+              <button class="button-catalog header__button-catalog-nav js-open-catalog-nav" type="button">Каталог товаров
+              </button>
+              <div class="catalog-nav header__catalog-nav js-catalog-nav">
+                <div class="overlay catalog-nav__overlay js-catalog-nav-overlay">
+                </div>
+                <div class="catalog-nav__dialog js-catalog-nav-dialog">
+                  <button class="button-remove catalog-nav__close js-close-catalog-nav" title="Закрыть каталог" type="button">
+                    <span class="button-remove__icon">
+                    </span>
+                  </button>
+                  <div class="catalog-nav__lvl-1 js-catalog-nav-lvl-1">
+                    <ul class="catalog-nav__list">
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#tools"></use>
+                          </svg>Инструмент
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Инструмент
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Инструмент
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Инструмент
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Инструмент
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Инструмент
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#drill"></use>
+                          </svg>Оснастка для электроинструмента
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#metiz"></use>
+                          </svg>Крепеж. Метизы
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#lock"></use>
+                          </svg>Замочно-скобяные изделия
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#scotch"></use>
+                          </svg>Строительный расходный материал
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#putty-knife"></use>
+                          </svg>Строительные материалы
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#color"></use>
+                          </svg>Лакокрасочные материалы
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#chemistry"></use>
+                          </svg>Строительная химия. Сухие смеси
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#roof"></use>
+                          </svg>Укрывочные материалы. Кровля
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#mask"></use>
+                          </svg>Средства индивидуальной защиты
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#wattering-can"></use>
+                          </svg>Сад. Огород
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#rest"></use>
+                          </svg>Отдых на природе
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#household"></use>
+                          </svg>Товары для дома. Хозтовары
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#canister"></use>
+                          </svg>Автохимия. Автотовары
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-nav__item">
+                        <a class="catalog-nav__link js-link-lvl-1" href="#">
+                          <svg class="catalog-nav__icon">
+                            <use xlink:href="./assets/images/sprites/sprite.svg#zoo"></use>
+                          </svg>Зоотовары
+                        </a>
+                        <div class="catalog-nav__lvl-2 js-catalog-nav-lvl-2">
+                          <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="catalog-nav__item">
+                              <a class="catalog-nav__link js-link-lvl-2" href="#">Далеко-далеко за словесными горами в стране
+                              </a>
+                              <div class="catalog-nav__lvl-3 js-catalog-nav-lvl-3">
+                                <ul class="catalog-nav__list">
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                  <li class="catalog-nav__item">
+                                    <a class="catalog-nav__link js-link-lvl-3" href="#">Далеко-далеко за словесными горами в стране
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="header__dialog js-main-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <button class="button-remove header__button-close js-close-nav" title="Закрыть главное меню" type="button">
+                <span class="button-remove__icon">
+                </span>
+              </button>
+              <ul class="main-nav header__main-nav">
+                <li class="main-nav__item" itemprop="name">
+                  <a class="main-nav__link" href="about.html" itemprop="url">О компании
+                  </a>
+                </li>
+                <li class="main-nav__item" itemprop="name">
+                  <a class="main-nav__link" href="delivery.html" itemprop="url">Оплата и доставка 
+                  </a>
+                </li>
+                <li class="main-nav__item" itemprop="name">
+                  <a class="main-nav__link" href="articles.html" itemprop="url">Статьи
+                  </a>
+                </li>
+                <li class="main-nav__item" itemprop="name">
+                  <a class="main-nav__link" href="contacts.html" itemprop="url">Контакты
+                  </a>
+                </li>
+              </ul>
+              <div class="header__company">
+                <div class="header__text">г. Симферополь, ул. Глинки, 55
+                </div>
+                <div class="header__text">пн-пт с 8:00 до 18:00, <br>сб - с 8:00 до 15:00, <br>вс - выходной
+                </div>
+                <div class="phone header__phone js-open-callback">
+                  <a class="phone__link" href="tel:79788400180">+7 (978) <span class="phone__num">840-01-80</span>
+                  </a>
+                  <button class="button phone__button dotted dotted--button" type="button">Обратный звонок
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="overlay header__overlay js-header-overlay">
+        </div>
+      </header>
+      <main class="content content--with-aside-top">
+        <div class="content__wrap">
+          <aside class="content__aside">
+            <section class="aside-dropdown content__aside-dropdown js-aside-dropdown-open-tablet">
+              <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                <span class="aside-dropdown__heading">Категории
+                </span>
+                <span class="arrow arrow--down-small aside-dropdown__arrow">
+                </span>
+              </button>
+              <div class="aside-dropdown__content">
+                <div class="aside-dropdown__inner">
+                  <div class="aside-category">
+                    <h4 class="hidden">Категории товаров</h4>
+                    <ul class="aside-category__list">
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Краски
+                          <span class="quantity">1171
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Колеры и тонеры
+                          <span class="quantity">110
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Эмали
+                          <span class="quantity">482
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Грунтовки под покраску
+                          <span class="quantity">163
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Лаки
+                          <span class="quantity">296
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Краски
+                          <span class="quantity">1171
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Колеры и тонеры
+                          <span class="quantity">110
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Эмали
+                          <span class="quantity">482
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Грунтовки под покраску
+                          <span class="quantity">163
+                          </span>
+                        </a>
+                      </li>
+                      <li class="aside-category__item js-show-more-item">
+                        <a class="aside-category__link" href="#">Лаки
+                          <span class="quantity">296
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="aside-link aside-dropdown__link-bottom js-show-more-button" type="button">+6 категорий
+                  </button>
+                </div>
+              </div>
+            </section>
+            <form class="filters content__aside-filters" action="/" method="post" accept-charset="UTF-8">
+              <button class="filters__button js-filters-button" type="button">Фильтры
+                <span class="arrow arrow--down-small filters__arrow">
+                </span>
+              </button>
+              <div class="filters__content js-filters-content">
+                <fieldset class="aside-dropdown filters__fieldset js-aside-dropdown-open-tablet">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Цена
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <div class="range filters__range">
+                        <div class="range__scale">
+                          <div class="range__bar" style="left: 20px; right: 30px;">
+                          </div>
+                        </div>
+                        <label class="range__input-label range__input-label--min" style="left: 20px" aria-hidden="true">
+                          <input class="range__input hidden" id="price-min" name="price" value="0" min="0" max="30000" type="range" aria-hidden="true" step="100">
+                        </label>
+                        <label class="range__input-label range__input-label--max" style="right: 30px" aria-hidden="true">
+                          <input class="range__input hidden" id="price-max" name="price" value="22890" min="0" max="30000" type="range" aria-hidden="true" step="100">
+                        </label>
+                        <div class="range__output-wrap">
+                          <label class="range__output-label range__output-label--min" aria-hidden="true">
+                            <input class="range__output" value="0" for="price-min" type="text" aria-hidden="true">
+                          </label>
+                          <label class="range__output-label range__output-label--max" aria-hidden="true">
+                            <input class="range__output" value="22890" for="price-max" type="text" aria-hidden="true">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset js-aside-dropdown-open-tablet">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Бренды
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Alpina
+                            </span>
+                            <span class="quantity">67
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Bayramix
+                            </span>
+                            <span class="quantity">96
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Beckers
+                            </span>
+                            <span class="quantity">24
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Belinka
+                            </span>
+                            <span class="quantity">28
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Colorist
+                            </span>
+                            <span class="quantity">7
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Alpina
+                            </span>
+                            <span class="quantity">67
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Bayramix
+                            </span>
+                            <span class="quantity">96
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Beckers
+                            </span>
+                            <span class="quantity">24
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Belinka
+                            </span>
+                            <span class="quantity">28
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Colorist
+                            </span>
+                            <span class="quantity">7
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                      <button class="aside-link aside-dropdown__link-bottom js-show-more-button" type="button">Показать еще
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset js-aside-dropdown-open-tablet">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Тип краски
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Декоративная
+                            </span>
+                            <span class="quantity">67
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Интерьерная
+                            </span>
+                            <span class="quantity">96
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Молотковая
+                            </span>
+                            <span class="quantity">24
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Резиновая
+                            </span>
+                            <span class="quantity">28
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Фактурная
+                            </span>
+                            <span class="quantity">7
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Декоративная
+                            </span>
+                            <span class="quantity">67
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Интерьерная
+                            </span>
+                            <span class="quantity">96
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Молотковая
+                            </span>
+                            <span class="quantity">24
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Резиновая
+                            </span>
+                            <span class="quantity">28
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label">Фактурная
+                            </span>
+                            <span class="quantity">7
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                      <button class="aside-link aside-dropdown__link-bottom js-show-more-button" type="button">Показать еще
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset filters__fieldset--color js-aside-dropdown-open-tablet">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Цвет
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #ead4b5;"></span> Бежевый
+                            </span>
+                            <span class="quantity">67
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #ffffff; border: 1px solid #cedaef"></span> Белый
+                            </span>
+                            <span class="quantity">96
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #88cbff;"></span> Голубой
+                            </span>
+                            <span class="quantity">24
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #ff9494;"></span> Розовый
+                            </span>
+                            <span class="quantity">28
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #6b8bc7;"></span> Фиолетовый
+                            </span>
+                            <span class="quantity">7
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #ead4b5;"></span> Бежевый
+                            </span>
+                            <span class="quantity">67
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #ffffff; border: 1px solid #cedaef"></span> Белый
+                            </span>
+                            <span class="quantity">96
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #88cbff;"></span> Голубой
+                            </span>
+                            <span class="quantity">24
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #ff9494;"></span> Розовый
+                            </span>
+                            <span class="quantity">28
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item js-show-more-item">
+                          <label class="checkbox filters__checkbox">
+                            <input class="hidden checkbox__input" name="name" type="checkbox">
+                            <span class="checkbox__label"><span class="filters__color" style="background-color: #6b8bc7;"></span> Фиолетовый
+                            </span>
+                            <span class="quantity">7
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                      <button class="aside-link aside-dropdown__link-bottom js-show-more-button" type="button">Показать еще
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset filters__fieldset--other">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Аэрозоль
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="spray" value="yes" type="radio">
+                            <span class="radio-button__label">Да
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="spray" value="no" type="radio">
+                            <span class="radio-button__label">Нет
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset filters__fieldset--other">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Моющаяся
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="washable" value="yes" type="radio">
+                            <span class="radio-button__label">Да
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="washable" value="no" type="radio">
+                            <span class="radio-button__label">Нет
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset filters__fieldset--other">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Без запаха
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="no-smell" value="yes" type="radio">
+                            <span class="radio-button__label">Да
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="no-smell" value="no" type="radio">
+                            <span class="radio-button__label">Нет
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset filters__fieldset--other">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Разбавитель
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="diluent" value="watter" type="radio">
+                            <span class="radio-button__label">Вода
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="diluent" value="aceton" type="radio">
+                            <span class="radio-button__label">Ацетон
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset filters__fieldset--other">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Огнезащитность
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="resistance-fire" value="yes" type="radio">
+                            <span class="radio-button__label">Да
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="resistance-fire" value="no" type="radio">
+                            <span class="radio-button__label">Нет
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="aside-dropdown filters__fieldset filters__fieldset--other">
+                  <button class="aside-dropdown__button js-aside-dropdown-button" type="button">
+                    <span class="aside-dropdown__heading">Влагостойкость
+                    </span>
+                    <span class="arrow arrow--down-small aside-dropdown__arrow">
+                    </span>
+                  </button>
+                  <div class="aside-dropdown__content">
+                    <div class="aside-dropdown__inner">
+                      <ul class="filters__list">
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="resistance-watter" value="yes" type="radio">
+                            <span class="radio-button__label">Да
+                            </span>
+                          </label>
+                        </li>
+                        <li class="filters__item">
+                          <label class="radio-button filters__radio-button">
+                            <input class="hidden radio-button__input" name="resistance-watter" value="no" type="radio">
+                            <span class="radio-button__label">Нет
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="filters__button-group">
+                  <label class="button button--secondary button--small filters__submit">
+                    <input class="hidden" type="submit">
+                    Применить
+                  </label>
+                  <button class="button button--border button--small filters__reset" type="reset">Очистить
+                  </button>
+                </div>
+              </div>
+            </form>
+          </aside>
+          <div class="content__main">
+            <div class="sorting content__sorting">
+              <label class="sorting__label sorting__label--type">
+                <span class="sorting__descr">Сортировать&nbsp;по: 
+                </span>
+                <select class="sorting__select">
+                  <option>По умолчанию
+                  </option>
+                  <option>Хиты
+                  </option>
+                  <option>Новинки
+                  </option>
+                  <option>Акции
+                  </option>
+                </select>
+              </label>
+              <div class="sorting__right">
+                <label class="sorting__label sorting__label--quantity">
+                  <span class="sorting__descr">Показывать&nbsp;по: 
+                  </span>
+                  <select class="sorting__select">
+                    <option>12
+                    </option>
+                    <option>24
+                    </option>
+                    <option>36
+                    </option>
+                  </select>
+                </label>
+                <div class="sorting__button-group">
+                  <button class="sorting__button sorting__button--vert js-vertical-direction" type="button">
+                    <svg>
+                      <use xlink:href="./assets/images/sprites/sprite.svg#vertical-cards"></use>
+                    </svg>
+                  </button>
+                  <button class="sorting__button sorting__button--horizontal js-horizontal-direction" type="button">
+                    <svg>
+                      <use xlink:href="./assets/images/sprites/sprite.svg#horizontal-cards"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="content__catalog">
+              <ul class="product-list content__product-list js-product-list">
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product01.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capatect ArmaReno 700, 25 кг
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">2 500
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">2 380
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product02.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">8 000
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">7 820
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <div class="product-card__sticker-wrap">
+                      <div class="sticker sticker--hit product-card__sticker">Хит
+                      </div>
+                      <div class="sticker sticker--new product-card__sticker">Новинка
+                      </div>
+                      <div class="sticker sticker--action product-card__sticker">Акция
+                      </div>
+                    </div>
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product03.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">5 200
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">4 760
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product03.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">5 200
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">4 760
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product01.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capatect ArmaReno 700, 25 кг
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">2 500
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">2 380
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product02.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">8 000
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">7 820
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product03.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">5 200
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">4 760
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product01.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capatect ArmaReno 700, 25 кг
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">2 500
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">2 380
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product02.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">8 000
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">7 820
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product03.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">5 200
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">4 760
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product01.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capatect ArmaReno 700, 25 кг
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">2 500
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">2 380
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="product-card">
+                    <a class="product-image product-card__image-wrap" href="#"><span class="product-image__wrap"><img class="product-image__image" src="assets/upload/product02.jpg" alt=""></span>
+                    </a>
+                    <div class="product-card__content">
+                      <h3 class="product-card__heading">
+                        <a class="product-card__heading-link" href="#">Caparol Capasilan 12,5л
+                        </a>
+                      </h3>
+                      <div class="product-card__bottom">
+                        <div class="product-card__row">
+                          <div class="price-old price-old--small product-card__price-old">
+                            <span class="price-old__value">8 000
+                            </span>
+                            <span class="price-old__unit"> р./шт
+                            </span>
+                          </div>
+                          <div class="product-card__art">Арт. 68754
+                          </div>
+                        </div>
+                        <div class="product-card__row">
+                          <div class="price-new price-new--small product-card__price-new">
+                            <span class="price-new__value">7 820
+                            </span>
+                            <span class="price-new__unit"> р./шт
+                            </span>
+                          </div>
+                          <button class="button button--shadow-secondary button--small product-card__button" type="button">В корзину
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="pagination content__pagination">
+                <button class="arrow arrow--left pagination__button disabled" title="Назад" type="button">
+                </button>
+                <ul class="pagination__list">
+                  <li class="pagination__item active">
+                    <a class="pagination__link" href="#">1
+                    </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">2
+                    </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">3
+                    </a>
+                  </li>
+                  <li class="pagination__item">
+                    <span>...
+                    </span>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">6
+                    </a>
+                  </li>
+                </ul>
+                <button class="arrow arrow--right pagination__button" title="Вперед" type="button">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__wrap">
+            <div class="footer__company">
+              <a class="logo logo--footer footer__logo" title="Перейти на главную страницу" href="main.html">
+                <img class="logo__image" src="./assets/images/logo-white.svg" alt=" ">
+              </a>
+              <div class="footer__text footer__text--address">г. Симферополь, ул. Глинки, 55
+              </div>
+              <a class="footer__text" href="tel:79788400180">+7 (978) 840-01-80
+              </a>
+              <div class="footer__text">пн-пт с 8:00 до 18:00, <br>сб - с 8:00 до 15:00, <br>вс - выходной
+              </div>
+            </div>
+            <div class="footer__nav footer__nav--info" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title">Информарция</h4>
+              <ul class="footer__list">
+                <li class="footer__item" itemprop="name">
+                  <a href="#" itemprop="url">О компании
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="#" itemprop="url">Производители
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="#" itemprop="url">Услуги
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="#" itemprop="url">Оплата и доставка
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="#" itemprop="url">Новости
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="#" itemprop="url">Статьи
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="#" itemprop="url">Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav footer__nav--catalog" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title">Каталог</h4>
+              <div class="footer__list-row">
+                <ul class="footer__list">
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Автохимия. Автотовары
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Замочно-скобяные изделия
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Лако-красочные материалы
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Сад. Огород
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Инструмент
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Зоотовары
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Строительные материалы
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Крепеж. Метизы
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Отдых на природе
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Товары для дома. Хозтовары
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Строительный расходный материал
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Средства индивидуальной защиты
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Укрывочные материалы. Кровля
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Строительная химия. Сухие смеси
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="#" itemprop="url">Оснастки для электроинструмента
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__wrap">
+            <div class="footer__copyright">г. Симферополь ©&nbsp;Copyright&nbsp;2019&nbsp;г.
+            </div>
+            <div class="footer__made">Сделанo в
+              <a title="Sheer" href="https://sheer82.ru/">
+                <svg>
+                  <use xlink:href="./assets/images/sprites/sprite.svg#sheer"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal js-modal-callback js-modal">
+      <div class="overlay modal__overlay active js-overlay-modal">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-remove modal__close js-close-modal" type="button">
+          <span class="button-remove__icon">
+          </span>
+        </button>
+        <h3 class="modal__heading">Обратный звонок
+        </h3>
+        <form class="form" action="/" method="post" accept-charset="UTF-8">
+          <div class="form__inner">
+            <div class="form__group">
+              <label class="field field--with-icon field--border-bottom form__field">
+                <span class="hidden">Имя
+                </span>
+                <span class="field__icon-wrap">
+                  <svg class="field__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#user-circle"></use>
+                  </svg>
+                </span>
+                <input class="field__input" tabindex="0" placeholder="Имя" name="user" type="text">
+              </label>
+              <label class="field field--with-icon field--border-bottom form__field">
+                <span class="hidden">Телефон
+                </span>
+                <span class="field__icon-wrap">
+                  <svg class="field__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#tel-circle"></use>
+                  </svg>
+                </span>
+                <input class="field__input" tabindex="0" placeholder="+7(___)___-__-__" name="tel" type="tel">
+              </label>
+            </div>
+            <div class="form__submit-wrap form__submit-wrap--center">
+              <label class="button button--shadow-secondary button--large form__submit">
+                <input class="hidden" type="submit">
+                Заказать
+              </label>
+            </div>
+            <div class="form__confirm">
+              <label class="checkbox-confirm checkbox-confirm--small">
+                <input class="hidden checkbox-confirm__input" required checked type="checkbox">
+                <span class="checkbox-confirm__label">Согласие на обработку персональных данных
+                </span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/libs/jquery.js"></script>
+    <script src="./scripts/libs/imask.js"></script>
+    <script src="./scripts/libs/svg4everybody.js"></script>
+    <script src="./scripts/libs/ofi.js"></script>
+    <script src="./scripts/libs/picturefill.js"></script>
+    <script src="./scripts/libs/slick.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.form-content__group {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-content__field {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-content__personal {
+  margin-top: 12px
+}
+
+.form-content__submit {
+  margin-top: 12px;
+
+  .button {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+@include respond-to(520px) {
+  .form-content__group {
+    display: flex;
+  }
+
+  .form-content__field {
+    width: calc(100% - 10px);
+    margin-bottom: 0;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include respond-to(large) {
+
+}

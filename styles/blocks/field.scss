@@ -1,0 +1,166 @@
+.field {
+  display: block;
+  width: 100%;
+
+  &--with-button {
+    position: relative;
+
+    .field__input {
+      padding-right: 60px;
+    }
+  }
+
+  &--border {
+    .field__input {
+      border: 1px solid #cedaef;
+      border-radius: radius(sm);
+
+      @include hover {
+        background-color: color(light-primary);
+      }
+    }
+  }
+
+  &--border-bottom {
+    .field__input {
+      border-bottom: 1px solid #9da0a7;
+
+      @include hover {
+        background-color: color(light-primary);
+      }
+    }
+  }
+
+  &--bg-light {
+    .field__input {
+      background-color: color(light);
+      border: 1px solid color(light);
+
+      @include hover {
+          border: 1px solid color(border);
+      }
+    }
+  }
+
+  &--with-icon {
+    position: relative;
+
+    .field__input {
+      padding-left: 50px;
+    }
+
+    @include hover {
+      .field__icon {
+        fill: darken(#b5c5e3, $change-color);
+      }
+    }
+  }
+
+  &--button-primary-light {
+    .field__button {
+      background-color: color(light-primary);
+
+      @include hover {
+        background-color: darken(color(light-primary), $change-color);
+      }
+
+      .button__icon {
+        fill: color(dark-primary);
+      }
+    }
+  }
+
+  &--small {
+    .field__input {
+      height: 40px;
+      min-height: 40px;
+      padding: 10px 15px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &--error:not(:focus) {
+    .field__input {
+      border: 1px solid color(error);
+      color: color(error);
+    }
+  }
+}
+
+.field__label {
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  color: color(gray);
+}
+
+.field__input {
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  padding: 15px;
+  border: none;
+  background-color: transparent;
+  color: color(black);
+  font-size: 16px;
+  line-height: 20px;
+  caret-color: color(black);
+  outline: none;
+  transition: duration(md) func(primary);
+
+  &::placeholder {
+    color: rgba(color(black), 0.5);
+  }
+
+  &--error:not(:focus) {
+    border: 1px solid color(error);
+    color: color(error);
+
+    ~ .field__label {
+      color: color(error);
+    }
+  }
+}
+
+.field__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.field__icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 50px;
+}
+
+.field__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: #b5c5e3;
+}
+
+@include respond-to(large) {
+  .field {
+    &--with-icon {
+      .field__input {
+        padding-left: 60px;
+      }
+    }
+  }
+}

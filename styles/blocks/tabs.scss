@@ -1,0 +1,93 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.tabs__item {
+  margin-right: 5px;
+  list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tabs__button {
+  position: relative;
+  padding: 6px;
+  font-family: font(secondary);
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    right: 6px;
+    height: 3px;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: duration(md);
+    background-color: color(light-gray);
+  }
+
+  @include hover {
+    color: color(dark-primary);
+
+    &::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+  &.active {
+    color: color(dark-primary);
+
+    &::after {
+      opacity: 1;
+      transform: scaleX(1);
+      background-color: color(secondary);
+    }
+  }
+}
+
+@include respond-to(520px) {
+  .tabs__item {
+    margin-right: 20px;
+  }
+
+  .tabs__button {
+    font-size: 20px;
+  }
+}
+
+@include respond-to(medium) {
+  .tabs__item {
+    margin-right: 30px;
+  }
+
+  .tabs__button {
+    font-size: 22px;
+  }
+}
+
+@include respond-to(large) {
+  .tabs__item {
+    margin-right: 45px;
+  }
+
+  .tabs__button {
+    font-size: 24px;
+  }
+}

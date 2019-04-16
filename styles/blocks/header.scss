@@ -1,0 +1,400 @@
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cedaef;
+}
+
+.header__wrap {
+  @include wrapper;
+}
+
+// верхняя часть хедера
+.header__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  min-height: 40px;
+  background-color: color(dark-primary);
+  color: color(white);
+
+  .header__company {
+    display: none;
+  }
+
+  .header__text {
+    color: rgba(color(white), 0.7);
+  }
+
+  .header__list {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .header__item {
+    margin-bottom: 0;
+    text-align: center;
+    list-style: none;
+
+    &--nav {
+      margin-right: auto;
+
+      .button-nav {
+        transform: translate(-15px);
+      }
+    }
+
+    &--user {
+      .button-toggle__text {
+        display: none;
+      }
+    }
+  }
+}
+
+.header__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+// средняя часть хедера
+.header__middle {
+  padding-top: 40px;
+
+  .header__phone {
+    display: none;
+  }
+
+  .header__company {
+    margin-top: 20px;
+  }
+}
+
+// логотип
+.header__logo {
+  margin-bottom: 15px;
+}
+
+// поле поиска
+.header__search {
+  display: none;
+  margin-top: 20px;
+
+  &.active {
+    display: block;
+  }
+}
+
+// корзина
+.header__button-cart {
+  display: none;
+}
+
+// панель с меню
+.header__dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 19;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  width: $width-aside-sm;
+  height: 100vh;
+  padding-top: 60px;
+  background-color: color(white);
+  overflow-y: auto;
+  transition: 0.3s;
+
+  &.active {
+    transform: translateX(0%);
+  }
+}
+
+// кнопка для каталога
+.header__button-catalog-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 18;
+  transform-origin: 0 0;
+  transform: rotate(90deg) translate(-50%, -100%);
+  margin-left: 0;
+
+  &.active {
+    margin-left: $width-aside-sm;
+  }
+}
+
+// закрыть меню
+.header__button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// меню
+.header__main-nav {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  color: color(black);
+}
+
+// нижняя часть хедера
+.header__bottom {
+  .header__company {
+    margin-top: auto;
+    padding: 0 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: color(light);
+
+    .header__top-txt {
+      margin-bottom: 10px;
+    }
+
+    .header__phone {
+      margin-top: 20px;
+    }
+  }
+}
+
+// оверлей
+.header__overlay {
+  z-index: 13;
+}
+
+@include respond-to(520px) {
+  .header__middle {
+    .header__company {
+      display: flex;
+      align-items: center;
+    }
+
+    .header__text {
+      text-align: left;
+    }
+  }
+
+  .header__logo {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+
+@include respond-to(medium) {
+  .header__top {
+    position: static;
+
+    .header__wrap {
+      display: flex;
+      align-items: center;
+    }
+
+    .header__company {
+      display: block;
+      flex-grow: 1;
+      margin-right: 20px;
+      padding: 5px 0;
+    }
+
+    .header__item {
+      &--nav {
+        display: none;
+      }
+    }
+  }
+
+  .header__middle {
+    padding-top: 0;
+
+    .header__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .header__company {
+      margin-top: 0;
+      margin-right: auto;
+    }
+
+    .header__phone {
+      display: block;
+    }
+  }
+
+  .header__search {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+// Перестраиваем главное меню
+@include respond-to(medium-lg) {
+  .header {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .header__dialog {
+    position: static;
+    transform: none;
+    display: block;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .header__button-close {
+    display: none;
+  }
+
+  .header__main-nav {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .header__bottom {
+    .header__company {
+      display: none;
+    }
+  }
+
+  .header__dialog {
+    width: calc(100% - #{$width-aside-md}); // source/sass/global/var
+  }
+
+  .header__bottom {
+    .header__wrap {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .header__catalog-nav-wrap {
+    position: relative;
+  }
+
+  .header__button-catalog-nav {
+    flex-shrink: 0;
+    position: static;
+    transform: none;
+    width: $width-aside-md; // source/sass/global/var
+    margin-left: 0 !important;
+  }
+
+  .header__catalog-nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: auto;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+@include respond-to(1020px) {
+  .header__top {
+    .header__company {
+      display: flex;
+      padding: 0;
+    }
+
+    .header__text {
+      &:first-child {
+        margin-right: 48px;
+      }
+    }
+
+    .header__item {
+      &--search {
+        display: none;
+      }
+
+      &--user {
+        .button-toggle__text {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .header__middle {
+    .header__company {
+      order: 1;
+      margin-right: auto;
+    }
+
+    .header__phone {
+      order: 3;
+      display: block;
+    }
+  }
+
+  .header__search {
+    order: 2;
+    display: block;
+    width: 300px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+@include respond-to(1120px) {
+  .header__search {
+    width: 340px;
+  }
+}
+
+@include respond-to(large) {
+  .header__top {
+    .header__text {
+      &:first-child {
+        margin-right: 85px;
+      }
+    }
+
+    .header__item {
+      &--cart {
+        display: none;
+      }
+    }
+  }
+
+  .header__middle {
+    .header__phone {
+      order: 4;
+      padding-left: 20px;
+      border-left: 1px solid rgba(#000, 0.1);
+    }
+  }
+
+  .header__button-cart {
+    display: block;
+    margin-right: 20px;
+    order: 3;
+
+    .button-cart__icon {
+      fill: color(black);
+    }
+  }
+
+  .header__dialog {
+    width: calc(100% - $width-aside-lg);
+  }
+
+  .header__button-catalog-nav {
+    width: $width-aside-lg;
+  }
+}

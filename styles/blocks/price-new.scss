@@ -1,0 +1,48 @@
+.price-new {
+  display: inline-block;
+  font-family: font(secondary);
+  font-weight: 700;
+  line-height: 1;
+
+  &--small {
+    font-size: 18px;
+  }
+
+  &--large {
+    .price-new__value {
+      font-size: 20px;
+    }
+
+    .price-new__unit {
+      font-size: 18px;
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .price-new {
+    &--large {
+      .price-new__value {
+        font-size: 24px;
+      }
+
+      .price-new__unit {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include respond-to(large) {
+  .price-new {
+    &--large {
+      .price-new__value {
+        font-size: 30px;
+      }
+
+      .price-new__unit {
+        font-size: 24px;
+      }
+    }
+  }
+}

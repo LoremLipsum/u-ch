@@ -1,0 +1,57 @@
+.arrow {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: color(light);
+  outline: none;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: calc(50% - 5px);
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid color(dark-primary);
+    border-right: 1px solid color(dark-primary);
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+
+  @include hover {
+    background-color: color(light-primary);
+  }
+
+  &--left {
+    left: 0;
+
+    &::after {
+      transform: rotate(-135deg);
+      left: 16px;
+    }
+  }
+
+  &--right {
+    right: 0;
+
+    &::after {
+      left: 14px;
+    }
+  }
+
+  &--down-small {
+    width: 26px;
+    height: 26px;
+
+    &::after {
+      transform: rotate(135deg);
+      width: 8px;
+      height: 8px;
+      left: 10px;
+      top: 8px;
+    }
+  }
+}

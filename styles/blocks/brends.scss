@@ -1,0 +1,58 @@
+.brends {
+  .arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 1;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
+
+
+.brends__heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: color(dark-primary);
+}
+
+.brends__list {
+  position: relative;
+  padding: 0 50px;
+}
+
+.brends__item {
+  height: 45px;
+}
+
+.brends__inner {
+  height: 45px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.brends__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  @include ofi(contain);
+}
+
+
+@include respond-to(medium) {
+  .brends__heading {
+    font-size: 28px;
+  }
+}
+
+@include respond-to(large) {
+  .brends__heading {
+    font-size: 36px;
+  }
+}

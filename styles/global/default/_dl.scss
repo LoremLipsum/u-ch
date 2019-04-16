@@ -1,0 +1,42 @@
+dl,
+dd {
+  margin: 0;
+  margin-bottom: mb(sm);
+}
+
+dt {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+dd {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include respond-to(medium) {
+  dl,
+  dd {
+    margin-bottom: mb(md);
+  }
+
+  dt {
+    margin-bottom: 8px;
+    font-size: 17px;
+  }
+}
+
+@include respond-to(large) {
+  dl,
+  dd {
+    margin-bottom: mb(lg);
+  }
+
+  dt {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}

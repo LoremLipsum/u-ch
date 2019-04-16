@@ -1,0 +1,115 @@
+.button {
+  display: block;
+  flex-shrink: 0;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--primary,
+  &--secondary,
+  &--shadow-secondary,
+  &--border,
+  &--disabled {
+    min-height: 34px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-radius: radius(sm);
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    background-color: color(light-gray);
+    color: color(white);
+  }
+
+  &--primary {
+    background-color: color(primary);
+    color: color(white);
+
+    @include hover {
+      background-color: darken(color(primary), $change-color);
+    }
+  }
+
+  &--shadow-secondary {
+    background-image: linear-gradient(#f4511e, #ff7043);
+    box-shadow: 0 3px 15px 0 rgba(color(secondary), 0.8);
+    color: color(white);
+
+    @include hover {
+      box-shadow: 0 0px 10px 0 rgba(color(secondary), 0.8);
+      background-image: linear-gradient(#f4511e, #f4511e);
+    }
+  }
+
+  &--secondary {
+    background-color: color(secondary);
+    color: color(white);
+
+    @include hover {
+      background-image: darken(color(secondary), $change-color);
+    }
+  }
+
+  &--small {
+    padding: 8px 18px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--large {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--border {
+    border: 1px solid color(border);
+    color: color(dark-primary);
+
+    @include hover {
+      background-color: color(border);
+    }
+  }
+
+  &--submit {
+    cursor: pointer;
+  }
+
+  @include hover {
+    .button__icon {
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.button__icon {
+  display: block;
+  fill: currentColor;
+  width: 22px;
+  width: 22px;
+}
+
+@include respond-to(medium) {
+  .button {
+    &--large {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .button {
+    &--large {
+      padding: 13px 20px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}

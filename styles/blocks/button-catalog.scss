@@ -1,0 +1,26 @@
+.button-catalog {
+  display: block;
+  min-width: 170px;
+  padding: 5px 15px;
+  background-color: color(secondary);
+  border-radius: radius(sm) radius(sm) 0 0;
+  color: color(white);
+  font-family: font(secondary);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: duration(md);
+  text-decoration: none;
+}
+
+@include respond-to(medium-lg) {
+  .button-catalog {
+    padding: 15px;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

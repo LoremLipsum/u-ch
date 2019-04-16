@@ -1,0 +1,105 @@
+.text-medium {
+  font-weight: 500;
+  font-family: font(secondary);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.color-blue {
+  font-family: font(secondary);
+  color: color(primary);
+}
+
+.color-red {
+  font-family: font(secondary);
+  color: color(secondary);
+}
+
+.color-gray {
+  font-family: font(secondary);
+  color: color(gray);
+}
+
+.text-lg {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.text-xl {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.line {
+  overflow: hidden;
+
+  > * {
+    position: relative;
+    display: inline-block !important;
+    width: auto !important;
+    padding-right: 8px;
+    background-color: color(white);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      z-index: -1;
+      right: -9999px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@include respond-to(medium) {
+  .text-lg {
+    font-size: 17px;
+  }
+
+  .text-xl {
+    font-size: 20px;
+  }
+}
+
+@include respond-to(large) {
+  .text-lg {
+    font-size: 18px;
+  }
+
+  .text-xl {
+    font-size: 24px;
+  }
+}
