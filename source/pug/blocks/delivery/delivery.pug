@@ -17,7 +17,7 @@ mixin delivery(data)
                     +el({
                         tag: 'h4',
                         text: 'Выполняем доставку в&nbsp;Республике Крым по&nbsp;следующим направлениям:',
-                        js: 'mh-delivery-heading'
+                        class: 'delivery__subheading delivery__subheading--two-line'
                     })
 
                     ul.red-disc
@@ -35,7 +35,7 @@ mixin delivery(data)
                     +el({
                         tag: 'h4',
                         text: 'Правила доставки товаров:',
-                        js: 'mh-delivery-heading'
+                        class: 'delivery__subheading delivery__subheading--two-line'
                     })
                     ul.blue-disc
                         li Доставка осуществляется с&nbsp;понедельника по&nbsp;пятницу с&nbsp;9:00 до&nbsp;18:00.
@@ -47,12 +47,14 @@ mixin delivery(data)
                 +el({
                     tag: 'h2',
                     text: 'Оплата',
+                    class: 'delivery__heading'
                 })
             .delivery__row
                 .delivery__col.delivery__col--left
                     +el({
                         tag: 'h4',
                         text: 'Виды оплаты:',
+                        class: 'delivery__subheading'
                     })
                     ul.blue-disc
                         li Наличными курьеру;
@@ -62,6 +64,7 @@ mixin delivery(data)
                     +el({
                         tag: 'h4',
                         text: 'Оформление заказа по&nbsp;телефону:',
+                        class: 'delivery__subheading'
                     })
                     +el({
                         tag: 'a',

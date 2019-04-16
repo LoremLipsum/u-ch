@@ -112,7 +112,7 @@
   transition: duration(md) func(primary);
 
   &::placeholder {
-    color: color(black);
+    color: rgba(color(black), 0.5);
   }
 
   &--error:not(:focus) {
