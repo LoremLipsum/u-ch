@@ -1,30 +1,41 @@
 blockquote {
-  position: relative;
   margin: 0;
   margin-bottom: mb(sm);
-  padding-left: mb(sm);
+  padding: 20px;
+  padding-top: 50px;
+  border: 4px solid color(secondary);
+  background-color: color(white);
+  background-image: url('../assets/images/attantion.svg');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 20px 10px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    bottom: 5px;
-    width: 2px;
-    background-color: color(primary);
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 @include respond-to(medium) {
   blockquote {
     margin-bottom: mb(md);
-    padding-left: mb(md);
+    padding: 20px 30px;
+    padding-left: 80px;
+    border-width: 5px;
+    background-size: 40px 40px;
+    background-position: 20px center;
   }
 }
 
 @include respond-to(large) {
   blockquote {
     margin-bottom: mb(lg);
-    padding-left: mb(lg);
+    padding: 25px 45px;
+    padding-bottom: 32px;
+    padding-left: 100px;
+    border-width: 6px;
+    background-size: 50px 50px;
+    background-position: 25px center;
   }
 }

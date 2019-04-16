@@ -10,6 +10,14 @@
   height: 40px;
 }
 
+.field__search {
+  .field__input {
+    padding-right: 60px;
+    background-color: color(light);
+    box-shadow: inset 2px 2px 3px 0 rgba(color(black), 0.05);
+  }
+}
+
 .search__button {
   position: absolute;
   top: 0;

@@ -22,6 +22,11 @@
 .aside-posts__item {
   margin-bottom: 40px;
   list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
 }
 
 .aside-posts__item-date {

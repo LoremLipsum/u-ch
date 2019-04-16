@@ -25,8 +25,8 @@ mixin aside-action(data)
                 class: 'aside-action__form',
             })
                 +field({
-                    class: 'aside-action__field',
-                    mod: ['with-button', 'bg-light', 'small'],
+                    mix: 'aside-action__field',
+                    mod: ['bg-light', 'small'],
                     label: 'Ваш e-mail:',
                     placeholder: 'Ваш e-mail:',
                     type: 'email',

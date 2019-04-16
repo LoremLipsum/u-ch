@@ -28,6 +28,10 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  outline: none;
+}
+
 @include respond-to(medium) {
   body {
     font-size: 15px;

@@ -42,7 +42,10 @@
 }
 
 .aside-action__field {
-  border-radius: 0 radius(sm) radius(sm) 0;
+  .field__input {
+    border-radius: 0 radius(sm) radius(sm) 0;
+    padding-right: 50px;
+  }
 }
 
 .aside-action__submit {

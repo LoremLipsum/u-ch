@@ -76,6 +76,10 @@
   margin-bottom: 20px;
 }
 
+.content__pagination {
+  margin-top: 25px;
+}
+
 @include respond-to(medium) {
   .content {
     padding-top: 30px;
@@ -112,14 +116,6 @@
       }
     }
 
-    &--with-aside-top,
-    &--with-aside-bottom {
-      .content__pagination {
-        width: 100%;
-        padding-left: $width-aside-md + 20px;
-      }
-    }
-
     &--with-aside-top {
       .content__aside {
         margin-bottom: 0;
@@ -149,8 +145,8 @@
 
     &--centred {
       .content__wrap {
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 100px + pads(medium);;
+        padding-left: 100px + pads(medium);;
       }
     }
   }
@@ -171,7 +167,6 @@
   .content__aside-dropdown {
     margin-bottom: 20px;
   }
-
 }
 
 @include respond-to(large) {
@@ -192,15 +187,8 @@
 
     &--centred {
       .content__wrap {
-        padding-right: 195px;
-        padding-left: 195px;
-      }
-    }
-
-    &--with-aside-top,
-    &--with-aside-bottom {
-      .content__pagination {
-        padding-left: 310px;
+        padding-right: 195px + pads(large);
+        padding-left: 195px + pads(large);
       }
     }
   }

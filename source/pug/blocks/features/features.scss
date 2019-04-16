@@ -7,6 +7,11 @@
   align-items: center;
   margin-bottom: 20px;
   list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
 
   &:last-child {
     margin-bottom: 0;

@@ -5,3 +5,13 @@
     display: block;
   }
 }
+
+.js-show-more-item {
+  &:nth-child(n+6) {
+    display: none;
+
+    &.active {
+      display: block !important;
+    }
+  }
+}

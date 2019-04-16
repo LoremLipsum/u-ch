@@ -49,9 +49,9 @@ mixin range(data)
                 mod: 'min',
             })(aria-hidden='true')
                 +el({
-                    tag: 'output',
+                    tag: 'input',
                     class: 'range__output',
-                    text: '0'
+                    value: '0'
                 })(for='price-min' aria-hidden='true')
 
             +el({
@@ -60,7 +60,7 @@ mixin range(data)
                 mod: 'max',
             })(aria-hidden='true')
                 +el({
-                    tag: 'output',
+                    tag: 'input',
                     class: 'range__output',
-                    text: '22890'
+                    value: '22890'
                 })(for='price-max' aria-hidden='true')

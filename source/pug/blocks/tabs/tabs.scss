@@ -9,6 +9,11 @@
 .tabs__item {
   margin-right: 5px;
   list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
 
   &:last-child {
     margin-right: 0;

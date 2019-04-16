@@ -33,8 +33,11 @@
 
 .button-cart__badge {
   position: absolute;
-  top: -4px;
-  left: 2px;
+  top: -6px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 24px;
   height: 24px;
   padding: 2px;
@@ -43,7 +46,7 @@
   background-color: color(secondary);
   color: color(white);
   text-align: center;
-  line-height: 20px;
+  line-height: 11px;
   font-family: font(secondary);
   font-size: 13px;
   font-weight: 700;
@@ -69,10 +72,9 @@
     left: 20px;
     min-width: 30px;
     height: 30px;
-    padding: 2px;
-    border: 2px solid color(white);
-    border-radius: 16px;
+    border: 1px solid color(white);
+    border-radius: 15px;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 15px;
   }
 }

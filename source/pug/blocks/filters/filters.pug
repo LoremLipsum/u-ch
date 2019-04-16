@@ -41,7 +41,8 @@ mixin filters(data)
                     each item in filterBrends
                         +el({
                             tag: 'li',
-                            class: 'filters__item'
+                            class: 'filters__item',
+                            js: 'show-more-item',
                         })
                             +checkbox({
                                 label: item.label,
@@ -67,7 +68,8 @@ mixin filters(data)
                     each item in filterTypeColor
                         +el({
                             tag: 'li',
-                            class: 'filters__item'
+                            class: 'filters__item',
+                            js: 'show-more-item',
                         })
                             +checkbox({
                                 label: item.label,
@@ -93,7 +95,8 @@ mixin filters(data)
                     each item in filterColor
                         +el({
                             tag: 'li',
-                            class: 'filters__item'
+                            class: 'filters__item',
+                            js: 'show-more-item',
                         })
                             +checkbox({
                                 label: item.label,

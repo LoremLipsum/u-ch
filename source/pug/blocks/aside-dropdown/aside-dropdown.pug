@@ -28,9 +28,13 @@ mixin aside-dropdown(data)
                 class: 'aside-dropdown__inner',
             })
                 block
+
+                if data.list
+
                 if data.link
                     +aside-link({
                         tag: 'button',
                         text: data.link,
-                        mix: 'aside-dropdown__link-bottom'
+                        mix: 'aside-dropdown__link-bottom',
+                        js: 'show-more-button'
                     })

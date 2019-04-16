@@ -3,21 +3,15 @@ mixin counter(data)
         class: 'counter',
         mod: data.mod,
         mix: data.mix,
-        js: data.js,
+        js: 'counter',
     })&attributes(attributes)
         .counter__inner
             +el({
-                tag: 'label',
+                tag: 'button',
                 class: 'counter__label',
                 mod: 'minus',
                 js: 'counter-minus'
             })
-                +el({
-                    tag: 'input',
-                    class: 'hidden',
-                    type: 'button',
-                    value: '-',
-                })
             +el({
                 tag: 'label',
                 class: 'counter__label',
@@ -28,22 +22,18 @@ mixin counter(data)
                     class: 'hidden',
                     type: 'number',
                     value: '1',
-                    name: "quantity"
+                    name: "quantity",
+                    js: 'counter-value'
                 })
                 +el({
                     tag: 'span',
                     class: 'counter__value',
-                    text: '1'
+                    text: '1',
+                    js: 'counter-input'
                 })
             +el({
-                tag: 'label',
+                tag: 'button',
                 class: 'counter__label',
                 mod: 'plus',
                 js: 'counter-plus'
             })
-                +el({
-                    tag: 'input',
-                    class: 'hidden',
-                    type: 'button',
-                    value: '+'
-                })

@@ -7,6 +7,11 @@
   margin-bottom: 0;
   list-style: none;
   font-size: 14px;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
 }
 
 .aside-category__link {

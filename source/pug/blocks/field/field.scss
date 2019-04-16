@@ -34,9 +34,10 @@
   &--bg-light {
     .field__input {
       background-color: color(light);
+      border: 1px solid color(light);
 
       @include hover {
-        box-shadow: 0 0 0 1px #cedaef;
+          border: 1px solid color(border);
       }
     }
   }
@@ -74,11 +75,11 @@
       height: 40px;
       min-height: 40px;
       padding: 10px 15px;
-    }
-  }
 
-  &--shadow {
-    box-shadow: inset 1px 1px 3px 0 rgba(color(black), 0.1);
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
   }
 
   &--error:not(:focus) {
@@ -86,12 +87,6 @@
       border: 1px solid color(error);
       color: color(error);
     }
-  }
-}
-
-.field--small.field--with-button {
-  .field__input {
-    padding-right: 50px;
   }
 }
 

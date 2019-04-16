@@ -8,7 +8,8 @@ mixin search(data)
         +f({})
             +field({
                 type: 'search',
-                mod: ['with-button', 'button-primary-light', 'shadow', 'bg-light'],
+                mod: 'bg-light',
+                mix: 'field__search',
                 placeholder: 'Поиск',
             })
             +button({

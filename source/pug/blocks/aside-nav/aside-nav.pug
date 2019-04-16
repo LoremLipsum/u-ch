@@ -14,6 +14,12 @@ mixin aside-nav(data)
             tag: 'ul',
             class: 'aside-nav__list',
         })
+            li.aside-nav__item.active
+                +el({
+                    tag: 'a',
+                    class: 'aside-nav__link',
+                    text: 'Личный кабинет',
+                })
             each item in data.items
                 li.aside-nav__item
                     +el({

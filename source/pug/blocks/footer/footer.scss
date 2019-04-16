@@ -39,6 +39,13 @@
   padding: 0;
 }
 
+.footer__text,
+.footer__item,
+.footer__copyright,
+.footer__made {
+  font-size: 14px;
+}
+
 .footer__title {
   display: inline-block;
   margin-bottom: 15px;
@@ -52,6 +59,11 @@
 .footer__item {
   margin-bottom: 5px;
   list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
 
   a {
     text-decoration: none;

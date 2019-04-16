@@ -46,6 +46,11 @@
   color: color(dark-primary);
   line-height: 20px;
   list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
 
   &.active {
     .pagination__link {

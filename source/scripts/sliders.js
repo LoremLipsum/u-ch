@@ -18,9 +18,9 @@
         autoplay: true,
         autoplaySpeed: 5000,
         infinite: true,
-        dotsClass: 'slick-dots',
-        prevArrow: '<button class="slider-button slider-button--prev" type="button" tabindex="0" aria-lable="Назад"></button>',
-        nextArrow: '<button class="slider-button slider-button--next" type="button" tabindex="0" aria-lable="Вперёд"></button>',
+        dotsClass: 'main-slider__dots',
+        prevArrow: '<button class="main-slider__button main-slider__button--prev" type="button" tabindex="0" aria-lable="Назад"></button>',
+        nextArrow: '<button class="main-slider__button main-slider__button--next" type="button" tabindex="0" aria-lable="Вперёд"></button>',
       });
     };
 
@@ -34,8 +34,8 @@
         autoplay: true,
         autoplaySpeed: 5000,
         infinite: true,
-        prevArrow: '<button class="brends__button brends__button--prev" type="button" tabindex="0" aria-lable="Назад"></button>',
-        nextArrow: '<button class="brends__button brends__button--next" type="button" tabindex="0" aria-lable="Вперёд"></button>',
+        prevArrow: '<button class="arrow arrow--left" type="button" tabindex="0" aria-lable="Назад"></button>',
+        nextArrow: '<button class="arrow arrow--right" type="button" tabindex="0" aria-lable="Вперёд"></button>',
         responsive: [
           {
             breakpoint: 1020,

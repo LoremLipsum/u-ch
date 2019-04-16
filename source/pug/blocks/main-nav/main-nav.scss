@@ -12,6 +12,11 @@
   color: color(black);
   line-height: 1.2;
   list-style: none;
+  text-indent: 0;
+
+  &::before {
+    display: none;
+  }
 
   &:last-child {
     margin-bottom: 0;
