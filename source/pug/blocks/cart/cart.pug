@@ -11,6 +11,7 @@ mixin cart(data)
         })
             +el({
                 class: 'cart__table',
+                js: 'js-cart-item'
             })
                 +el({
                     class: 'cart__row',
@@ -89,7 +90,7 @@ mixin cart(data)
                             +el({
                                 tag: 'span',
                                 class: 'cart__value',
-                                text: '4 760'
+                                js: 'price'
                             })
                             +el({
                                 tag: 'span',
@@ -107,6 +108,7 @@ mixin cart(data)
                             })
                             +counter({
                                 mix: 'cart__counter',
+                                price: '4000'
                             })
 
                         +el({
@@ -118,13 +120,130 @@ mixin cart(data)
                                 class: 'cart__label',
                             })
                                 +el({
-                                    tag: 'input',
-                                    class: 'cart__input-total',
-                                    value: '47 600',
-                                    type: 'hidden',
-                                    name: 'total',
-                                    js: 'cart-total-input'
+                                    tag: 'span',
+                                    class: 'cart__descr',
+                                    text: 'Итого: '
                                 })
+                                +el({
+                                    tag: 'span',
+                                    class: 'cart__value',
+                                    js: 'price-sum'
+                                })
+                                +el({
+                                    tag: 'span',
+                                    class: 'cart__unit',
+                                    text: ' p.'
+                                })
+            +el({
+                class: 'cart__table',
+                js: 'js-cart-item'
+            })
+                +el({
+                    class: 'cart__row',
+                    mod: 'head',
+                })
+                    .cart__group.cart__group--left
+                        +el({
+                            class: 'cart__col',
+                            mod: 'image',
+                            text: 'Фото товара'
+                        })
+                    .cart__group.cart__group--right
+                        +el({
+                            class: 'cart__col',
+                            mod: 'name',
+                            text: 'Наименование товара'
+                        })
+                        +el({
+                            class: 'cart__col',
+                            mod: 'price',
+                            text: 'Цена'
+                        })
+                        +el({
+                            class: 'cart__col',
+                            mod: 'counter',
+                            text: 'Количество',
+                        })
+                        +el({
+                            class: 'cart__col',
+                            mod: 'total',
+                            text: 'Итого'
+                        })
+                +el({
+                    class: 'cart__row',
+                    mod: 'content',
+                })
+                    .cart__group.cart__group--left
+                        +el({
+                            class: 'cart__col',
+                            mod: 'image'
+                        })
+                            +el({
+                                class: 'cart__image-wrap',
+                            })
+                                +el({
+                                    tag: 'a',
+                                    class: 'cart__image-link',
+                                })
+                                    img.cart__image(src="./assets/upload/cart01.jpg" alt="")
+                    .cart__group.cart__group--right
+                        +el({
+                            class: 'cart__col',
+                            mod: 'name',
+                        })
+                            +el({
+                                class: 'cart__name',
+                            })
+                                +el({
+                                    tag: 'a',
+                                    class: 'cart__link',
+                                    text: 'Краска латексная Tikkurila Euro Matt-3 основа C 9 л',
+                                })
+                            +el({
+                                class: 'cart__articul',
+                                text: '<span class="cart__descr">Артикул:</span> <span class="cart__value">079643</span>'
+                            })
+                        +el({
+                            class: 'cart__col',
+                            mod: 'price',
+                        })
+                            +el({
+                                tag: 'span',
+                                class: 'cart__descr',
+                                text: 'Цена: '
+                            })
+                            +el({
+                                tag: 'span',
+                                class: 'cart__value',
+                                js: 'price'
+                            })
+                            +el({
+                                tag: 'span',
+                                class: 'cart__unit',
+                                text: ' р.'
+                            })
+                        +el({
+                            class: 'cart__col',
+                            mod: 'counter'
+                        })
+                            +el({
+                                tag: 'span',
+                                class: 'cart__descr',
+                                text: 'Количество: '
+                            })
+                            +counter({
+                                mix: 'cart__counter',
+                                price: '5000'
+                            })
+
+                        +el({
+                            class: 'cart__col',
+                            mod: 'total'
+                        })
+                            +el({
+                                tag: 'label',
+                                class: 'cart__label',
+                            })
                                 +el({
                                     tag: 'span',
                                     class: 'cart__descr',
@@ -133,30 +252,29 @@ mixin cart(data)
                                 +el({
                                     tag: 'span',
                                     class: 'cart__value',
-                                    text: '47 600',
-                                    js: 'cart-total-text'
+                                    js: 'price-sum'
                                 })
                                 +el({
                                     tag: 'span',
                                     class: 'cart__unit',
                                     text: ' p.'
                                 })
-        footer.cart__footer
-            .cart__footer-col.cart__footer-col--left
-                +button-reset({
-                    mix: 'cart__button-reset',
-                    text: 'Очистить корзину'
-                })
-            .cart__footer-col.cart__footer-col--right
-                .cart__total-sum
-                  | Итого к оплате:
-                  |
-                  span.cart__value 47 600
-                  |
-                  | р.
-                +button({
-                    type: 'submit',
-                    mix: 'cart__button-submit',
-                    mod: ['shadow-secondary', 'large'],
-                    text: 'Оформить заказ',
-                })
+            footer.cart__footer
+                .cart__footer-col.cart__footer-col--left
+                    +button-reset({
+                        mix: 'cart__button-reset',
+                        text: 'Очистить корзину'
+                    })
+                .cart__footer-col.cart__footer-col--right
+                    .cart__total-sum
+                        | Итого к оплате:
+                        |
+                        span.cart__value.js-price-total(data-price-total='')
+                        |
+                        | р.
+                    +button({
+                        type: 'submit',
+                        mix: 'cart__button-submit',
+                        mod: ['shadow-secondary', 'large'],
+                        text: 'Оформить заказ',
+                    })

@@ -3,12 +3,12 @@ mixin price-new(data)
         class: 'price-new',
         mod: data.mod,
         mix: data.mix,
-        js: data.js,
     })&attributes(attributes)
         +el({
             tag: 'span',
             class: 'price-new__value',
-            text: data.value
+            text: data.value,
+            js: data.js
         })
         +el({
             tag: 'span',

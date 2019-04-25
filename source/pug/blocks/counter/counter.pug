@@ -10,30 +10,22 @@ mixin counter(data)
                 tag: 'button',
                 class: 'counter__label',
                 mod: 'minus',
-                js: 'counter-minus'
+                js: 'counter-down'
             })
             +el({
                 tag: 'label',
                 class: 'counter__label',
-                mod: 'value',
+                mod: 'input',
             })
                 +el({
                     tag: 'input',
-                    class: 'hidden',
-                    type: 'number',
+                    class: 'counter__input',
+                    js: 'counter-input',
                     value: '1',
-                    name: "quantity",
-                    js: 'counter-value'
-                })
-                +el({
-                    tag: 'span',
-                    class: 'counter__value',
-                    text: '1',
-                    js: 'counter-input'
-                })
+                })(step='1', min='0', max='100', data-price=data.price, data-price-sum='', data-count='1', readonly)
             +el({
                 tag: 'button',
                 class: 'counter__label',
                 mod: 'plus',
-                js: 'counter-plus'
+                js: 'counter-up'
             })

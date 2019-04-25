@@ -3,7 +3,7 @@ mixin product-info(data)
         class: 'product-info',
         mod: data.mod,
         mix: data.mix,
-        js: data.js
+        js: 'product-info'
     })&attributes(attributes)
         +f({
             mix: 'product-info__form'
@@ -37,14 +37,15 @@ mixin product-info(data)
                     +price-new({
                         mix: 'product-info__price-new',
                         mod: 'large',
-                        value: '4 760',
+                        js: 'price'
                     })
                 +el({
                     class: 'product-info__line product-info__line--footer',
                 })
                     +counter({
                         mix: 'product-info__counter',
-                        mod: 'vertical'
+                        mod: 'vertical',
+                        price: '5000'
                     })
                     +button({
                         mix: 'product-info__submit',
