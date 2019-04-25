@@ -13,6 +13,58 @@
 
 'use strict';
 
+(function(){
+  var items = document.querySelectorAll('.js-cart-item');
+
+  var prettify = function (num) {
+    var n = num.toString();
+    return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
+  }
+
+  if (items) {
+    var sum;
+    var sumChange;
+    var total = 0;
+    var upClass = 'js-counter-up';
+    var downClass = 'js-counter-down';
+
+    for (var i = 0; i < items.length; i += 1) {
+      var value = items[i].querySelector('.js-price');
+      var input = items[i].querySelector('.js-counter-input');
+      var sumValue = items[i].querySelector('.js-price-sum');
+      var price = parseInt(input.getAttribute('data-price'), 10);
+      var count = parseInt(input.getAttribute('data-count'), 10);
+
+      sum = price * count;
+      value.innerHTML = prettify(price);
+      sumValue.innerHTML = prettify(sum);
+      input.setAttribute('data-price-sum', sum)
+
+      items[i].addEventListener('click', function(e) {
+        var inputChange = e.currentTarget.querySelector('.js-counter-input');
+        var sumValueChange = e.currentTarget.querySelector('.js-price-sum');
+        var priceChange = parseInt(inputChange.getAttribute('data-price'), 10);
+        var countChange = parseInt(inputChange.getAttribute('data-count'), 10);
+        var priceSumChange = parseInt(inputChange.getAttribute('data-price-sum'), 10);
+        var elem = e.target;
+
+        if (elem.classList.contains(downClass)) {
+          countChange = countChange == 0 ? countChange : (countChange - 1);
+        } else if (elem.classList.contains(upClass)){
+          countChange += 1;
+        }
+        sumChange = priceChange * countChange;
+        inputChange.value = countChange;
+        sumValueChange.innerHTML = prettify(sumChange);
+        inputChange.setAttribute('data-count', countChange);
+        inputChange.setAttribute('data-price-sum', sumChange);
+      });
+    }
+  }
+})();
+
+'use strict';
+
 (function($) {
 	'use strict';
 	$(function() {
@@ -107,45 +159,6 @@
 
 	});
 })(jQuery);
-
-'use strict';
-
-(function() {
-
-  var counter = document.querySelector('.js-counter');
-
-  if (counter) {
-    var input = counter.querySelector('.js-counter-input');
-    var sum = counter.querySelector('.js-price');
-    var minus = counter.querySelector('.js-counter-minus');
-    var plus = counter.querySelector('.js-counter-plus');
-
-    var value = parseInt(document.querySelector('.js-counter-value').value, 10);
-
-    var up = function () {
-      value += 1;
-      input.innerHTML = value;
-    }
-
-    var down = function () {
-      value = value == 1 ? value : (value - 1);
-      input.innerHTML = value;
-    }
-
-    var onPlusClick = function () {
-      up();
-    }
-
-    var onMinusClick = function () {
-      down();
-    }
-
-    if(counter) {
-      plus.addEventListener('click', onPlusClick)
-      minus.addEventListener('click', onMinusClick)
-    }
-  }
-})();
 
 'use strict';
 
@@ -322,6 +335,50 @@ picturefill();
 
   document.addEventListener('keyup', onEscKeyup);
 })()
+
+'use strict';
+
+(function(){
+  var item = document.querySelector('.js-product-info');
+
+  var prettify = function (num) {
+    var n = num.toString();
+    return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
+  }
+
+  if (item) {
+    var upClass = 'js-counter-up';
+    var downClass = 'js-counter-down';
+
+    var value = item.querySelector('.js-price');
+    var input = item.querySelector('.js-counter-input');
+    var price = parseInt(input.getAttribute('data-price'), 10);
+    var count = parseInt(input.getAttribute('data-count'), 10);
+    var sumValue = parseInt(input.getAttribute('data-price-sum'), 10);
+
+    var sum = price * count;
+    value.innerHTML = prettify(price);
+    input.setAttribute('data-price-sum', sum)
+
+    item.addEventListener('click', function(e) {
+      var input = e.currentTarget.querySelector('.js-counter-input');
+      var price = parseInt(input.getAttribute('data-price'), 10);
+      var count = parseInt(input.getAttribute('data-count'), 10);
+      var priceSum = parseInt(input.getAttribute('data-price-sum'), 10);
+      var elem = e.target;
+
+      if (elem.classList.contains(downClass)) {
+        count = count == 0 ? count : (count - 1);
+      } else if (elem.classList.contains(upClass)){
+        count += 1;
+      }
+      var sum = price * count;
+      input.value = count;
+      input.setAttribute('data-count', count);
+      input.setAttribute('data-price-sum', sum);
+    });
+  }
+})();
 
 'use strict';
 

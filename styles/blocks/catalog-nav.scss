@@ -40,7 +40,7 @@
     &.active {
       background-color: color(light-primary);
 
-      .catalog-nav__link {
+      > .catalog-nav__link {
         color: color(dark-primary);
 
         &::after {
@@ -82,7 +82,7 @@
     &:hover,
     &:focus,
     &.active {
-      > .catalog-nav__link {
+      .catalog-nav__link {
         &::after {
          opacity: 1;
         }
@@ -91,7 +91,7 @@
 
     &.active {
       padding-bottom: 10px;
-      .catalog-nav__link {
+      > .catalog-nav__link {
         color: color(dark-primary);
 
         &::after {
@@ -129,7 +129,7 @@
 
     &:hover,
     &:focus {
-      .catalog-nav__link {
+      > .catalog-nav__link {
         color: color(dark-primary) !important;
         background-color: color(white);
       }
@@ -158,7 +158,7 @@
   }
 
   @include hover {
-    .catalog-nav__link {
+    > .catalog-nav__link {
       color: color(dark-primary);
     }
   }

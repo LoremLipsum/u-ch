@@ -1,7 +1,7 @@
 'use strict';
 
 (function(){
-  var items = document.querySelectorAll('.js-item-w-counter');
+  var items = document.querySelectorAll('.js-cart-item');
 
   var prettify = function (num) {
     var n = num.toString();

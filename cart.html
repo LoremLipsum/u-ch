@@ -1479,7 +1479,7 @@
           <section class="cart content__cart">
             <h1 class="hidden">Ваша корзина</h1>
             <form action="/" method="post" accept-charset="UTF-8">
-              <div class="cart__table">
+              <div class="cart__table js-js-cart-item">
                 <div class="cart__row cart__row--head">
                   <div class="cart__group cart__group--left">
                     <div class="cart__col cart__col--image">Фото товара
@@ -1517,7 +1517,7 @@
                     <div class="cart__col cart__col--price">
                       <span class="cart__descr">Цена: 
                       </span>
-                      <span class="cart__value">4 760
+                      <span class="cart__value js-price">
                       </span>
                       <span class="cart__unit"> р.
                       </span>
@@ -1527,24 +1527,21 @@
                       </span>
                       <div class="counter cart__counter js-counter">
                         <div class="counter__inner">
-                          <button class="counter__label counter__label--minus js-counter-minus" type="button">
+                          <button class="counter__label counter__label--minus js-counter-down" type="button">
                           </button>
-                          <label class="counter__label counter__label--value">
-                            <input class="hidden js-counter-value" name="quantity" value="1" type="number">
-                            <span class="counter__value js-counter-input">1
-                            </span>
+                          <label class="counter__label counter__label--input">
+                            <input class="counter__input js-counter-input" value="1" readonly min="0" max="100" type="text" step="1" data-price="4000" data-price-sum="" data-count="1">
                           </label>
-                          <button class="counter__label counter__label--plus js-counter-plus" type="button">
+                          <button class="counter__label counter__label--plus js-counter-up" type="button">
                           </button>
                         </div>
                       </div>
                     </div>
                     <div class="cart__col cart__col--total">
                       <label class="cart__label">
-                        <input class="cart__input-total js-cart-total-input" name="total" value="47 600" type="hidden">
                         <span class="cart__descr">Итого: 
                         </span>
-                        <span class="cart__value js-cart-total-text">47 600
+                        <span class="cart__value js-price-sum">
                         </span>
                         <span class="cart__unit"> p.
                         </span>
@@ -1553,28 +1550,99 @@
                   </div>
                 </div>
               </div>
-            </form>
-            <footer class="cart__footer">
-              <div class="cart__footer-col cart__footer-col--left">
-                <label class="button-reset cart__button-reset">
-                  <input class="hidden" type="reset">
-                  Очистить корзину
-                  <span class="button-reset__icon">
-                  </span>
-                </label>
-              </div>
-              <div class="cart__footer-col cart__footer-col--right">
-                <div class="cart__total-sum">
-                  Итого к оплате:
-                  <span class="cart__value">47 600</span>
-                  р.
+              <div class="cart__table js-js-cart-item">
+                <div class="cart__row cart__row--head">
+                  <div class="cart__group cart__group--left">
+                    <div class="cart__col cart__col--image">Фото товара
+                    </div>
+                  </div>
+                  <div class="cart__group cart__group--right">
+                    <div class="cart__col cart__col--name">Наименование товара
+                    </div>
+                    <div class="cart__col cart__col--price">Цена
+                    </div>
+                    <div class="cart__col cart__col--counter">Количество
+                    </div>
+                    <div class="cart__col cart__col--total">Итого
+                    </div>
+                  </div>
                 </div>
-                <label class="button button--shadow-secondary button--large cart__button-submit">
-                  <input class="hidden" type="submit">
-                  Оформить заказ
-                </label>
+                <div class="cart__row cart__row--content">
+                  <div class="cart__group cart__group--left">
+                    <div class="cart__col cart__col--image">
+                      <div class="cart__image-wrap">
+                        <a class="cart__image-link" href="#"><img class="cart__image" src="./assets/upload/cart01.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart__group cart__group--right">
+                    <div class="cart__col cart__col--name">
+                      <div class="cart__name">
+                        <a class="cart__link" href="#">Краска латексная Tikkurila Euro Matt-3 основа C 9 л
+                        </a>
+                      </div>
+                      <div class="cart__articul"><span class="cart__descr">Артикул:</span> <span class="cart__value">079643</span>
+                      </div>
+                    </div>
+                    <div class="cart__col cart__col--price">
+                      <span class="cart__descr">Цена: 
+                      </span>
+                      <span class="cart__value js-price">
+                      </span>
+                      <span class="cart__unit"> р.
+                      </span>
+                    </div>
+                    <div class="cart__col cart__col--counter">
+                      <span class="cart__descr">Количество: 
+                      </span>
+                      <div class="counter cart__counter js-counter">
+                        <div class="counter__inner">
+                          <button class="counter__label counter__label--minus js-counter-down" type="button">
+                          </button>
+                          <label class="counter__label counter__label--input">
+                            <input class="counter__input js-counter-input" value="1" readonly min="0" max="100" type="text" step="1" data-price="5000" data-price-sum="" data-count="1">
+                          </label>
+                          <button class="counter__label counter__label--plus js-counter-up" type="button">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__col cart__col--total">
+                      <label class="cart__label">
+                        <span class="cart__descr">Итого: 
+                        </span>
+                        <span class="cart__value js-price-sum">
+                        </span>
+                        <span class="cart__unit"> p.
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </footer>
+              <footer class="cart__footer">
+                <div class="cart__footer-col cart__footer-col--left">
+                  <label class="button-reset cart__button-reset">
+                    <input class="hidden" type="reset">
+                    Очистить корзину
+                    <span class="button-reset__icon">
+                    </span>
+                  </label>
+                </div>
+                <div class="cart__footer-col cart__footer-col--right">
+                  <div class="cart__total-sum">
+                    Итого к оплате:
+                    <span class="cart__value js-price-total" data-price-total=""></span>
+                    р.
+                  </div>
+                  <label class="button button--shadow-secondary button--large cart__button-submit">
+                    <input class="hidden" type="submit">
+                    Оформить заказ
+                  </label>
+                </div>
+              </footer>
+            </form>
           </section>
           <div class="product-line">
             <h3 class="product-line__heading">недавно просмотренные
