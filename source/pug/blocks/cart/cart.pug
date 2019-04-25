@@ -11,7 +11,7 @@ mixin cart(data)
         })
             +el({
                 class: 'cart__table',
-                js: 'js-cart-item'
+                js: 'cart-item'
             })
                 +el({
                     class: 'cart__row',
@@ -136,7 +136,7 @@ mixin cart(data)
                                 })
             +el({
                 class: 'cart__table',
-                js: 'js-cart-item'
+                js: 'cart-item'
             })
                 +el({
                     class: 'cart__row',
@@ -269,7 +269,7 @@ mixin cart(data)
                     .cart__total-sum
                         | Итого к оплате:
                         |
-                        span.cart__value.js-price-total(data-price-total='')
+                        span.cart__value.js-price-total(data-price-total='') 5
                         |
                         | р.
                     +button({
