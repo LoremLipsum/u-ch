@@ -22,8 +22,6 @@
   }
 
   if (items) {
-    var sum;
-    var sumChange;
     var total = 0;
     var upClass = 'js-counter-up';
     var downClass = 'js-counter-down';
@@ -35,29 +33,29 @@
       var price = parseInt(input.getAttribute('data-price'), 10);
       var count = parseInt(input.getAttribute('data-count'), 10);
 
-      sum = price * count;
+      var sum = price * count;
       value.innerHTML = prettify(price);
       sumValue.innerHTML = prettify(sum);
       input.setAttribute('data-price-sum', sum)
 
       items[i].addEventListener('click', function(e) {
-        var inputChange = e.currentTarget.querySelector('.js-counter-input');
-        var sumValueChange = e.currentTarget.querySelector('.js-price-sum');
-        var priceChange = parseInt(inputChange.getAttribute('data-price'), 10);
-        var countChange = parseInt(inputChange.getAttribute('data-count'), 10);
-        var priceSumChange = parseInt(inputChange.getAttribute('data-price-sum'), 10);
+        var input = e.currentTarget.querySelector('.js-counter-input');
+        var sumValue = e.currentTarget.querySelector('.js-price-sum');
+        var price = parseInt(input.getAttribute('data-price'), 10);
+        var count = parseInt(input.getAttribute('data-count'), 10);
+        var priceSum = parseInt(input.getAttribute('data-price-sum'), 10);
         var elem = e.target;
 
         if (elem.classList.contains(downClass)) {
-          countChange = countChange == 0 ? countChange : (countChange - 1);
+          count = count == 0 ? count : (count - 1);
         } else if (elem.classList.contains(upClass)){
-          countChange += 1;
+          count += 1;
         }
-        sumChange = priceChange * countChange;
-        inputChange.value = countChange;
-        sumValueChange.innerHTML = prettify(sumChange);
-        inputChange.setAttribute('data-count', countChange);
-        inputChange.setAttribute('data-price-sum', sumChange);
+        var sum = price * count;
+        input.value = count;
+        sumValue.innerHTML = prettify(sum);
+        input.setAttribute('data-count', count);
+        input.setAttribute('data-price-sum', sum);
       });
     }
   }

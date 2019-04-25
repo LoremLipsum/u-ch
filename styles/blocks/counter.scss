@@ -35,7 +35,7 @@ $counter-sign-height: 2px;
         top: 25px;
       }
 
-      &--value {
+      &--input {
         left: 0;
         transform: none;
         border-left: none;
@@ -108,7 +108,7 @@ $counter-sign-height: 2px;
     }
   }
 
-  &--value {
+  &--input {
     left: 50%;
     transform: translate(-50%);
     width: 50px;
@@ -119,12 +119,11 @@ $counter-sign-height: 2px;
   }
 }
 
-.counter__value {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.counter__input {
   width: 100%;
   height: 100%;
+  border: none;
+  text-align: center;
 }
 
 @include respond-to(medium-lg) {
@@ -158,7 +157,7 @@ $counter-sign-height: 2px;
       width: 40px;
     }
 
-    &--value {
+    &--input {
       width: 60px;
     }
   }
