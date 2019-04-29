@@ -7788,11 +7788,18 @@ picture
 
 .filters__item
 {
-    font-size: 14px; 
+    font-size: 14px;
 
     margin-bottom: 0;
 
     list-style: none;
+    list-style: none;
+
+    text-indent: 0;
+}
+.filters__item::before
+{
+    display: none;
 }
 
 .filters__color
